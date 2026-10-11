@@ -1,25 +1,27 @@
 """
-FnGuide 재무제표 수집 모듈 (pd.read_html 기반)
+FnGuide 재무제표 수집 모듈 (wcomp.fnguide.com JSON API)
 
-comp.fnguide.com에서 재무제표를 수집합니다.
-기존 naver_finance.py의 BeautifulSoup 파싱을 pd.read_html()로 대체합니다.
+2026-07 FnGuide 개편으로 comp.fnguide.com/SVO2/ASP/SVD_*.asp 가 폐기되어
+신규 사이트의 JSON 엔드포인트로 이관했다.
 
 수집 데이터:
-- 연간/분기 손익계산서: 매출액, 매출총이익, 영업이익(EBIT), 당기순이익
+- 연간/분기 손익계산서: 매출액, 매출총이익, 영업이익(EBIT), 당기순이익, 지배주주순이익
 - 연간/분기 재무상태표: 총자산, 자본총계, 지배주주지분, 유동자산, 유동부채, 비유동자산, 차입금, 현금, 재고자산
 - 연간/분기 현금흐름표: 영업활동현금흐름, 투자활동현금흐름
-- 페이지 헤더: PER, 12M PER, 업종 PER, PBR, 배당수익률
+- Snapshot 페이지: PER, 12M PER, 업종 PER, PBR, 배당수익률(헤더), 연간 EPS
+
+주의: 신규 API의 연간 데이터는 최근 3개년뿐이다. 그 이전 연도는
+collect_quant_data.py 가 이전 캐시에서 이어붙인다.
 
 사용법:
     from scripts.fnguide_data import get_financial_data
     data = get_financial_data('005930')
 """
 
-import io
+import json
 import os
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, List, Optional, Any
 
 import numpy as np
@@ -32,70 +34,47 @@ import requests
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
 }
 
-FNGUIDE_FINANCE_URL = 'https://comp.fnguide.com/SVO2/ASP/SVD_Finance.asp'
-FNGUIDE_MAIN_URL = 'https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp'
+FNGUIDE_BASE = 'https://wcomp.fnguide.com/CompanyInfo'
+FNGUIDE_SNAPSHOT_URL = f'{FNGUIDE_BASE}/Snapshot'
 
-# 재무제표 테이블 인덱스 (SVD_Finance.asp)
-TABLE_IDX = {
-    'annual_income': 0,     # 연간 손익계산서
-    'quarter_income': 1,    # 분기 손익계산서
-    'annual_balance': 2,    # 연간 재무상태표
-    'quarter_balance': 3,   # 분기 재무상태표
-    'annual_cashflow': 4,   # 연간 현금흐름표
-    'quarter_cashflow': 5,  # 분기 현금흐름표
-}
-
-# 손익계산서 항목 매핑 (FnGuide 한글 → 코드 키)
+# 손익계산서 항목 매핑 (FnGuide 계정명 → 코드 키)
 INCOME_ITEMS = {
     '매출액': 'revenue',
     '매출총이익': 'gross_profit',
     '영업이익': 'operating_income',
     '당기순이익': 'net_income',
-    '지배주주순이익': 'net_income_controlling',
+    '(지배주주지분)당기순이익': 'net_income_controlling',
     '법인세비용': 'tax_expense',
     '금융원가': 'finance_cost',
 }
 
-# 재무상태표 항목 매핑 (key: 영문키, value: 검색할 한글명 리스트)
-# FnGuide 요약 테이블에서는 '자산', '자본' 등 짧은 이름 사용
-# '계산에참여한계정펼치기' 접미사가 붙는 경우가 있음
+# 재무상태표 항목 매핑 (key: 영문키, value: 검색할 계정명 리스트)
 BALANCE_SEARCH = {
-    'total_assets': ['자산총계', '자산'],
+    'total_assets': ['자산총계', '자산'],  # 금융업은 '자산'/'자본'
     'total_equity': ['자본총계', '자본'],
-    'controlling_equity': ['지배기업주주지분', '지배주주지분'],
+    'controlling_equity': ['지배주주지분'],
     'current_assets': ['유동자산'],
     'current_liabilities': ['유동부채'],
     'non_current_assets': ['비유동자산'],
     'non_current_liabilities': ['비유동부채'],
-    'cash': ['현금및현금성자산', '현금'],
+    'cash': ['현금및현금성자산'],
     'short_term_debt': ['단기차입금'],
     'long_term_debt': ['장기차입금'],
     'bonds': ['사채'],
     'inventory': ['재고자산'],
 }
 
-# SVD_Main.asp table[11] 행 이름 → annual dict key 매핑
-MAIN_ANNUAL_ITEMS = {
-    '매출액':         'revenue',
-    '영업이익':       'operating_income',
-    '당기순이익':     'net_income',
-    '지배주주순이익': 'net_income_controlling',
-    'EPS':            'eps',  # 주당순이익 (5년 EPS 성장률 계산용)
-}
-
 # 현금흐름표 항목 매핑
 CASHFLOW_ITEMS = {
     '영업활동으로인한현금흐름': 'cfo',
-    '영업활동현금흐름': 'cfo',
 }
 
-CASHFLOW_INVEST_ITEMS = ['투자활동으로인한현금흐름', '투자활동현금흐름']
+CASHFLOW_INVEST_ITEMS = ['투자활동으로인한현금흐름']
 
-# 페이지 헤더 지표 ID 매핑 (corp_group2 영역)
+# Snapshot 페이지 헤더 지표 ID 매핑 (corp_group2 영역)
 HEADER_METRIC_IDS = {
     'h_per': 'per',
     'h_12m': 'per_12m',
@@ -106,189 +85,78 @@ HEADER_METRIC_IDS = {
 
 
 # ============================================================================
-# 데이터 수집 함수
+# 파싱 함수 (네트워크 없음 — test_fnguide_parse.py 에서 점검)
 # ============================================================================
 
-def _fetch_tables(code: str, report_type: str = 'D') -> Optional[tuple]:
+def _dataset_to_df(dataset: Dict, quarterly: bool) -> pd.DataFrame:
     """
-    FnGuide 재무제표 페이지에서 테이블들과 HTML을 추출합니다.
+    FnGuide JSON dataset → DataFrame (index=계정명, columns='YYYY/MM' 오래된→최근 순).
 
-    Args:
-        code: 종목코드 (6자리)
-        report_type: 'D' = 연결, 'I' = 개별
-
-    Returns:
-        (6개 테이블 리스트, HTML 텍스트) 튜플 또는 None
+    - '전년동기', '전년동기대비(%)' 컬럼은 버린다.
+    - 연간(quarterly=False)은 '(최근분기)' 처럼 괄호 표시가 붙은 누적 컬럼도 버린다.
+      분기 표에서는 '(최근분기)' 가 실제 최신 분기이므로 유지한다.
+    - 같은 이름의 계정(하위 '기타' 등)은 첫 행(상위 계정)만 남긴다.
     """
-    params = {
-        'pGB': '1',
-        'gicode': f'A{code}',
-        'cID': '',
-        'MenuYn': 'Y',
-        'ReportGB': report_type,
-        'NewMenuID': '103',
-        'stkGb': '701',
-    }
-
-    try:
-        resp = requests.get(FNGUIDE_FINANCE_URL, params=params, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-
-        html_text = resp.text
-        tables = pd.read_html(
-            io.StringIO(html_text), encoding='utf-8', displayed_only=False
-        )
-
-        if len(tables) < 6:
-            # 개별 재무제표로 재시도
-            if report_type == 'D':
-                return _fetch_tables(code, 'I')
-            return None
-
-        return tables, html_text
-
-    except Exception as e:
-        if report_type == 'D':
-            # 개별 재무제표로 재시도
-            return _fetch_tables(code, 'I')
-        return None
-
-
-def _fetch_tables_main(code: str) -> Optional[pd.DataFrame]:
-    """SVD_Main.asp에서 연간 Financial Highlight 테이블만 추출. 실패 시 None.
-
-    div#div15 (Financial Highlight 섹션) 내 6개 테이블 중 인덱스 1번 사용:
-      [0] IFRS(연결) Annual+Quarter 전체  [1] IFRS(연결) Annual ← 사용
-      [2] IFRS(연결) Net Quarter         [3] IFRS(별도) Annual+Quarter
-      [4] IFRS(별도) Annual              [5] IFRS(별도) Net Quarter
-    """
-    params = {
-        'pGB': '1', 'gicode': f'A{code}', 'cID': '',
-        'MenuYn': 'Y', 'ReportGB': '', 'NewMenuID': '101', 'stkGb': '701',
-    }
-    try:
-        resp = requests.get(FNGUIDE_MAIN_URL, params=params, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-        html = resp.text
-
-        # 전체 파싱 후 인덱스 11 사용 (17개 테이블 중 div#div15의 Annual 연결 테이블)
-        # 로컬 파싱 시간: ~0.03s, 네트워크가 실질적 병목
-        tables = pd.read_html(io.StringIO(html), encoding='utf-8', displayed_only=False)
-        if len(tables) >= 12:
-            return tables[11]
-    except Exception:
-        pass
-    return None
-
-
-def _parse_main_annual(table: pd.DataFrame) -> Dict[str, Dict[str, float]]:
-    """
-    SVD_Main.asp table[11] (Financial Highlight 연간) 파싱.
-    반환: {'revenue': {'2021/12': 값, ...}, 'operating_income': {...}, ...}
-    """
-    result = {}
-    # MultiIndex 컬럼 → 두 번째 레벨(날짜)만 사용
-    cols = []
-    for c in table.columns:
-        if isinstance(c, tuple):
-            cols.append(c[1])
-        else:
-            cols.append(str(c))
-    table = table.copy()
-    table.columns = cols
-
-    # 첫 번째 열을 인덱스로
-    item_col = table.columns[0]
-    table = table.set_index(item_col)
-    table.index = table.index.astype(str).str.strip()
-
-    # 날짜 컬럼만 필터 (YYYY/MM 형식)
-    date_cols = [c for c in table.columns if re.match(r'\d{4}/\d{2}', str(c))]
-
-    for kr_name, en_key in MAIN_ANNUAL_ITEMS.items():
-        matched = None
-        for idx in table.index:
-            if kr_name == idx or kr_name in idx:
-                matched = idx
-                break
-        if matched is None:
+    cols = {}
+    for h in dataset.get('header') or []:
+        yymm = str(h.get('YYMM', ''))
+        m = re.match(r'(\d{4})/(\d{2})', yymm)
+        if not m or '전년' in yymm or (not quarterly and '(' in yymm):
             continue
-        row = table.loc[matched, date_cols]
-        row = pd.to_numeric(row, errors='coerce').dropna()
-        if not row.empty:
-            result[en_key] = row.to_dict()
+        cols[h['CD']] = f'{m.group(1)}/{m.group(2)}'
 
-    return result
+    rows = {}
+    for r in dataset.get('data') or []:
+        name = re.sub(r'\s+', '', str(r.get('NAME', '')))
+        if name and name not in rows:
+            rows[name] = {col: r.get(cd) for cd, col in cols.items()}
+
+    df = pd.DataFrame.from_dict(rows, orient='index', columns=list(cols.values()))
+    return df.apply(pd.to_numeric, errors='coerce')
+
+
+def _latest_value(series: pd.Series) -> Optional[float]:
+    """가장 최근(오른쪽) 기간의 유효값."""
+    valid = series.dropna()
+    return float(valid.iloc[-1]) if len(valid) else None
 
 
 def _parse_header_metrics(html: str) -> Dict[str, float]:
-    """
-    FnGuide 페이지 헤더에서 PER, 12M PER, 업종 PER, PBR, 배당수익률을 추출합니다.
-    corp_group2 영역의 anchor ID로 매핑합니다.
-    """
+    """Snapshot 헤더에서 PER, 12M PER, 업종 PER, PBR, 배당수익률 추출."""
     metrics = {}
-    pattern = r'class="tip_in"\s*id="(\w+)"[^>]*>.*?</a>\s*</dt>\s*<dd>([^<]*)</dd>'
+    pattern = r'id="(h_\w+)"[^>]*>.*?</button>\s*</li>\s*<li>\s*([^<]*)</li>'
     for match in re.finditer(pattern, html, re.DOTALL):
-        anchor_id = match.group(1)
-        value_str = match.group(2).strip().replace('%', '').replace(',', '')
-        metric_key = HEADER_METRIC_IDS.get(anchor_id)
-        if metric_key:
+        key = HEADER_METRIC_IDS.get(match.group(1))
+        value_str = match.group(2).replace('%', '').replace(',', '').strip()
+        if key:
             try:
-                metrics[metric_key] = float(value_str)
-            except (ValueError, TypeError):
+                metrics[key] = float(value_str)
+            except ValueError:
                 pass
     return metrics
 
 
-def _clean_table(df: pd.DataFrame) -> pd.DataFrame:
-    """테이블 정제: 불필요한 열/행 제거, 인덱스 정리"""
-    if df is None or df.empty:
-        return pd.DataFrame()
-
-    # 첫 번째 열을 항목명으로 설정
-    df = df.copy()
-
-    # MultiIndex 처리
-    if isinstance(df.columns, pd.MultiIndex):
-        # 마지막 레벨만 사용
-        df.columns = [col[-1] if isinstance(col, tuple) else col for col in df.columns]
-
-    # 첫 번째 열을 인덱스로
-    first_col = df.columns[0]
-    df = df.set_index(first_col)
-
-    # 인덱스 정리 (공백, 특수문자 제거)
-    df.index = df.index.astype(str).str.strip()
-    df.index = df.index.str.replace(r'\s+', '', regex=True)
-
-    # '전년동기' 등 불필요한 열 제거
-    cols_to_drop = [c for c in df.columns if '전년' in str(c) or '동기' in str(c)]
-    df = df.drop(columns=cols_to_drop, errors='ignore')
-
-    # 컬럼명에서 날짜 추출 및 정리
-    new_cols = []
-    for col in df.columns:
-        col_str = str(col).strip()
-        # YYYY/MM 패턴 추출 (잠정실적(P), 컨센서스(E) 마커 보존 → /12 체크에서 제외)
-        match = re.search(r'(\d{4})[/.](\d{2})', col_str)
-        if match:
-            base = f"{match.group(1)}/{match.group(2)}"
-            if re.search(r'\([PE]\)', col_str):
-                new_cols.append(base + '(P)')  # endswith('/12') 체크 불통과
-            else:
-                new_cols.append(base)
-        else:
-            new_cols.append(col_str)
-    df.columns = new_cols
-
-    # 숫자 변환
-    for col in df.columns:
-        df[col] = pd.to_numeric(
-            df[col].astype(str).str.replace(',', '').str.strip(),
-            errors='coerce'
-        )
-
-    return df
+def _parse_snapshot_eps(html: str) -> Dict[str, float]:
+    """Snapshot 의 snpFinancial(Financial Highlight)에서 확정 연간 EPS만 추출 (추정치·분기 제외)."""
+    m = re.search(r'snpFinancial\s*:\s*', html)
+    if not m:
+        return {}
+    try:
+        obj, _ = json.JSONDecoder().raw_decode(html[m.end():])
+    except ValueError:
+        return {}
+    annual_cds = {h['CD']: h['YYMM'] for h in obj.get('header', [])
+                  if h.get('EP_CHK') is None and re.fullmatch(r'\d{4}/\d{2}', str(h.get('YYMM', '')))}
+    for r in obj.get('data', []):
+        if str(r.get('NAME', '')).strip() == 'EPS':
+            out = {}
+            for cd, yymm in annual_cds.items():
+                try:
+                    out[yymm] = float(r.get(cd))
+                except (TypeError, ValueError):
+                    pass
+            return out
+    return {}
 
 
 def _extract_item(df: pd.DataFrame, item_names: list) -> pd.Series:
@@ -318,198 +186,111 @@ def _extract_item(df: pd.DataFrame, item_names: list) -> pd.Series:
 
 
 # ============================================================================
-# 메인 수집 함수
+# 데이터 수집 함수
 # ============================================================================
+
+def _fetch_dataset(endpoint: str, code: str, freq: str, consol: str) -> Dict:
+    resp = requests.get(
+        f'{FNGUIDE_BASE}/{endpoint}',
+        params={'cmp_cd': code, 'freq_typ': freq, 'consol_typ': consol},
+        headers=HEADERS, timeout=20,
+    )
+    resp.raise_for_status()
+    return resp.json().get('dataset') or {}
+
+
+def _fetch_statements(code: str) -> Optional[Dict[str, pd.DataFrame]]:
+    """연결(C) 우선, 비어 있으면 별도(P)로 6개 표를 받는다."""
+    for consol in ('C', 'P'):
+        tables = {}
+        for name, endpoint in (('income', 'getFinIncome'), ('balance', 'getFinBalance'),
+                               ('cashflow', 'getFinCashFlow')):
+            for freq, quarterly in (('Y', False), ('Q', True)):
+                tables[f'{freq}_{name}'] = _dataset_to_df(
+                    _fetch_dataset(endpoint, code, freq, consol), quarterly)
+        if not tables['Y_income'].dropna(how='all').empty:
+            return tables
+    return None
+
 
 def get_financial_data(code: str, retry: int = 2) -> Optional[Dict[str, Any]]:
     """
     FnGuide에서 종목의 재무데이터를 수집합니다.
 
-    Args:
-        code: 종목코드 (6자리)
-        retry: 재시도 횟수
-
     Returns:
         {
             'code': '005930',
-            'annual': {
-                'revenue': {'2024/12': 178707, '2023/12': ...},
-                'ebit': {...},
-                'net_income': {...},
-                'gross_profit': {...},
-                ...
-            },
-            'quarter': {
-                'revenue': {'2025/09': ..., '2025/06': ..., ...},
-                ...
-            },
-            'balance': {
-                'total_assets': value,
-                'total_equity': value,
-                'current_assets': value,
-                'current_liabilities': value,
-                'non_current_assets': value,
-                'cash': value,
-                'total_debt': value,  # 단기+장기+사채
-                ...
-            },
-            'cashflow': {
-                'cfo_annual': {'2024/12': value, ...},
-                'cfo_ttm': value,  # TTM or latest annual
-            }
+            'fetched_at': epoch 초,
+            'header': {'per':..., 'pbr':..., 'dividend_yield':...},
+            'annual': {'revenue': {'2025/12': 값, ...}, 'eps': {...}, ...},
+            'quarter': {'revenue': {'2026/06': 값, ...}, ...},   # 개별 분기값
+            'balance': {...},       # 최근 분기 시점값 (EV, PBR 등)
+            'balance_avg': {...},   # 최근 4분기 평균 (ROE, GPA 등)
+            'cashflow': {'cfo_annual': {...}, 'cfo_quarter': {...}, ...},
+            'revenue_ttm': ..., 'cfo_ttm': ..., ...
         }
     """
     for attempt in range(retry):
         try:
-            # 두 페이지 동시 요청 (벽시계 시간 동일 유지)
-            with ThreadPoolExecutor(max_workers=2) as executor:
-                future_finance = executor.submit(_fetch_tables, code)
-                future_main    = executor.submit(_fetch_tables_main, code)
-                fetch_result = future_finance.result(timeout=30)
-                main_tables  = future_main.result(timeout=30)
+            tables = _fetch_statements(code)
+            if tables is None:
+                return None
 
-            if not fetch_result:
-                if attempt < retry - 1:
-                    time.sleep(0.5)
-                continue
-
-            tables, html_text = fetch_result
-            if len(tables) < 6:
-                if attempt < retry - 1:
-                    time.sleep(0.5)
-                continue
+            snap = requests.get(
+                FNGUIDE_SNAPSHOT_URL,
+                params={'c_id': 'AA', 'menu_type': '01', 'cmp_cd': code},
+                headers=HEADERS, timeout=20,
+            )
+            snap.raise_for_status()
 
             result = {
                 'code': code,
+                'fetched_at': time.time(),
+                'header': _parse_header_metrics(snap.text),
                 'annual': {},
                 'quarter': {},
                 'balance': {},
+                'balance_avg': {},
                 'cashflow': {},
             }
 
-            # 0. 페이지 헤더 지표 (PER, PBR, 배당수익률 등)
-            result['header'] = _parse_header_metrics(html_text)
-
-            # 1. 연간/분기 손익계산서 (먼저 둘 다 파싱)
-            annual_income = _clean_table(tables[TABLE_IDX['annual_income']])
-            quarter_income = _clean_table(tables[TABLE_IDX['quarter_income']])
-
-            # 미완성 연간 컬럼 제거: 최신 연간 컬럼 결산월이 /12가 아니면 분기 누적값
-            # (한국 상장사 95%+는 12월 결산 → /12 외 패턴은 미완성 연간으로 처리)
-            if not annual_income.empty:
-                date_annual_cols = sorted(
-                    [c for c in annual_income.columns if re.match(r'\d{4}/\d{2}', str(c))],
-                    reverse=True,
-                )
-                if date_annual_cols and not date_annual_cols[0].endswith('/12'):
-                    annual_income = annual_income.drop(columns=[date_annual_cols[0]], errors='ignore')
-
-            if not annual_income.empty:
+            # 1. 손익계산서
+            for period, df in (('annual', tables['Y_income']), ('quarter', tables['Q_income'])):
                 for kr_name, en_key in INCOME_ITEMS.items():
-                    series = _extract_item(annual_income, [kr_name])
+                    series = _extract_item(df, [kr_name]).dropna()
                     if not series.empty:
-                        result['annual'][en_key] = series.dropna().to_dict()
+                        result[period][en_key] = series.to_dict()
 
-            if not quarter_income.empty:
-                for kr_name, en_key in INCOME_ITEMS.items():
-                    series = _extract_item(quarter_income, [kr_name])
-                    if not series.empty:
-                        result['quarter'][en_key] = series.dropna().to_dict()
+            eps = _parse_snapshot_eps(snap.text)
+            if eps:
+                result['annual']['eps'] = eps
 
-            # 3. 재무상태표 (최신 분기 우선, 없으면 연간)
-            quarter_balance = _clean_table(tables[TABLE_IDX['quarter_balance']])
-            annual_balance = _clean_table(tables[TABLE_IDX['annual_balance']])
+            # 2. 재무상태표 (분기 우선, 없으면 연간). 컬럼은 오래된→최근 순
+            bs = tables['Q_balance'] if not tables['Q_balance'].dropna(how='all').empty else tables['Y_balance']
+            for en_key, kr_names in BALANCE_SEARCH.items():
+                series = _extract_item(bs, kr_names).dropna()
+                if not series.empty:
+                    result['balance'][en_key] = _latest_value(series)
+                    result['balance_avg'][en_key] = float(series.tail(4).mean())
 
-            bs_source = quarter_balance if not quarter_balance.empty else annual_balance
-            if not bs_source.empty:
-                for en_key, kr_names in BALANCE_SEARCH.items():
-                    series = _extract_item(bs_source, kr_names)
-                    if not series.empty:
-                        valid = series.dropna()
-                        if len(valid) > 0:
-                            # 최신값 (EV, PBR 등 시점 기준 계산용)
-                            result['balance'][en_key] = float(valid.iloc[0])
+            result['balance']['total_debt'] = sum(
+                result['balance'].get(k) or 0 for k in ('short_term_debt', 'long_term_debt', 'bonds'))
 
-                # 총차입금 계산
-                short_debt = result['balance'].get('short_term_debt', 0) or 0
-                long_debt = result['balance'].get('long_term_debt', 0) or 0
-                bonds = result['balance'].get('bonds', 0) or 0
-                result['balance']['total_debt'] = short_debt + long_debt + bonds
+            # 3. 현금흐름표
+            for suffix, df in (('annual', tables['Y_cashflow']), ('quarter', tables['Q_cashflow'])):
+                cfo = _extract_item(df, list(CASHFLOW_ITEMS)).dropna()
+                if not cfo.empty:
+                    result['cashflow'][f'cfo_{suffix}'] = cfo.to_dict()
+                inv = _extract_item(df, CASHFLOW_INVEST_ITEMS).dropna()
+                if not inv.empty:
+                    result['cashflow'][f'invest_cf_{suffix}'] = inv.to_dict()
 
-            # 재무상태표 평균값 (ROE, GPA, CFO, IC 등 Flow/Stock 혼합 비율용)
-            # Stock 항목은 시점 잔액이므로, Flow(TTM) 분자와 매칭하려면
-            # 최근 4분기 평균을 사용해야 정확
-            result['balance_avg'] = {}
-            bs_q = quarter_balance if not quarter_balance.empty else annual_balance
-            if not bs_q.empty:
-                for en_key, kr_names in BALANCE_SEARCH.items():
-                    series = _extract_item(bs_q, kr_names)
-                    if not series.empty:
-                        valid = series.dropna()
-                        if len(valid) > 0:
-                            # 최근 4분기 평균 (4개 미만이면 있는 만큼 평균)
-                            avg_val = float(valid.head(4).mean())
-                            result['balance_avg'][en_key] = avg_val
-
-            # 4. 현금흐름표
-            annual_cf = _clean_table(tables[TABLE_IDX['annual_cashflow']])
-            quarter_cf = _clean_table(tables[TABLE_IDX['quarter_cashflow']])
-
-            if not annual_cf.empty:
-                cfo_series = _extract_item(annual_cf, list(CASHFLOW_ITEMS.keys()))
-                if not cfo_series.empty:
-                    result['cashflow']['cfo_annual'] = cfo_series.dropna().to_dict()
-
-            if not quarter_cf.empty:
-                cfo_q_series = _extract_item(quarter_cf, list(CASHFLOW_ITEMS.keys()))
-                if not cfo_q_series.empty:
-                    result['cashflow']['cfo_quarter'] = cfo_q_series.dropna().to_dict()
-
-            # 4-2. 투자활동현금흐름
-            if not annual_cf.empty:
-                invest_series = _extract_item(annual_cf, CASHFLOW_INVEST_ITEMS)
-                if not invest_series.empty:
-                    result['cashflow']['invest_cf_annual'] = invest_series.dropna().to_dict()
-
-            if not quarter_cf.empty:
-                invest_q_series = _extract_item(quarter_cf, CASHFLOW_INVEST_ITEMS)
-                if not invest_q_series.empty:
-                    result['cashflow']['invest_cf_quarter'] = invest_q_series.dropna().to_dict()
-
-            # SVD_Main.asp 5년 데이터로 연간 보충
-            # - 기존 키(revenue 등): 이전 연도만 추가 (덮어쓰기 방지, 미발표 누적값 방지)
-            # - 새 키(eps 등): SVD_Finance에 없으므로 전체 기간 추가
-            if main_tables is not None:
-                try:
-                    main_annual = _parse_main_annual(main_tables)
-                    existing_years = set()
-                    for v in result.get('annual', {}).values():
-                        existing_years.update(v.keys())
-                    min_existing = min(existing_years) if existing_years else '9999/99'
-                    for en_key, year_dict in main_annual.items():
-                        if en_key not in result['annual']:
-                            # 새 지표: 전체 기간 추가 (단, /12 결산월만)
-                            result['annual'][en_key] = {
-                                p: v for p, v in year_dict.items()
-                                if p.endswith('/12')
-                            }
-                        else:
-                            # 기존 지표: min_existing보다 이전 연도만 보충
-                            for period, value in year_dict.items():
-                                if period < min_existing:
-                                    result['annual'][en_key][period] = value
-                except Exception:
-                    pass  # Main 파싱 실패해도 기존 4년 데이터로 계속
-
-            # TTM 계산
             _calculate_ttm(result)
-
             return result
 
-        except Exception as e:
+        except Exception:
             if attempt < retry - 1:
-                time.sleep(0.5)
-            continue
+                time.sleep(1)
 
     return None
 

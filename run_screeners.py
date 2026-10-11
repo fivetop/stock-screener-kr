@@ -3188,7 +3188,11 @@ def screen_new_high_52w(stocks: pd.DataFrame) -> List[Dict]:
         if already_broken:
             continue
 
-        if current_close > breakout_level:
+        # 갭 구간(최근 15일)의 장중 고가까지 넘어야 실제 52주 신고가
+        # (윈도우가 오늘-15에서 끝나 최근 고점이 빠지므로 별도 확인)
+        recent_high = high.iloc[day_end:idx].max()
+
+        if current_close > breakout_level and current_close > recent_high:
             breakout_date = df.index[-1]
             days_since = 0
             breakout_idx = idx
@@ -3365,6 +3369,10 @@ def screen_near_high_52w(stocks: pd.DataFrame) -> List[Dict]:
                 ever_broken = True
                 break
         if ever_broken:
+            continue
+
+        # 갭 구간(최근 15일) 장중 고가가 이미 52주 고가를 넘었으면 '미돌파 근접'이 아님
+        if high.iloc[end_idx:total_len - 1].max() > high_52w:
             continue
 
         # 현재가가 high_52w 대비 -10% 이상 이탈하면 제외

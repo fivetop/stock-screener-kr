@@ -31,9 +31,20 @@ from scripts.fnguide_data import get_financial_data, save_fnguide_cache
 
 CACHE_DIR = os.path.join(SCRIPT_DIR, '.cache')
 MIN_MARKET_CAP = 1000  # 시가총액 1,000억 이상
-MAX_WORKERS = 5  # FnGuide 병렬 요청 수 (각 종목당 2페이지 동시 요청 → 실제 최대 10 concurrent)
+MAX_WORKERS = 5  # FnGuide 병렬 종목 수 (종목당 7요청은 순차)
 MAX_CACHE_DAYS = 2  # 최근 N일 캐시만 유지
-CACHE_REFRESH_DAYS = 7  # N일 이상 된 종목만 재수집
+CACHE_REFRESH_DAYS = 7  # 종목별 수집 시각(fetched_at)이 N일 지나면 재수집
+MIN_SUCCESS_RATE = 0.5  # 수집 성공률이 이보다 낮으면 실패로 종료 (FnGuide 개편 등 감지)
+
+
+def merge_older_annual(new: dict, old: dict) -> None:
+    """신규 API는 연간 3개년만 주므로, 이전 캐시의 더 오래된 연도를 이어붙인다 (최신 값은 덮어쓰지 않음)."""
+    for key, old_years in (old.get('annual') or {}).items():
+        cur = new['annual'].setdefault(key, {})
+        oldest = min(cur) if cur else '9999/99'
+        for period, value in old_years.items():
+            if period < oldest:
+                cur[period] = value
 
 
 # ============================================================================
@@ -109,26 +120,18 @@ def collect_fnguide_data():
         except Exception:
             continue
 
-    # 증분 수집: 캐시에 없거나 7일+ 된 종목만 수집
+    # 증분 수집: 종목별 수집 시각이 7일 이내면 재사용, 아니면 재수집
+    # (파일 날짜로 판단하면 매일 이어 저장되는 캐시가 영원히 '신선'해 보여 재수집이 안 됨)
     codes_to_fetch = []
-    if prev_cache and prev_cache_date:
-        from datetime import timedelta
-        cache_date = datetime.strptime(prev_cache_date, '%Y-%m-%d')
-        cache_age_days = (datetime.now() - cache_date).days
-
-        for code in codes:
-            if code in prev_cache and cache_age_days <= CACHE_REFRESH_DAYS:
-                # 캐시가 7일 이내 → 재사용
-                results[code] = prev_cache[code]
-                reused += 1
-            else:
-                # 캐시에 없거나 7일+ → 새로 수집
-                codes_to_fetch.append(code)
-
-        print(f"  캐시 재사용: {reused}개, 신규 수집 필요: {len(codes_to_fetch)}개 (캐시 {cache_age_days}일 전)")
-    else:
-        codes_to_fetch = codes
-        print(f"  이전 캐시 없음 → 전체 수집: {len(codes_to_fetch)}개")
+    refresh_sec = CACHE_REFRESH_DAYS * 86400
+    for code in codes:
+        cached = prev_cache.get(code)
+        if cached and time.time() - cached.get('fetched_at', 0) <= refresh_sec:
+            results[code] = cached
+            reused += 1
+        else:
+            codes_to_fetch.append(code)
+    print(f"  캐시 재사용: {reused}개, 수집 필요: {len(codes_to_fetch)}개 (이전 캐시: {prev_cache_date or '없음'})")
 
     # 4. FnGuide 재무데이터 병렬 수집 (신규/갱신 대상만)
     print(f"\n[3/3] FnGuide 재무데이터 수집 ({len(codes_to_fetch)}개 종목, {MAX_WORKERS}스레드)...")
@@ -147,10 +150,14 @@ def collect_fnguide_data():
                 try:
                     code, data = future.result()
                     if data:
+                        if code in prev_cache:
+                            merge_older_annual(data, prev_cache[code])
                         results[code] = data
                         success += 1
                     else:
                         failed += 1
+                        if code in prev_cache:  # 일시 실패 시 이전 값 유지 (fetched_at 그대로 → 다음 실행에 재시도)
+                            results[code] = prev_cache[code]
                 except Exception:
                     failed += 1
 
@@ -171,6 +178,10 @@ def collect_fnguide_data():
     elapsed = time.time() - start_time
     print(f"\n총 실행 시간: {elapsed:.1f}초 ({elapsed/60:.1f}분)")
     print("=" * 60)
+
+    if codes_to_fetch and success / len(codes_to_fetch) < MIN_SUCCESS_RATE:
+        sys.exit(f"FnGuide 수집 성공률 {success}/{len(codes_to_fetch)} < {MIN_SUCCESS_RATE:.0%} "
+                 f"— API 변경 여부 확인 필요 (scripts/fnguide_data.py)")
 
     return results
 

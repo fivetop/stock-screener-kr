@@ -45,7 +45,7 @@ env:
 jobs:
   retrain-models:
     name: 🤖 ML 모델 재학습
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 120  # 최대 2시간
 
     steps:
