@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-12T00:25:12.255253",
+    "lastUpdated": "2026-10-12T01:38:49.098211",
     "totalCount": 360,
     "screened_from": 1358
   },
@@ -15,12 +15,12 @@
       "prev_low": 6060,
       "recent_low": 6800,
       "low_rise_percent": 12.2,
-      "per": 63.3,
-      "pbr": 3.74,
+      "per": 15.7,
+      "pbr": 1.58,
       "ma150": 10114,
       "above_ma150": false,
       "market_cap": 1624,
-      "updated_at": "2026-10-12T00:25:12.093002"
+      "updated_at": "2026-10-12T01:38:48.933879"
     },
     {
       "ticker": "376900",
@@ -33,11 +33,11 @@
       "recent_low": 26000,
       "low_rise_percent": 7.4,
       "per": null,
-      "pbr": null,
+      "pbr": 36.28,
       "ma150": 59205,
       "above_ma150": false,
       "market_cap": 4684,
-      "updated_at": "2026-10-12T00:25:11.859599"
+      "updated_at": "2026-10-12T01:38:48.628837"
     },
     {
       "ticker": "082270",
@@ -50,11 +50,11 @@
       "recent_low": 9830,
       "low_rise_percent": 0.3,
       "per": null,
-      "pbr": 45.17,
+      "pbr": 7.8,
       "ma150": 18554,
       "above_ma150": false,
       "market_cap": 4844,
-      "updated_at": "2026-10-12T00:25:12.104360"
+      "updated_at": "2026-10-12T01:38:48.974147"
     },
     {
       "ticker": "027360",
@@ -66,12 +66,12 @@
       "prev_low": 2960,
       "recent_low": 3150,
       "low_rise_percent": 6.4,
-      "per": 106.0,
-      "pbr": 3.33,
+      "per": 51.7,
+      "pbr": 1.59,
       "ma150": 7253,
       "above_ma150": false,
       "market_cap": 4319,
-      "updated_at": "2026-10-12T00:25:11.990830"
+      "updated_at": "2026-10-12T01:38:48.773580"
     },
     {
       "ticker": "000250",
@@ -83,12 +83,12 @@
       "prev_low": 153000,
       "recent_low": 153800,
       "low_rise_percent": 0.5,
-      "per": null,
-      "pbr": 79.78,
+      "per": 1085.5,
+      "pbr": 20.52,
       "ma150": 360621,
       "above_ma150": false,
       "market_cap": 57119,
-      "updated_at": "2026-10-12T00:25:11.910497"
+      "updated_at": "2026-10-12T01:38:48.673030"
     },
     {
       "ticker": "348370",
@@ -101,11 +101,11 @@
       "recent_low": 19810,
       "low_rise_percent": 16.5,
       "per": null,
-      "pbr": 2.28,
+      "pbr": 1.02,
       "ma150": 32416,
       "above_ma150": false,
       "market_cap": 4777,
-      "updated_at": "2026-10-12T00:25:12.025670"
+      "updated_at": "2026-10-12T01:38:48.793298"
     },
     {
       "ticker": "100790",
@@ -117,12 +117,12 @@
       "prev_low": 13700,
       "recent_low": 15220,
       "low_rise_percent": 11.1,
-      "per": 139.3,
-      "pbr": 3.37,
+      "per": 29.4,
+      "pbr": 2.4,
       "ma150": 27709,
       "above_ma150": false,
       "market_cap": 9025,
-      "updated_at": "2026-10-12T00:25:11.876870"
+      "updated_at": "2026-10-12T01:38:48.645796"
     },
     {
       "ticker": "348340",
@@ -135,11 +135,11 @@
       "recent_low": 17340,
       "low_rise_percent": 9.7,
       "per": null,
-      "pbr": 65.35,
+      "pbr": 29.61,
       "ma150": 30158,
       "above_ma150": false,
       "market_cap": 4986,
-      "updated_at": "2026-10-12T00:25:11.800706"
+      "updated_at": "2026-10-12T01:38:48.501677"
     },
     {
       "ticker": "484870",
@@ -151,12 +151,12 @@
       "prev_low": 14420,
       "recent_low": 16850,
       "low_rise_percent": 16.9,
-      "per": 34.5,
-      "pbr": 6.41,
+      "per": 11.1,
+      "pbr": 2.61,
       "ma150": 27292,
       "above_ma150": false,
       "market_cap": 5116,
-      "updated_at": "2026-10-12T00:25:12.030681"
+      "updated_at": "2026-10-12T01:38:48.797668"
     },
     {
       "ticker": "056080",
@@ -169,11 +169,11 @@
       "recent_low": 11330,
       "low_rise_percent": 3.3,
       "per": null,
-      "pbr": 30.36,
+      "pbr": 16.38,
       "ma150": 18907,
       "above_ma150": false,
       "market_cap": 4852,
-      "updated_at": "2026-10-12T00:25:12.061405"
+      "updated_at": "2026-10-12T01:38:48.901676"
     },
     {
       "ticker": "474650",
@@ -186,11 +186,11 @@
       "recent_low": 24100,
       "low_rise_percent": 9.8,
       "per": null,
-      "pbr": null,
+      "pbr": 3.76,
       "ma150": 41201,
       "above_ma150": false,
       "market_cap": 1470,
-      "updated_at": "2026-10-12T00:25:11.864245"
+      "updated_at": "2026-10-12T01:38:48.633999"
     },
     {
       "ticker": "242040",
@@ -202,12 +202,12 @@
       "prev_low": 2940,
       "recent_low": 2970,
       "low_rise_percent": 1.0,
-      "per": null,
-      "pbr": 6.59,
+      "per": 333.5,
+      "pbr": 2.93,
       "ma150": 4773,
       "above_ma150": false,
       "market_cap": 1064,
-      "updated_at": "2026-10-12T00:25:11.788081"
+      "updated_at": "2026-10-12T01:38:48.474995"
     },
     {
       "ticker": "474170",
@@ -219,12 +219,12 @@
       "prev_low": 5840,
       "recent_low": 6220,
       "low_rise_percent": 6.5,
-      "per": null,
-      "pbr": null,
+      "per": 2471.9,
+      "pbr": 1.85,
       "ma150": 10231,
       "above_ma150": false,
       "market_cap": 1133,
-      "updated_at": "2026-10-12T00:25:11.863352"
+      "updated_at": "2026-10-12T01:38:48.632445"
     },
     {
       "ticker": "357580",
@@ -236,12 +236,12 @@
       "prev_low": 4640,
       "recent_low": 4920,
       "low_rise_percent": 6.0,
-      "per": null,
-      "pbr": null,
+      "per": 190.6,
+      "pbr": 2.2,
       "ma150": 11494,
       "above_ma150": false,
       "market_cap": 1007,
-      "updated_at": "2026-10-12T00:25:11.981322"
+      "updated_at": "2026-10-12T01:38:48.767097"
     },
     {
       "ticker": "274090",
@@ -254,11 +254,11 @@
       "recent_low": 9520,
       "low_rise_percent": 3.3,
       "per": null,
-      "pbr": 1.48,
+      "pbr": 0.94,
       "ma150": 16501,
       "above_ma150": false,
       "market_cap": 1561,
-      "updated_at": "2026-10-12T00:25:12.127146"
+      "updated_at": "2026-10-12T01:38:48.985951"
     },
     {
       "ticker": "088800",
@@ -271,11 +271,11 @@
       "recent_low": 1750,
       "low_rise_percent": 4.4,
       "per": null,
-      "pbr": 2.65,
+      "pbr": 2.48,
       "ma150": 2939,
       "above_ma150": false,
       "market_cap": 1714,
-      "updated_at": "2026-10-12T00:25:12.017775"
+      "updated_at": "2026-10-12T01:38:48.785722"
     },
     {
       "ticker": "448900",
@@ -287,12 +287,12 @@
       "prev_low": 44500,
       "recent_low": 47100,
       "low_rise_percent": 5.8,
-      "per": 204.7,
-      "pbr": 13.61,
+      "per": 147.8,
+      "pbr": 5.61,
       "ma150": 79583,
       "above_ma150": false,
       "market_cap": 3226,
-      "updated_at": "2026-10-12T00:25:12.217518"
+      "updated_at": "2026-10-12T01:38:49.067481"
     },
     {
       "ticker": "092220",
@@ -305,11 +305,11 @@
       "recent_low": 2500,
       "low_rise_percent": 6.4,
       "per": null,
-      "pbr": null,
+      "pbr": 0.38,
       "ma150": 5022,
       "above_ma150": false,
       "market_cap": 1257,
-      "updated_at": "2026-10-12T00:25:11.731147"
+      "updated_at": "2026-10-12T01:38:48.426572"
     },
     {
       "ticker": "451760",
@@ -321,12 +321,12 @@
       "prev_low": 6560,
       "recent_low": 6920,
       "low_rise_percent": 5.5,
-      "per": null,
-      "pbr": null,
+      "per": 15.9,
+      "pbr": 1.39,
       "ma150": 13150,
       "above_ma150": false,
       "market_cap": 1304,
-      "updated_at": "2026-10-12T00:25:12.117802"
+      "updated_at": "2026-10-12T01:38:48.981966"
     },
     {
       "ticker": "046120",
@@ -338,12 +338,12 @@
       "prev_low": 3905,
       "recent_low": 4745,
       "low_rise_percent": 21.5,
-      "per": 172.6,
-      "pbr": 6.42,
+      "per": 170.3,
+      "pbr": 2.17,
       "ma150": 7350,
       "above_ma150": false,
       "market_cap": 1674,
-      "updated_at": "2026-10-12T00:25:12.034477"
+      "updated_at": "2026-10-12T01:38:48.801248"
     },
     {
       "ticker": "187660",
@@ -356,11 +356,11 @@
       "recent_low": 5580,
       "low_rise_percent": 74.6,
       "per": null,
-      "pbr": 33.81,
+      "pbr": 17.02,
       "ma150": 8131,
       "above_ma150": false,
       "market_cap": 4055,
-      "updated_at": "2026-10-12T00:25:12.186097"
+      "updated_at": "2026-10-12T01:38:49.048498"
     },
     {
       "ticker": "402490",
@@ -372,12 +372,12 @@
       "prev_low": 5990,
       "recent_low": 6120,
       "low_rise_percent": 2.2,
-      "per": null,
-      "pbr": null,
+      "per": 12.2,
+      "pbr": 1.8,
       "ma150": 11527,
       "above_ma150": false,
       "market_cap": 1294,
-      "updated_at": "2026-10-12T00:25:11.781999"
+      "updated_at": "2026-10-12T01:38:48.466453"
     },
     {
       "ticker": "099320",
@@ -389,12 +389,12 @@
       "prev_low": 66600,
       "recent_low": 68600,
       "low_rise_percent": 3.0,
-      "per": 126.1,
-      "pbr": 7.75,
+      "per": 49.1,
+      "pbr": 3.02,
       "ma150": 119978,
       "above_ma150": false,
       "market_cap": 7578,
-      "updated_at": "2026-10-12T00:25:11.967223"
+      "updated_at": "2026-10-12T01:38:48.758621"
     },
     {
       "ticker": "010820",
@@ -406,12 +406,12 @@
       "prev_low": 5310,
       "recent_low": 5750,
       "low_rise_percent": 8.3,
-      "per": 23.4,
-      "pbr": 4.18,
+      "per": 19.1,
+      "pbr": 3.42,
       "ma150": 7957,
       "above_ma150": false,
       "market_cap": 2819,
-      "updated_at": "2026-10-12T00:25:12.183481"
+      "updated_at": "2026-10-12T01:38:49.047403"
     },
     {
       "ticker": "131030",
@@ -423,12 +423,12 @@
       "prev_low": 5500,
       "recent_low": 5550,
       "low_rise_percent": 0.9,
-      "per": null,
-      "pbr": null,
+      "per": 9.2,
+      "pbr": 0.65,
       "ma150": 7661,
       "above_ma150": false,
       "market_cap": 1138,
-      "updated_at": "2026-10-12T00:25:12.039080"
+      "updated_at": "2026-10-12T01:38:48.824990"
     },
     {
       "ticker": "249420",
@@ -440,12 +440,12 @@
       "prev_low": 13350,
       "recent_low": 13530,
       "low_rise_percent": 1.3,
-      "per": 15.9,
-      "pbr": 5.39,
+      "per": 15.0,
+      "pbr": 1.79,
       "ma150": 20578,
       "above_ma150": false,
       "market_cap": 4436,
-      "updated_at": "2026-10-12T00:25:12.078479"
+      "updated_at": "2026-10-12T01:38:48.912688"
     },
     {
       "ticker": "008350",
@@ -457,12 +457,12 @@
       "prev_low": 933,
       "recent_low": 1038,
       "low_rise_percent": 11.3,
-      "per": null,
-      "pbr": 0.64,
+      "per": 38.7,
+      "pbr": 0.49,
       "ma150": 1398,
       "above_ma150": false,
       "market_cap": 1408,
-      "updated_at": "2026-10-12T00:25:11.792554"
+      "updated_at": "2026-10-12T01:38:48.477302"
     },
     {
       "ticker": "475230",
@@ -474,12 +474,12 @@
       "prev_low": 7800,
       "recent_low": 8950,
       "low_rise_percent": 14.7,
-      "per": null,
-      "pbr": null,
+      "per": 18.8,
+      "pbr": 1.15,
       "ma150": 13703,
       "above_ma150": false,
       "market_cap": 1014,
-      "updated_at": "2026-10-12T00:25:12.024247"
+      "updated_at": "2026-10-12T01:38:48.792255"
     },
     {
       "ticker": "036170",
@@ -491,12 +491,12 @@
       "prev_low": 2150,
       "recent_low": 2205,
       "low_rise_percent": 2.6,
-      "per": 54.8,
-      "pbr": 2.36,
+      "per": 18.1,
+      "pbr": 1.44,
       "ma150": 4094,
       "above_ma150": false,
       "market_cap": 1979,
-      "updated_at": "2026-10-12T00:25:12.020055"
+      "updated_at": "2026-10-12T01:38:48.786877"
     },
     {
       "ticker": "418420",
@@ -509,11 +509,11 @@
       "recent_low": 3800,
       "low_rise_percent": 8.6,
       "per": null,
-      "pbr": null,
+      "pbr": 7.17,
       "ma150": 5377,
       "above_ma150": false,
       "market_cap": 1214,
-      "updated_at": "2026-10-12T00:25:11.855747"
+      "updated_at": "2026-10-12T01:38:48.625593"
     },
     {
       "ticker": "289930",
@@ -525,12 +525,12 @@
       "prev_low": 6160,
       "recent_low": 6730,
       "low_rise_percent": 9.3,
-      "per": null,
-      "pbr": null,
+      "per": 55.1,
+      "pbr": 1.93,
       "ma150": 12160,
       "above_ma150": false,
       "market_cap": 1041,
-      "updated_at": "2026-10-12T00:25:12.056619"
+      "updated_at": "2026-10-12T01:38:48.894311"
     },
     {
       "ticker": "048410",
@@ -543,11 +543,11 @@
       "recent_low": 6000,
       "low_rise_percent": 3.8,
       "per": null,
-      "pbr": 31.01,
+      "pbr": 6.01,
       "ma150": 10052,
       "above_ma150": false,
       "market_cap": 6659,
-      "updated_at": "2026-10-12T00:25:12.241249"
+      "updated_at": "2026-10-12T01:38:49.087383"
     },
     {
       "ticker": "308430",
@@ -559,12 +559,12 @@
       "prev_low": 11960,
       "recent_low": 12150,
       "low_rise_percent": 1.6,
-      "per": null,
-      "pbr": 13.37,
+      "per": 22.6,
+      "pbr": 7.65,
       "ma150": 20844,
       "above_ma150": false,
       "market_cap": 1754,
-      "updated_at": "2026-10-12T00:25:11.939433"
+      "updated_at": "2026-10-12T01:38:48.736253"
     },
     {
       "ticker": "008830",
@@ -577,11 +577,11 @@
       "recent_low": 5880,
       "low_rise_percent": 5.2,
       "per": null,
-      "pbr": null,
+      "pbr": 1.16,
       "ma150": 9684,
       "above_ma150": false,
       "market_cap": 1170,
-      "updated_at": "2026-10-12T00:25:11.804224"
+      "updated_at": "2026-10-12T01:38:48.513861"
     },
     {
       "ticker": "058970",
@@ -593,12 +593,12 @@
       "prev_low": 14510,
       "recent_low": 15300,
       "low_rise_percent": 5.4,
-      "per": 127.8,
-      "pbr": 3.93,
+      "per": 67.1,
+      "pbr": 2.07,
       "ma150": 21752,
       "above_ma150": false,
       "market_cap": 1968,
-      "updated_at": "2026-10-12T00:25:12.029882"
+      "updated_at": "2026-10-12T01:38:48.796931"
     },
     {
       "ticker": "078160",
@@ -611,11 +611,11 @@
       "recent_low": 8400,
       "low_rise_percent": 2.9,
       "per": null,
-      "pbr": 3.36,
+      "pbr": 1.51,
       "ma150": 14379,
       "above_ma150": false,
       "market_cap": 3764,
-      "updated_at": "2026-10-12T00:25:11.870643"
+      "updated_at": "2026-10-12T01:38:48.637535"
     },
     {
       "ticker": "462350",
@@ -628,11 +628,11 @@
       "recent_low": 5730,
       "low_rise_percent": 5.1,
       "per": null,
-      "pbr": 7.23,
+      "pbr": 3.87,
       "ma150": 9847,
       "above_ma150": false,
       "market_cap": 2341,
-      "updated_at": "2026-10-12T00:25:12.063329"
+      "updated_at": "2026-10-12T01:38:48.903524"
     },
     {
       "ticker": "418550",
@@ -645,11 +645,11 @@
       "recent_low": 4645,
       "low_rise_percent": 11.5,
       "per": null,
-      "pbr": 1.47,
+      "pbr": 0.92,
       "ma150": 6647,
       "above_ma150": false,
       "market_cap": 1691,
-      "updated_at": "2026-10-12T00:25:12.099696"
+      "updated_at": "2026-10-12T01:38:48.937819"
     },
     {
       "ticker": "101360",
@@ -662,11 +662,11 @@
       "recent_low": 7310,
       "low_rise_percent": 1.1,
       "per": null,
-      "pbr": null,
+      "pbr": 0.73,
       "ma150": 12168,
       "above_ma150": false,
       "market_cap": 1597,
-      "updated_at": "2026-10-12T00:25:12.021390"
+      "updated_at": "2026-10-12T01:38:48.788129"
     },
     {
       "ticker": "321550",
@@ -679,11 +679,11 @@
       "recent_low": 4300,
       "low_rise_percent": 10.5,
       "per": null,
-      "pbr": 5.64,
+      "pbr": 3.49,
       "ma150": 6596,
       "above_ma150": false,
       "market_cap": 1380,
-      "updated_at": "2026-10-12T00:25:12.178605"
+      "updated_at": "2026-10-12T01:38:49.044356"
     },
     {
       "ticker": "308080",
@@ -696,11 +696,11 @@
       "recent_low": 5450,
       "low_rise_percent": 2.8,
       "per": null,
-      "pbr": null,
+      "pbr": 2.74,
       "ma150": 6915,
       "above_ma150": false,
       "market_cap": 1197,
-      "updated_at": "2026-10-12T00:25:11.888116"
+      "updated_at": "2026-10-12T01:38:48.655759"
     },
     {
       "ticker": "199820",
@@ -712,12 +712,12 @@
       "prev_low": 6820,
       "recent_low": 7100,
       "low_rise_percent": 4.1,
-      "per": 25.5,
-      "pbr": 1.73,
+      "per": 25.4,
+      "pbr": 1.07,
       "ma150": 9642,
       "above_ma150": false,
       "market_cap": 1671,
-      "updated_at": "2026-10-12T00:25:12.102045"
+      "updated_at": "2026-10-12T01:38:48.972574"
     },
     {
       "ticker": "085660",
@@ -729,12 +729,12 @@
       "prev_low": 7650,
       "recent_low": 7690,
       "low_rise_percent": 0.5,
-      "per": null,
-      "pbr": 4.2,
+      "per": 53.2,
+      "pbr": 2.2,
       "ma150": 12728,
       "above_ma150": false,
       "market_cap": 7587,
-      "updated_at": "2026-10-12T00:25:12.114383"
+      "updated_at": "2026-10-12T01:38:48.979631"
     },
     {
       "ticker": "160190",
@@ -747,11 +747,11 @@
       "recent_low": 19810,
       "low_rise_percent": 23.8,
       "per": null,
-      "pbr": 19.73,
+      "pbr": 8.46,
       "ma150": 30512,
       "above_ma150": true,
       "market_cap": 9606,
-      "updated_at": "2026-10-12T00:25:12.205985"
+      "updated_at": "2026-10-12T01:38:49.061228"
     },
     {
       "ticker": "361390",
@@ -764,11 +764,11 @@
       "recent_low": 11340,
       "low_rise_percent": 0.3,
       "per": null,
-      "pbr": null,
+      "pbr": 2.18,
       "ma150": 19639,
       "above_ma150": false,
       "market_cap": 1238,
-      "updated_at": "2026-10-12T00:25:12.096909"
+      "updated_at": "2026-10-12T01:38:48.935221"
     },
     {
       "ticker": "024060",
@@ -780,12 +780,12 @@
       "prev_low": 9600,
       "recent_low": 10950,
       "low_rise_percent": 14.1,
-      "per": 472.4,
-      "pbr": 3.68,
+      "per": 1155.9,
+      "pbr": 2.26,
       "ma150": 14577,
       "above_ma150": false,
       "market_cap": 1874,
-      "updated_at": "2026-10-12T00:25:12.253524"
+      "updated_at": "2026-10-12T01:38:49.095377"
     },
     {
       "ticker": "235980",
@@ -798,11 +798,11 @@
       "recent_low": 2600,
       "low_rise_percent": 8.8,
       "per": null,
-      "pbr": null,
+      "pbr": 2.23,
       "ma150": 3804,
       "above_ma150": false,
       "market_cap": 1028,
-      "updated_at": "2026-10-12T00:25:11.868277"
+      "updated_at": "2026-10-12T01:38:48.636603"
     },
     {
       "ticker": "012860",
@@ -814,12 +814,12 @@
       "prev_low": 2045,
       "recent_low": 2195,
       "low_rise_percent": 7.3,
-      "per": 18.0,
-      "pbr": 1.29,
+      "per": 9.0,
+      "pbr": 0.73,
       "ma150": 3103,
       "above_ma150": false,
       "market_cap": 1794,
-      "updated_at": "2026-10-12T00:25:11.873832"
+      "updated_at": "2026-10-12T01:38:48.641553"
     },
     {
       "ticker": "124500",
@@ -831,12 +831,12 @@
       "prev_low": 23300,
       "recent_low": 25850,
       "low_rise_percent": 10.9,
-      "per": 335.4,
-      "pbr": 18.31,
+      "per": 13.2,
+      "pbr": 4.9,
       "ma150": 39276,
       "above_ma150": false,
       "market_cap": 6080,
-      "updated_at": "2026-10-12T00:25:11.989875"
+      "updated_at": "2026-10-12T01:38:48.772689"
     },
     {
       "ticker": "290740",
@@ -848,12 +848,12 @@
       "prev_low": 7050,
       "recent_low": 10610,
       "low_rise_percent": 50.5,
-      "per": null,
-      "pbr": null,
+      "per": 15.6,
+      "pbr": 1.44,
       "ma150": 13807,
       "above_ma150": false,
       "market_cap": 1152,
-      "updated_at": "2026-10-12T00:25:11.996706"
+      "updated_at": "2026-10-12T01:38:48.777806"
     },
     {
       "ticker": "484590",
@@ -865,12 +865,12 @@
       "prev_low": 5850,
       "recent_low": 6400,
       "low_rise_percent": 9.4,
-      "per": 24.2,
-      "pbr": 7.18,
+      "per": 10.9,
+      "pbr": 1.84,
       "ma150": 9019,
       "above_ma150": false,
       "market_cap": 2926,
-      "updated_at": "2026-10-12T00:25:11.905958"
+      "updated_at": "2026-10-12T01:38:48.670483"
     },
     {
       "ticker": "004090",
@@ -882,12 +882,12 @@
       "prev_low": 10600,
       "recent_low": 11020,
       "low_rise_percent": 4.0,
-      "per": 17.0,
-      "pbr": 1.12,
+      "per": 28.3,
+      "pbr": 0.72,
       "ma150": 13617,
       "above_ma150": false,
       "market_cap": 1495,
-      "updated_at": "2026-10-12T00:25:12.214094"
+      "updated_at": "2026-10-12T01:38:49.064326"
     },
     {
       "ticker": "464080",
@@ -900,11 +900,11 @@
       "recent_low": 9470,
       "low_rise_percent": 10.1,
       "per": null,
-      "pbr": 9.47,
+      "pbr": 6.84,
       "ma150": 12179,
       "above_ma150": false,
       "market_cap": 1819,
-      "updated_at": "2026-10-12T00:25:12.005593"
+      "updated_at": "2026-10-12T01:38:48.782628"
     },
     {
       "ticker": "189300",
@@ -916,12 +916,12 @@
       "prev_low": 59700,
       "recent_low": 61500,
       "low_rise_percent": 3.0,
-      "per": null,
-      "pbr": 4.74,
+      "per": 90.6,
+      "pbr": 2.41,
       "ma150": 98809,
       "above_ma150": false,
       "market_cap": 6851,
-      "updated_at": "2026-10-12T00:25:12.072253"
+      "updated_at": "2026-10-12T01:38:48.911383"
     },
     {
       "ticker": "445680",
@@ -934,11 +934,11 @@
       "recent_low": 45250,
       "low_rise_percent": 17.7,
       "per": null,
-      "pbr": 40.35,
+      "pbr": 17.35,
       "ma150": 68946,
       "above_ma150": false,
       "market_cap": 9095,
-      "updated_at": "2026-10-12T00:25:12.163514"
+      "updated_at": "2026-10-12T01:38:49.035918"
     },
     {
       "ticker": "042520",
@@ -951,11 +951,11 @@
       "recent_low": 17320,
       "low_rise_percent": 2.5,
       "per": null,
-      "pbr": 18.13,
+      "pbr": 7.96,
       "ma150": 27554,
       "above_ma150": false,
       "market_cap": 2916,
-      "updated_at": "2026-10-12T00:25:12.223766"
+      "updated_at": "2026-10-12T01:38:49.073709"
     },
     {
       "ticker": "140670",
@@ -968,11 +968,11 @@
       "recent_low": 9620,
       "low_rise_percent": 4.2,
       "per": null,
-      "pbr": 6.74,
+      "pbr": 2.22,
       "ma150": 13079,
       "above_ma150": false,
       "market_cap": 1311,
-      "updated_at": "2026-10-12T00:25:11.993953"
+      "updated_at": "2026-10-12T01:38:48.775755"
     },
     {
       "ticker": "115180",
@@ -985,11 +985,11 @@
       "recent_low": 20750,
       "low_rise_percent": 14.2,
       "per": null,
-      "pbr": 26.7,
+      "pbr": 24.73,
       "ma150": 28193,
       "above_ma150": false,
       "market_cap": 8389,
-      "updated_at": "2026-10-12T00:25:12.156293"
+      "updated_at": "2026-10-12T01:38:49.035472"
     },
     {
       "ticker": "001510",
@@ -1001,12 +1001,12 @@
       "prev_low": 2140,
       "recent_low": 2200,
       "low_rise_percent": 2.8,
-      "per": 142.6,
-      "pbr": 2.08,
+      "per": 18.2,
+      "pbr": 0.76,
       "ma150": 3141,
       "above_ma150": false,
       "market_cap": 5135,
-      "updated_at": "2026-10-12T00:25:11.765260"
+      "updated_at": "2026-10-12T01:38:48.455099"
     },
     {
       "ticker": "389500",
@@ -1019,11 +1019,11 @@
       "recent_low": 36950,
       "low_rise_percent": 10.1,
       "per": null,
-      "pbr": 24.81,
+      "pbr": 21.05,
       "ma150": 50166,
       "above_ma150": false,
       "market_cap": 2749,
-      "updated_at": "2026-10-12T00:25:11.999876"
+      "updated_at": "2026-10-12T01:38:48.780026"
     },
     {
       "ticker": "211270",
@@ -1036,11 +1036,11 @@
       "recent_low": 7800,
       "low_rise_percent": 5.1,
       "per": null,
-      "pbr": null,
+      "pbr": 1.1,
       "ma150": 12142,
       "above_ma150": false,
       "market_cap": 1217,
-      "updated_at": "2026-10-12T00:25:11.703767"
+      "updated_at": "2026-10-12T01:38:48.380373"
     },
     {
       "ticker": "432720",
@@ -1053,11 +1053,11 @@
       "recent_low": 8530,
       "low_rise_percent": 7.2,
       "per": null,
-      "pbr": null,
+      "pbr": 4.54,
       "ma150": 13155,
       "above_ma150": false,
       "market_cap": 1643,
-      "updated_at": "2026-10-12T00:25:12.151067"
+      "updated_at": "2026-10-12T01:38:49.033781"
     },
     {
       "ticker": "011690",
@@ -1070,11 +1070,11 @@
       "recent_low": 3055,
       "low_rise_percent": 2.5,
       "per": null,
-      "pbr": null,
+      "pbr": 1.36,
       "ma150": 4853,
       "above_ma150": false,
       "market_cap": 1327,
-      "updated_at": "2026-10-12T00:25:12.042622"
+      "updated_at": "2026-10-12T01:38:48.849479"
     },
     {
       "ticker": "199430",
@@ -1087,11 +1087,11 @@
       "recent_low": 16000,
       "low_rise_percent": 29.1,
       "per": null,
-      "pbr": 4.27,
+      "pbr": 7.91,
       "ma150": 18442,
       "above_ma150": false,
       "market_cap": 1854,
-      "updated_at": "2026-10-12T00:25:12.120782"
+      "updated_at": "2026-10-12T01:38:48.984623"
     },
     {
       "ticker": "101170",
@@ -1103,12 +1103,12 @@
       "prev_low": 7430,
       "recent_low": 7820,
       "low_rise_percent": 5.2,
-      "per": null,
-      "pbr": null,
+      "per": 49.7,
+      "pbr": 1.4,
       "ma150": 10604,
       "above_ma150": false,
       "market_cap": 1189,
-      "updated_at": "2026-10-12T00:25:12.045902"
+      "updated_at": "2026-10-12T01:38:48.889169"
     },
     {
       "ticker": "355150",
@@ -1120,12 +1120,12 @@
       "prev_low": 17800,
       "recent_low": 18420,
       "low_rise_percent": 3.5,
-      "per": null,
-      "pbr": null,
+      "per": 86.7,
+      "pbr": 7.67,
       "ma150": 26363,
       "above_ma150": false,
       "market_cap": 1832,
-      "updated_at": "2026-10-12T00:25:12.136865"
+      "updated_at": "2026-10-12T01:38:48.990103"
     },
     {
       "ticker": "381970",
@@ -1137,12 +1137,12 @@
       "prev_low": 5990,
       "recent_low": 6210,
       "low_rise_percent": 3.7,
-      "per": 15.8,
-      "pbr": 3.07,
+      "per": 6.0,
+      "pbr": 1.37,
       "ma150": 9179,
       "above_ma150": false,
       "market_cap": 3046,
-      "updated_at": "2026-10-12T00:25:11.731781"
+      "updated_at": "2026-10-12T01:38:48.431587"
     },
     {
       "ticker": "321370",
@@ -1155,11 +1155,11 @@
       "recent_low": 1100,
       "low_rise_percent": 3.9,
       "per": null,
-      "pbr": null,
+      "pbr": 6.83,
       "ma150": 2176,
       "above_ma150": false,
       "market_cap": 1256,
-      "updated_at": "2026-10-12T00:25:11.937733"
+      "updated_at": "2026-10-12T01:38:48.731959"
     },
     {
       "ticker": "098070",
@@ -1171,12 +1171,12 @@
       "prev_low": 22650,
       "recent_low": 22700,
       "low_rise_percent": 0.2,
-      "per": 16.1,
-      "pbr": 3.78,
+      "per": 8.0,
+      "pbr": 1.59,
       "ma150": 32840,
       "above_ma150": false,
       "market_cap": 2563,
-      "updated_at": "2026-10-12T00:25:12.232126"
+      "updated_at": "2026-10-12T01:38:49.081946"
     },
     {
       "ticker": "001440",
@@ -1188,12 +1188,12 @@
       "prev_low": 25200,
       "recent_low": 27550,
       "low_rise_percent": 9.3,
-      "per": 68.1,
-      "pbr": 3.57,
+      "per": 62.2,
+      "pbr": 3.26,
       "ma150": 35136,
       "above_ma150": false,
       "market_cap": 55564,
-      "updated_at": "2026-10-12T00:25:11.823334"
+      "updated_at": "2026-10-12T01:38:48.525721"
     },
     {
       "ticker": "475400",
@@ -1206,11 +1206,11 @@
       "recent_low": 16990,
       "low_rise_percent": 1.3,
       "per": null,
-      "pbr": 5.52,
+      "pbr": 3.51,
       "ma150": 24753,
       "above_ma150": false,
       "market_cap": 2080,
-      "updated_at": "2026-10-12T00:25:11.968332"
+      "updated_at": "2026-10-12T01:38:48.759697"
     },
     {
       "ticker": "209640",
@@ -1222,12 +1222,12 @@
       "prev_low": 2905,
       "recent_low": 3000,
       "low_rise_percent": 3.3,
-      "per": null,
-      "pbr": null,
+      "per": 13.7,
+      "pbr": 1.49,
       "ma150": 4670,
       "above_ma150": false,
       "market_cap": 1108,
-      "updated_at": "2026-10-12T00:25:12.041548"
+      "updated_at": "2026-10-12T01:38:48.844833"
     },
     {
       "ticker": "452280",
@@ -1239,12 +1239,12 @@
       "prev_low": 9500,
       "recent_low": 10140,
       "low_rise_percent": 6.7,
-      "per": 63.4,
-      "pbr": 4.5,
+      "per": 27.1,
+      "pbr": 3.55,
       "ma150": 15243,
       "above_ma150": false,
       "market_cap": 2706,
-      "updated_at": "2026-10-12T00:25:12.220821"
+      "updated_at": "2026-10-12T01:38:49.072316"
     },
     {
       "ticker": "092200",
@@ -1256,12 +1256,12 @@
       "prev_low": 4915,
       "recent_low": 5240,
       "low_rise_percent": 6.6,
-      "per": 25.1,
-      "pbr": 2.32,
+      "per": null,
+      "pbr": 1.58,
       "ma150": 6861,
       "above_ma150": false,
       "market_cap": 2228,
-      "updated_at": "2026-10-12T00:25:11.849377"
+      "updated_at": "2026-10-12T01:38:48.615997"
     },
     {
       "ticker": "323990",
@@ -1274,11 +1274,11 @@
       "recent_low": 4040,
       "low_rise_percent": 6.9,
       "per": null,
-      "pbr": null,
+      "pbr": 1.65,
       "ma150": 5689,
       "above_ma150": false,
       "market_cap": 1015,
-      "updated_at": "2026-10-12T00:25:11.890033"
+      "updated_at": "2026-10-12T01:38:48.656260"
     },
     {
       "ticker": "006910",
@@ -1290,12 +1290,12 @@
       "prev_low": 6350,
       "recent_low": 6900,
       "low_rise_percent": 8.7,
-      "per": 106.1,
-      "pbr": 6.97,
+      "per": 16.8,
+      "pbr": 3.08,
       "ma150": 8825,
       "above_ma150": false,
       "market_cap": 3410,
-      "updated_at": "2026-10-12T00:25:11.891896"
+      "updated_at": "2026-10-12T01:38:48.658532"
     },
     {
       "ticker": "122870",
@@ -1307,12 +1307,12 @@
       "prev_low": 37200,
       "recent_low": 39900,
       "low_rise_percent": 7.3,
-      "per": 60.4,
-      "pbr": 2.29,
+      "per": 20.5,
+      "pbr": 1.46,
       "ma150": 47132,
       "above_ma150": false,
       "market_cap": 7570,
-      "updated_at": "2026-10-12T00:25:12.042181"
+      "updated_at": "2026-10-12T01:38:48.849088"
     },
     {
       "ticker": "140410",
@@ -1325,11 +1325,11 @@
       "recent_low": 64300,
       "low_rise_percent": 15.9,
       "per": null,
-      "pbr": 59.58,
+      "pbr": 121.85,
       "ma150": 75164,
       "above_ma150": false,
       "market_cap": 21217,
-      "updated_at": "2026-10-12T00:25:11.871760"
+      "updated_at": "2026-10-12T01:38:48.638184"
     },
     {
       "ticker": "166480",
@@ -1342,11 +1342,11 @@
       "recent_low": 1955,
       "low_rise_percent": 1.8,
       "per": null,
-      "pbr": null,
+      "pbr": 2.03,
       "ma150": 2535,
       "above_ma150": false,
       "market_cap": 1237,
-      "updated_at": "2026-10-12T00:25:12.137529"
+      "updated_at": "2026-10-12T01:38:48.990786"
     },
     {
       "ticker": "032820",
@@ -1358,12 +1358,12 @@
       "prev_low": 10260,
       "recent_low": 11050,
       "low_rise_percent": 7.7,
-      "per": 149.0,
-      "pbr": 41.08,
+      "per": 2409.5,
+      "pbr": 15.32,
       "ma150": 15769,
       "above_ma150": false,
       "market_cap": 20112,
-      "updated_at": "2026-10-12T00:25:12.043437"
+      "updated_at": "2026-10-12T01:38:48.850413"
     },
     {
       "ticker": "095700",
@@ -1376,11 +1376,11 @@
       "recent_low": 2640,
       "low_rise_percent": 6.9,
       "per": null,
-      "pbr": 0.86,
+      "pbr": 0.54,
       "ma150": 3646,
       "above_ma150": false,
       "market_cap": 1314,
-      "updated_at": "2026-10-12T00:25:12.095508"
+      "updated_at": "2026-10-12T01:38:48.934885"
     },
     {
       "ticker": "226590",
@@ -1392,12 +1392,12 @@
       "prev_low": 10880,
       "recent_low": 12010,
       "low_rise_percent": 10.4,
-      "per": null,
-      "pbr": null,
+      "per": 14.2,
+      "pbr": 3.3,
       "ma150": 18533,
       "above_ma150": false,
       "market_cap": 1572,
-      "updated_at": "2026-10-12T00:25:12.029236"
+      "updated_at": "2026-10-12T01:38:48.796170"
     },
     {
       "ticker": "003280",
@@ -1409,12 +1409,12 @@
       "prev_low": 1666,
       "recent_low": 1724,
       "low_rise_percent": 3.5,
-      "per": 18.4,
-      "pbr": 3.19,
+      "per": 14.3,
+      "pbr": 1.71,
       "ma150": 2254,
       "above_ma150": false,
       "market_cap": 4445,
-      "updated_at": "2026-10-12T00:25:12.254666"
+      "updated_at": "2026-10-12T01:38:49.096121"
     },
     {
       "ticker": "285490",
@@ -1426,12 +1426,12 @@
       "prev_low": 11250,
       "recent_low": 11650,
       "low_rise_percent": 3.6,
-      "per": 14.1,
-      "pbr": 1.33,
+      "per": 7.4,
+      "pbr": 0.73,
       "ma150": 16106,
       "above_ma150": false,
       "market_cap": 1305,
-      "updated_at": "2026-10-12T00:25:11.799636"
+      "updated_at": "2026-10-12T01:38:48.483229"
     },
     {
       "ticker": "078150",
@@ -1443,12 +1443,12 @@
       "prev_low": 1770,
       "recent_low": 1902,
       "low_rise_percent": 7.5,
-      "per": 8.0,
-      "pbr": 0.77,
+      "per": 7.7,
+      "pbr": 0.73,
       "ma150": 2428,
       "above_ma150": false,
       "market_cap": 2259,
-      "updated_at": "2026-10-12T00:25:11.718057"
+      "updated_at": "2026-10-12T01:38:48.390385"
     },
     {
       "ticker": "217270",
@@ -1461,11 +1461,11 @@
       "recent_low": 2305,
       "low_rise_percent": 1.1,
       "per": null,
-      "pbr": 0.29,
+      "pbr": 0.35,
       "ma150": 3052,
       "above_ma150": false,
       "market_cap": 1121,
-      "updated_at": "2026-10-12T00:25:11.798314"
+      "updated_at": "2026-10-12T01:38:48.481976"
     },
     {
       "ticker": "105840",
@@ -1477,12 +1477,12 @@
       "prev_low": 11540,
       "recent_low": 12270,
       "low_rise_percent": 6.3,
-      "per": 72.5,
-      "pbr": 3.17,
+      "per": 28.5,
+      "pbr": 1.25,
       "ma150": 18985,
       "above_ma150": false,
       "market_cap": 2496,
-      "updated_at": "2026-10-12T00:25:12.052407"
+      "updated_at": "2026-10-12T01:38:48.890928"
     },
     {
       "ticker": "065350",
@@ -1494,12 +1494,12 @@
       "prev_low": 27450,
       "recent_low": 29700,
       "low_rise_percent": 8.2,
-      "per": 80.5,
-      "pbr": 7.02,
+      "per": 40.9,
+      "pbr": 3.57,
       "ma150": 42408,
       "above_ma150": false,
       "market_cap": 8919,
-      "updated_at": "2026-10-12T00:25:11.954685"
+      "updated_at": "2026-10-12T01:38:48.754071"
     },
     {
       "ticker": "333430",
@@ -1511,12 +1511,12 @@
       "prev_low": 3570,
       "recent_low": 3610,
       "low_rise_percent": 1.1,
-      "per": 13.1,
-      "pbr": 2.12,
+      "per": 15.3,
+      "pbr": 2.48,
       "ma150": 4450,
       "above_ma150": false,
       "market_cap": 1131,
-      "updated_at": "2026-10-12T00:25:12.079039"
+      "updated_at": "2026-10-12T01:38:48.913150"
     },
     {
       "ticker": "298830",
@@ -1528,12 +1528,12 @@
       "prev_low": 3980,
       "recent_low": 4015,
       "low_rise_percent": 0.9,
-      "per": 36.9,
-      "pbr": 4.23,
+      "per": 26.0,
+      "pbr": 2.1,
       "ma150": 5518,
       "above_ma150": false,
       "market_cap": 2280,
-      "updated_at": "2026-10-12T00:25:11.947849"
+      "updated_at": "2026-10-12T01:38:48.749372"
     },
     {
       "ticker": "003030",
@@ -1545,12 +1545,12 @@
       "prev_low": 94200,
       "recent_low": 100700,
       "low_rise_percent": 6.9,
-      "per": 13.2,
-      "pbr": 0.4,
+      "per": 6.9,
+      "pbr": 0.21,
       "ma150": 145457,
       "above_ma150": false,
       "market_cap": 4266,
-      "updated_at": "2026-10-12T00:25:11.935265"
+      "updated_at": "2026-10-12T01:38:48.730408"
     },
     {
       "ticker": "011930",
@@ -1563,11 +1563,11 @@
       "recent_low": 15650,
       "low_rise_percent": 5.2,
       "per": null,
-      "pbr": 2.57,
+      "pbr": 1.71,
       "ma150": 23504,
       "above_ma150": false,
       "market_cap": 3998,
-      "updated_at": "2026-10-12T00:25:11.962314"
+      "updated_at": "2026-10-12T01:38:48.754804"
     },
     {
       "ticker": "488280",
@@ -1580,11 +1580,11 @@
       "recent_low": 9690,
       "low_rise_percent": 10.5,
       "per": null,
-      "pbr": null,
+      "pbr": 7.49,
       "ma150": 15387,
       "above_ma150": true,
       "market_cap": 1722,
-      "updated_at": "2026-10-12T00:25:12.006206"
+      "updated_at": "2026-10-12T01:38:48.783214"
     },
     {
       "ticker": "417010",
@@ -1596,12 +1596,12 @@
       "prev_low": 4760,
       "recent_low": 5800,
       "low_rise_percent": 21.8,
-      "per": null,
-      "pbr": null,
+      "per": 128.1,
+      "pbr": 2.62,
       "ma150": 7979,
       "above_ma150": false,
       "market_cap": 1289,
-      "updated_at": "2026-10-12T00:25:11.787641"
+      "updated_at": "2026-10-12T01:38:48.474561"
     },
     {
       "ticker": "459510",
@@ -1614,11 +1614,11 @@
       "recent_low": 14320,
       "low_rise_percent": 7.3,
       "per": null,
-      "pbr": 17.31,
+      "pbr": 12.31,
       "ma150": 18917,
       "above_ma150": false,
       "market_cap": 1988,
-      "updated_at": "2026-10-12T00:25:11.790465"
+      "updated_at": "2026-10-12T01:38:48.475958"
     },
     {
       "ticker": "336260",
@@ -1631,11 +1631,11 @@
       "recent_low": 43000,
       "low_rise_percent": 42.9,
       "per": null,
-      "pbr": 9.33,
+      "pbr": 9.74,
       "ma150": 51437,
       "above_ma150": false,
       "market_cap": 28654,
-      "updated_at": "2026-10-12T00:25:11.845985"
+      "updated_at": "2026-10-12T01:38:48.608462"
     },
     {
       "ticker": "125210",
@@ -1647,12 +1647,12 @@
       "prev_low": 5190,
       "recent_low": 5360,
       "low_rise_percent": 3.3,
-      "per": null,
-      "pbr": null,
+      "per": 19.1,
+      "pbr": 1.38,
       "ma150": 7974,
       "above_ma150": false,
       "market_cap": 1110,
-      "updated_at": "2026-10-12T00:25:11.975725"
+      "updated_at": "2026-10-12T01:38:48.766467"
     },
     {
       "ticker": "489500",
@@ -1664,12 +1664,12 @@
       "prev_low": 18520,
       "recent_low": 19830,
       "low_rise_percent": 7.1,
-      "per": null,
-      "pbr": null,
+      "per": 33.7,
+      "pbr": 2.52,
       "ma150": 26970,
       "above_ma150": false,
       "market_cap": 1528,
-      "updated_at": "2026-10-12T00:25:12.027462"
+      "updated_at": "2026-10-12T01:38:48.795678"
     },
     {
       "ticker": "432320",
@@ -1686,7 +1686,7 @@
       "ma150": 1785,
       "above_ma150": false,
       "market_cap": 2432,
-      "updated_at": "2026-10-12T00:25:11.728899"
+      "updated_at": "2026-10-12T01:38:48.415339"
     },
     {
       "ticker": "358570",
@@ -1699,11 +1699,11 @@
       "recent_low": 7740,
       "low_rise_percent": 3.1,
       "per": null,
-      "pbr": 26.83,
+      "pbr": 4.64,
       "ma150": 11197,
       "above_ma150": false,
       "market_cap": 5452,
-      "updated_at": "2026-10-12T00:25:12.110144"
+      "updated_at": "2026-10-12T01:38:48.977260"
     },
     {
       "ticker": "458870",
@@ -1715,12 +1715,12 @@
       "prev_low": 19820,
       "recent_low": 22100,
       "low_rise_percent": 11.5,
-      "per": null,
-      "pbr": 107.28,
+      "per": 60.8,
+      "pbr": 24.83,
       "ma150": 35061,
       "above_ma150": false,
       "market_cap": 10008,
-      "updated_at": "2026-10-12T00:25:11.970404"
+      "updated_at": "2026-10-12T01:38:48.761050"
     },
     {
       "ticker": "317330",
@@ -1733,11 +1733,11 @@
       "recent_low": 12090,
       "low_rise_percent": 22.1,
       "per": null,
-      "pbr": 1.64,
+      "pbr": 2.38,
       "ma150": 15613,
       "above_ma150": false,
       "market_cap": 2748,
-      "updated_at": "2026-10-12T00:25:11.830907"
+      "updated_at": "2026-10-12T01:38:48.575828"
     },
     {
       "ticker": "439260",
@@ -1749,12 +1749,12 @@
       "prev_low": 44100,
       "recent_low": 44500,
       "low_rise_percent": 0.9,
-      "per": 16.1,
-      "pbr": 6.14,
+      "per": 6.2,
+      "pbr": 1.59,
       "ma150": 65691,
       "above_ma150": false,
       "market_cap": 17064,
-      "updated_at": "2026-10-12T00:25:11.825147"
+      "updated_at": "2026-10-12T01:38:48.553384"
     },
     {
       "ticker": "454910",
@@ -1767,11 +1767,11 @@
       "recent_low": 67200,
       "low_rise_percent": 3.1,
       "per": null,
-      "pbr": 14.38,
+      "pbr": 12.83,
       "ma150": 86389,
       "above_ma150": false,
       "market_cap": 44920,
-      "updated_at": "2026-10-12T00:25:11.844512"
+      "updated_at": "2026-10-12T01:38:48.593603"
     },
     {
       "ticker": "241520",
@@ -1783,12 +1783,12 @@
       "prev_low": 7610,
       "recent_low": 7650,
       "low_rise_percent": 0.5,
-      "per": 36.4,
-      "pbr": 3.34,
+      "per": 12.6,
+      "pbr": 1.64,
       "ma150": 11200,
       "above_ma150": false,
       "market_cap": 2147,
-      "updated_at": "2026-10-12T00:25:11.714346"
+      "updated_at": "2026-10-12T01:38:48.386890"
     },
     {
       "ticker": "047040",
@@ -1801,11 +1801,11 @@
       "recent_low": 16600,
       "low_rise_percent": 9.9,
       "per": null,
-      "pbr": 2.3,
+      "pbr": 2.05,
       "ma150": 20023,
       "above_ma150": false,
       "market_cap": 68252,
-      "updated_at": "2026-10-12T00:25:11.815100"
+      "updated_at": "2026-10-12T01:38:48.519435"
     },
     {
       "ticker": "082920",
@@ -1817,12 +1817,12 @@
       "prev_low": 24850,
       "recent_low": 26500,
       "low_rise_percent": 6.6,
-      "per": 26.7,
-      "pbr": 4.73,
+      "per": 22.3,
+      "pbr": 3.8,
       "ma150": 37685,
       "above_ma150": false,
       "market_cap": 12639,
-      "updated_at": "2026-10-12T00:25:11.895454"
+      "updated_at": "2026-10-12T01:38:48.661994"
     },
     {
       "ticker": "115500",
@@ -1834,12 +1834,12 @@
       "prev_low": 8110,
       "recent_low": 8760,
       "low_rise_percent": 8.0,
-      "per": null,
-      "pbr": null,
+      "per": 54.8,
+      "pbr": 7.04,
       "ma150": 10974,
       "above_ma150": true,
       "market_cap": 1369,
-      "updated_at": "2026-10-12T00:25:12.118894"
+      "updated_at": "2026-10-12T01:38:48.983009"
     },
     {
       "ticker": "270660",
@@ -1852,11 +1852,11 @@
       "recent_low": 13100,
       "low_rise_percent": 0.5,
       "per": null,
-      "pbr": 3.77,
+      "pbr": 2.73,
       "ma150": 15032,
       "above_ma150": false,
       "market_cap": 1683,
-      "updated_at": "2026-10-12T00:25:11.997919"
+      "updated_at": "2026-10-12T01:38:48.778840"
     },
     {
       "ticker": "017510",
@@ -1868,12 +1868,12 @@
       "prev_low": 6800,
       "recent_low": 7210,
       "low_rise_percent": 6.0,
-      "per": null,
-      "pbr": null,
+      "per": 9.0,
+      "pbr": 1.27,
       "ma150": 8886,
       "above_ma150": false,
       "market_cap": 1142,
-      "updated_at": "2026-10-12T00:25:11.933841"
+      "updated_at": "2026-10-12T01:38:48.729072"
     },
     {
       "ticker": "272210",
@@ -1885,12 +1885,12 @@
       "prev_low": 66100,
       "recent_low": 68600,
       "low_rise_percent": 3.8,
-      "per": 106.1,
-      "pbr": 5.26,
+      "per": 59.7,
+      "pbr": 2.95,
       "ma150": 96921,
       "above_ma150": false,
       "market_cap": 144901,
-      "updated_at": "2026-10-12T00:25:12.236801"
+      "updated_at": "2026-10-12T01:38:49.083548"
     },
     {
       "ticker": "136150",
@@ -1902,12 +1902,12 @@
       "prev_low": 6810,
       "recent_low": 7570,
       "low_rise_percent": 11.2,
-      "per": null,
-      "pbr": null,
+      "per": 146.4,
+      "pbr": 2.08,
       "ma150": 12114,
       "above_ma150": true,
       "market_cap": 1022,
-      "updated_at": "2026-10-12T00:25:12.054982"
+      "updated_at": "2026-10-12T01:38:48.893434"
     },
     {
       "ticker": "263750",
@@ -1919,12 +1919,12 @@
       "prev_low": 29450,
       "recent_low": 31500,
       "low_rise_percent": 7.0,
-      "per": 44.2,
-      "pbr": 3.17,
+      "per": 7.6,
+      "pbr": 2.51,
       "ma150": 43479,
       "above_ma150": false,
       "market_cap": 20550,
-      "updated_at": "2026-10-12T00:25:12.185510"
+      "updated_at": "2026-10-12T01:38:49.048001"
     },
     {
       "ticker": "130660",
@@ -1936,12 +1936,12 @@
       "prev_low": 10580,
       "recent_low": 11660,
       "low_rise_percent": 10.2,
-      "per": 62.0,
-      "pbr": 6.22,
+      "per": 93.6,
+      "pbr": 3.68,
       "ma150": 14865,
       "above_ma150": false,
       "market_cap": 3821,
-      "updated_at": "2026-10-12T00:25:12.228040"
+      "updated_at": "2026-10-12T01:38:49.080519"
     },
     {
       "ticker": "299030",
@@ -1953,12 +1953,12 @@
       "prev_low": 12970,
       "recent_low": 13020,
       "low_rise_percent": 0.4,
-      "per": null,
-      "pbr": null,
+      "per": 55.0,
+      "pbr": 1.2,
       "ma150": 19525,
       "above_ma150": false,
       "market_cap": 1215,
-      "updated_at": "2026-10-12T00:25:12.203825"
+      "updated_at": "2026-10-12T01:38:49.056705"
     },
     {
       "ticker": "073010",
@@ -1970,12 +1970,12 @@
       "prev_low": 2645,
       "recent_low": 2730,
       "low_rise_percent": 3.2,
-      "per": null,
-      "pbr": null,
+      "per": 18.5,
+      "pbr": 1.46,
       "ma150": 3568,
       "above_ma150": false,
       "market_cap": 1212,
-      "updated_at": "2026-10-12T00:25:12.119627"
+      "updated_at": "2026-10-12T01:38:48.983774"
     },
     {
       "ticker": "251370",
@@ -1987,12 +1987,12 @@
       "prev_low": 6700,
       "recent_low": 6860,
       "low_rise_percent": 2.4,
-      "per": 75.5,
-      "pbr": 1.2,
+      "per": null,
+      "pbr": 0.91,
       "ma150": 11929,
       "above_ma150": false,
       "market_cap": 1812,
-      "updated_at": "2026-10-12T00:25:12.041150"
+      "updated_at": "2026-10-12T01:38:48.843691"
     },
     {
       "ticker": "126340",
@@ -2005,11 +2005,11 @@
       "recent_low": 60500,
       "low_rise_percent": 9.2,
       "per": null,
-      "pbr": 9.76,
+      "pbr": 7.35,
       "ma150": 104170,
       "above_ma150": false,
       "market_cap": 6304,
-      "updated_at": "2026-10-12T00:25:11.893577"
+      "updated_at": "2026-10-12T01:38:48.660131"
     },
     {
       "ticker": "092190",
@@ -2021,12 +2021,12 @@
       "prev_low": 6080,
       "recent_low": 7310,
       "low_rise_percent": 20.2,
-      "per": 23.4,
-      "pbr": 3.45,
+      "per": 22.6,
+      "pbr": 4.82,
       "ma150": 7326,
       "above_ma150": true,
       "market_cap": 3802,
-      "updated_at": "2026-10-12T00:25:11.916517"
+      "updated_at": "2026-10-12T01:38:48.711002"
     },
     {
       "ticker": "215600",
@@ -2039,11 +2039,11 @@
       "recent_low": 2165,
       "low_rise_percent": 5.1,
       "per": null,
-      "pbr": 3.74,
+      "pbr": 2.94,
       "ma150": 2810,
       "above_ma150": false,
       "market_cap": 3214,
-      "updated_at": "2026-10-12T00:25:11.951300"
+      "updated_at": "2026-10-12T01:38:48.753702"
     },
     {
       "ticker": "031330",
@@ -2055,12 +2055,12 @@
       "prev_low": 7490,
       "recent_low": 7750,
       "low_rise_percent": 3.5,
-      "per": 7.0,
-      "pbr": 1.07,
+      "per": 11.3,
+      "pbr": 1.72,
       "ma150": 9411,
       "above_ma150": false,
       "market_cap": 8600,
-      "updated_at": "2026-10-12T00:25:12.003670"
+      "updated_at": "2026-10-12T01:38:48.781151"
     },
     {
       "ticker": "064820",
@@ -2072,12 +2072,12 @@
       "prev_low": 7230,
       "recent_low": 7440,
       "low_rise_percent": 2.9,
-      "per": 21.5,
-      "pbr": 1.48,
+      "per": 3.9,
+      "pbr": 0.77,
       "ma150": 10049,
       "above_ma150": false,
       "market_cap": 2339,
-      "updated_at": "2026-10-12T00:25:12.124835"
+      "updated_at": "2026-10-12T01:38:48.985567"
     },
     {
       "ticker": "084990",
@@ -2090,11 +2090,11 @@
       "recent_low": 2850,
       "low_rise_percent": 0.2,
       "per": null,
-      "pbr": 1.79,
+      "pbr": 1.47,
       "ma150": 5228,
       "above_ma150": false,
       "market_cap": 2007,
-      "updated_at": "2026-10-12T00:25:12.239388"
+      "updated_at": "2026-10-12T01:38:49.085600"
     },
     {
       "ticker": "365340",
@@ -2107,11 +2107,11 @@
       "recent_low": 33650,
       "low_rise_percent": 4.8,
       "per": null,
-      "pbr": 3.54,
+      "pbr": 3.6,
       "ma150": 49377,
       "above_ma150": false,
       "market_cap": 4839,
-      "updated_at": "2026-10-12T00:25:11.924370"
+      "updated_at": "2026-10-12T01:38:48.722019"
     },
     {
       "ticker": "090360",
@@ -2123,12 +2123,12 @@
       "prev_low": 69500,
       "recent_low": 74000,
       "low_rise_percent": 6.5,
-      "per": null,
-      "pbr": 7.22,
+      "per": 1880.3,
+      "pbr": 8.43,
       "ma150": 76762,
       "above_ma150": false,
       "market_cap": 7352,
-      "updated_at": "2026-10-12T00:25:11.858522"
+      "updated_at": "2026-10-12T01:38:48.628192"
     },
     {
       "ticker": "117580",
@@ -2140,12 +2140,12 @@
       "prev_low": 6610,
       "recent_low": 6950,
       "low_rise_percent": 5.1,
-      "per": 17.8,
-      "pbr": 0.93,
+      "per": 7.9,
+      "pbr": 0.56,
       "ma150": 8029,
       "above_ma150": false,
       "market_cap": 1953,
-      "updated_at": "2026-10-12T00:25:11.808086"
+      "updated_at": "2026-10-12T01:38:48.515737"
     },
     {
       "ticker": "006650",
@@ -2157,12 +2157,12 @@
       "prev_low": 79300,
       "recent_low": 86400,
       "low_rise_percent": 9.0,
-      "per": 27.6,
-      "pbr": 0.48,
+      "per": 18.4,
+      "pbr": 0.3,
       "ma150": 119860,
       "above_ma150": false,
       "market_cap": 5785,
-      "updated_at": "2026-10-12T00:25:11.821387"
+      "updated_at": "2026-10-12T01:38:48.524779"
     },
     {
       "ticker": "035760",
@@ -2174,12 +2174,12 @@
       "prev_low": 30700,
       "recent_low": 32900,
       "low_rise_percent": 7.2,
-      "per": 9.3,
-      "pbr": 0.45,
+      "per": 26.9,
+      "pbr": 0.27,
       "ma150": 42525,
       "above_ma150": false,
       "market_cap": 7763,
-      "updated_at": "2026-10-12T00:25:11.708501"
+      "updated_at": "2026-10-12T01:38:48.383675"
     },
     {
       "ticker": "017550",
@@ -2191,12 +2191,12 @@
       "prev_low": 1712,
       "recent_low": 1771,
       "low_rise_percent": 3.4,
-      "per": null,
-      "pbr": null,
+      "per": 7.0,
+      "pbr": 0.55,
       "ma150": 2173,
       "above_ma150": false,
       "market_cap": 1116,
-      "updated_at": "2026-10-12T00:25:11.943462"
+      "updated_at": "2026-10-12T01:38:48.742927"
     },
     {
       "ticker": "347700",
@@ -2208,12 +2208,12 @@
       "prev_low": 18330,
       "recent_low": 19020,
       "low_rise_percent": 3.8,
-      "per": null,
-      "pbr": 31.56,
+      "per": 5444.1,
+      "pbr": 16.98,
       "ma150": 31939,
       "above_ma150": false,
       "market_cap": 13094,
-      "updated_at": "2026-10-12T00:25:11.949636"
+      "updated_at": "2026-10-12T01:38:48.752100"
     },
     {
       "ticker": "112040",
@@ -2225,12 +2225,12 @@
       "prev_low": 14410,
       "recent_low": 14800,
       "low_rise_percent": 2.7,
-      "per": 4.0,
-      "pbr": 1.7,
+      "per": 8.2,
+      "pbr": 1.29,
       "ma150": 18737,
       "above_ma150": false,
       "market_cap": 5255,
-      "updated_at": "2026-10-12T00:25:12.057196"
+      "updated_at": "2026-10-12T01:38:48.897759"
     },
     {
       "ticker": "042370",
@@ -2242,12 +2242,12 @@
       "prev_low": 7670,
       "recent_low": 8170,
       "low_rise_percent": 6.5,
-      "per": 37.9,
-      "pbr": 1.33,
+      "per": 41.6,
+      "pbr": 1.06,
       "ma150": 11097,
       "above_ma150": false,
       "market_cap": 2772,
-      "updated_at": "2026-10-12T00:25:11.899571"
+      "updated_at": "2026-10-12T01:38:48.664147"
     },
     {
       "ticker": "033240",
@@ -2259,12 +2259,12 @@
       "prev_low": 25200,
       "recent_low": 25300,
       "low_rise_percent": 0.4,
-      "per": 52.1,
-      "pbr": 2.1,
+      "per": 12.6,
+      "pbr": 1.25,
       "ma150": 33850,
       "above_ma150": false,
       "market_cap": 5769,
-      "updated_at": "2026-10-12T00:25:12.092623"
+      "updated_at": "2026-10-12T01:38:48.933432"
     },
     {
       "ticker": "388720",
@@ -2277,11 +2277,11 @@
       "recent_low": 63900,
       "low_rise_percent": 3.1,
       "per": null,
-      "pbr": 12.05,
+      "pbr": 9.06,
       "ma150": 81847,
       "above_ma150": false,
       "market_cap": 8176,
-      "updated_at": "2026-10-12T00:25:12.060888"
+      "updated_at": "2026-10-12T01:38:48.901166"
     },
     {
       "ticker": "156100",
@@ -2293,12 +2293,12 @@
       "prev_low": 3475,
       "recent_low": 4765,
       "low_rise_percent": 37.1,
-      "per": null,
-      "pbr": null,
+      "per": 59.5,
+      "pbr": 3.52,
       "ma150": 6027,
       "above_ma150": true,
       "market_cap": 1645,
-      "updated_at": "2026-10-12T00:25:12.026968"
+      "updated_at": "2026-10-12T01:38:48.794521"
     },
     {
       "ticker": "009470",
@@ -2310,12 +2310,12 @@
       "prev_low": 20950,
       "recent_low": 22650,
       "low_rise_percent": 8.1,
-      "per": 13.2,
-      "pbr": 2.96,
+      "per": 19.0,
+      "pbr": 1.91,
       "ma150": 31850,
       "above_ma150": false,
       "market_cap": 1773,
-      "updated_at": "2026-10-12T00:25:11.911346"
+      "updated_at": "2026-10-12T01:38:48.673840"
     },
     {
       "ticker": "099440",
@@ -2327,12 +2327,12 @@
       "prev_low": 3675,
       "recent_low": 3720,
       "low_rise_percent": 1.2,
-      "per": 12.0,
-      "pbr": 1.76,
+      "per": null,
+      "pbr": 2.63,
       "ma150": 3989,
       "above_ma150": false,
       "market_cap": 2569,
-      "updated_at": "2026-10-12T00:25:11.948699"
+      "updated_at": "2026-10-12T01:38:48.750166"
     },
     {
       "ticker": "368770",
@@ -2344,12 +2344,12 @@
       "prev_low": 11140,
       "recent_low": 11430,
       "low_rise_percent": 2.6,
-      "per": 74.6,
-      "pbr": 13.82,
+      "per": 47.5,
+      "pbr": 9.62,
       "ma150": 16227,
       "above_ma150": false,
       "market_cap": 4452,
-      "updated_at": "2026-10-12T00:25:12.182369"
+      "updated_at": "2026-10-12T01:38:49.046329"
     },
     {
       "ticker": "094480",
@@ -2361,12 +2361,12 @@
       "prev_low": 4895,
       "recent_low": 5000,
       "low_rise_percent": 2.1,
-      "per": 428.4,
-      "pbr": 3.08,
+      "per": 26.1,
+      "pbr": 1.82,
       "ma150": 6586,
       "above_ma150": false,
       "market_cap": 2177,
-      "updated_at": "2026-10-12T00:25:11.772957"
+      "updated_at": "2026-10-12T01:38:48.460689"
     },
     {
       "ticker": "003720",
@@ -2378,12 +2378,12 @@
       "prev_low": 5890,
       "recent_low": 5940,
       "low_rise_percent": 0.8,
-      "per": 30.2,
-      "pbr": 3.15,
+      "per": 16.6,
+      "pbr": 2.47,
       "ma150": 7749,
       "above_ma150": false,
       "market_cap": 2152,
-      "updated_at": "2026-10-12T00:25:11.906637"
+      "updated_at": "2026-10-12T01:38:48.671183"
     },
     {
       "ticker": "200710",
@@ -2395,12 +2395,12 @@
       "prev_low": 22150,
       "recent_low": 22700,
       "low_rise_percent": 2.5,
-      "per": null,
-      "pbr": 4.61,
+      "per": 105.5,
+      "pbr": 2.71,
       "ma150": 37489,
       "above_ma150": false,
       "market_cap": 3783,
-      "updated_at": "2026-10-12T00:25:12.016871"
+      "updated_at": "2026-10-12T01:38:48.784944"
     },
     {
       "ticker": "041190",
@@ -2412,12 +2412,12 @@
       "prev_low": 4390,
       "recent_low": 5100,
       "low_rise_percent": 16.2,
-      "per": 3.9,
-      "pbr": 0.85,
+      "per": 4.5,
+      "pbr": 0.59,
       "ma150": 5781,
       "above_ma150": true,
       "market_cap": 4764,
-      "updated_at": "2026-10-12T00:25:12.044505"
+      "updated_at": "2026-10-12T01:38:48.850802"
     },
     {
       "ticker": "168360",
@@ -2429,12 +2429,12 @@
       "prev_low": 11260,
       "recent_low": 12130,
       "low_rise_percent": 7.7,
-      "per": null,
-      "pbr": 17.77,
+      "per": 2785.8,
+      "pbr": 13.07,
       "ma150": 18376,
       "above_ma150": false,
       "market_cap": 3538,
-      "updated_at": "2026-10-12T00:25:12.189827"
+      "updated_at": "2026-10-12T01:38:49.048901"
     },
     {
       "ticker": "352480",
@@ -2446,12 +2446,12 @@
       "prev_low": 18790,
       "recent_low": 19860,
       "low_rise_percent": 5.7,
-      "per": 8.6,
-      "pbr": 1.35,
+      "per": 15.2,
+      "pbr": 0.78,
       "ma150": 22848,
       "above_ma150": false,
       "market_cap": 2740,
-      "updated_at": "2026-10-12T00:25:11.968731"
+      "updated_at": "2026-10-12T01:38:48.760056"
     },
     {
       "ticker": "022100",
@@ -2463,12 +2463,12 @@
       "prev_low": 19080,
       "recent_low": 19650,
       "low_rise_percent": 3.0,
-      "per": 94.6,
-      "pbr": 8.63,
+      "per": 61.6,
+      "pbr": 5.62,
       "ma150": 26409,
       "above_ma150": false,
       "market_cap": 31623,
-      "updated_at": "2026-10-12T00:25:12.192012"
+      "updated_at": "2026-10-12T01:38:49.049471"
     },
     {
       "ticker": "218410",
@@ -2480,12 +2480,12 @@
       "prev_low": 42900,
       "recent_low": 46500,
       "low_rise_percent": 8.4,
-      "per": 83.5,
-      "pbr": 6.5,
+      "per": 54.1,
+      "pbr": 4.37,
       "ma150": 69807,
       "above_ma150": false,
       "market_cap": 15414,
-      "updated_at": "2026-10-12T00:25:11.746463"
+      "updated_at": "2026-10-12T01:38:48.449666"
     },
     {
       "ticker": "039560",
@@ -2498,11 +2498,11 @@
       "recent_low": 2295,
       "low_rise_percent": 2.9,
       "per": null,
-      "pbr": null,
+      "pbr": 0.42,
       "ma150": 3482,
       "above_ma150": false,
       "market_cap": 1186,
-      "updated_at": "2026-10-12T00:25:11.801432"
+      "updated_at": "2026-10-12T01:38:48.511846"
     },
     {
       "ticker": "474610",
@@ -2514,12 +2514,12 @@
       "prev_low": 6420,
       "recent_low": 6630,
       "low_rise_percent": 3.3,
-      "per": null,
-      "pbr": null,
+      "per": 21.0,
+      "pbr": 2.19,
       "ma150": 9088,
       "above_ma150": false,
       "market_cap": 1172,
-      "updated_at": "2026-10-12T00:25:11.754543"
+      "updated_at": "2026-10-12T01:38:48.450192"
     },
     {
       "ticker": "232680",
@@ -2531,12 +2531,12 @@
       "prev_low": 8500,
       "recent_low": 9010,
       "low_rise_percent": 6.0,
-      "per": null,
-      "pbr": null,
+      "per": 36.9,
+      "pbr": 3.63,
       "ma150": 12643,
       "above_ma150": false,
       "market_cap": 1456,
-      "updated_at": "2026-10-12T00:25:11.851582"
+      "updated_at": "2026-10-12T01:38:48.618678"
     },
     {
       "ticker": "015860",
@@ -2548,12 +2548,12 @@
       "prev_low": 6280,
       "recent_low": 6640,
       "low_rise_percent": 5.7,
-      "per": 10.7,
-      "pbr": 0.7,
+      "per": 9.7,
+      "pbr": 0.61,
       "ma150": 7591,
       "above_ma150": false,
       "market_cap": 3489,
-      "updated_at": "2026-10-12T00:25:12.087141"
+      "updated_at": "2026-10-12T01:38:48.915236"
     },
     {
       "ticker": "066570",
@@ -2565,12 +2565,12 @@
       "prev_low": 180900,
       "recent_low": 192600,
       "low_rise_percent": 6.5,
-      "per": 22.2,
-      "pbr": 0.89,
+      "per": 37.7,
+      "pbr": 1.51,
       "ma150": 180356,
       "above_ma150": true,
       "market_cap": 327398,
-      "updated_at": "2026-10-12T00:25:11.736975"
+      "updated_at": "2026-10-12T01:38:48.442710"
     },
     {
       "ticker": "100590",
@@ -2583,11 +2583,11 @@
       "recent_low": 3345,
       "low_rise_percent": 1.2,
       "per": null,
-      "pbr": null,
+      "pbr": 0.67,
       "ma150": 5122,
       "above_ma150": true,
       "market_cap": 1006,
-      "updated_at": "2026-10-12T00:25:11.867339"
+      "updated_at": "2026-10-12T01:38:48.635676"
     },
     {
       "ticker": "000540",
@@ -2599,12 +2599,12 @@
       "prev_low": 3250,
       "recent_low": 3325,
       "low_rise_percent": 2.3,
-      "per": 3.0,
-      "pbr": 0.41,
+      "per": 1.5,
+      "pbr": 0.26,
       "ma150": 3797,
       "above_ma150": false,
       "market_cap": 2213,
-      "updated_at": "2026-10-12T00:25:12.253894"
+      "updated_at": "2026-10-12T01:38:49.095757"
     },
     {
       "ticker": "040300",
@@ -2617,11 +2617,11 @@
       "recent_low": 1960,
       "low_rise_percent": 0.4,
       "per": null,
-      "pbr": null,
+      "pbr": 0.47,
       "ma150": 2577,
       "above_ma150": false,
       "market_cap": 1080,
-      "updated_at": "2026-10-12T00:25:11.770750"
+      "updated_at": "2026-10-12T01:38:48.459025"
     },
     {
       "ticker": "023530",
@@ -2633,12 +2633,12 @@
       "prev_low": 93900,
       "recent_low": 97000,
       "low_rise_percent": 3.3,
-      "per": 62.3,
-      "pbr": 0.21,
+      "per": 53.7,
+      "pbr": 0.18,
       "ma150": 128570,
       "above_ma150": false,
       "market_cap": 27553,
-      "updated_at": "2026-10-12T00:25:11.861003"
+      "updated_at": "2026-10-12T01:38:48.629756"
     },
     {
       "ticker": "025860",
@@ -2650,12 +2650,12 @@
       "prev_low": 5730,
       "recent_low": 5870,
       "low_rise_percent": 2.4,
-      "per": 14.2,
-      "pbr": 0.74,
+      "per": 10.1,
+      "pbr": 0.52,
       "ma150": 7041,
       "above_ma150": false,
       "market_cap": 2946,
-      "updated_at": "2026-10-12T00:25:11.793095"
+      "updated_at": "2026-10-12T01:38:48.477830"
     },
     {
       "ticker": "004560",
@@ -2667,12 +2667,12 @@
       "prev_low": 11100,
       "recent_low": 11590,
       "low_rise_percent": 4.4,
-      "per": 17.7,
-      "pbr": 0.5,
+      "per": 12.1,
+      "pbr": 0.34,
       "ma150": 13851,
       "above_ma150": false,
       "market_cap": 1782,
-      "updated_at": "2026-10-12T00:25:12.245067"
+      "updated_at": "2026-10-12T01:38:49.088367"
     },
     {
       "ticker": "083650",
@@ -2684,12 +2684,12 @@
       "prev_low": 50900,
       "recent_low": 53100,
       "low_rise_percent": 4.3,
-      "per": 172.9,
-      "pbr": 29.12,
+      "per": 25.4,
+      "pbr": 9.34,
       "ma150": 71874,
       "above_ma150": false,
       "market_cap": 16493,
-      "updated_at": "2026-10-12T00:25:11.894864"
+      "updated_at": "2026-10-12T01:38:48.661443"
     },
     {
       "ticker": "0008Z0",
@@ -2701,12 +2701,12 @@
       "prev_low": 21500,
       "recent_low": 22650,
       "low_rise_percent": 5.3,
-      "per": 10.1,
-      "pbr": 2.25,
+      "per": 10.8,
+      "pbr": 1.28,
       "ma150": 27984,
       "above_ma150": false,
       "market_cap": 2199,
-      "updated_at": "2026-10-12T00:25:12.004110"
+      "updated_at": "2026-10-12T01:38:48.781512"
     },
     {
       "ticker": "065680",
@@ -2718,12 +2718,12 @@
       "prev_low": 20350,
       "recent_low": 21400,
       "low_rise_percent": 5.2,
-      "per": 14.0,
-      "pbr": 1.04,
+      "per": 10.4,
+      "pbr": 0.74,
       "ma150": 30106,
       "above_ma150": false,
       "market_cap": 2183,
-      "updated_at": "2026-10-12T00:25:12.050725"
+      "updated_at": "2026-10-12T01:38:48.890513"
     },
     {
       "ticker": "086900",
@@ -2735,12 +2735,12 @@
       "prev_low": 65600,
       "recent_low": 65800,
       "low_rise_percent": 0.3,
-      "per": 49.1,
-      "pbr": 1.45,
+      "per": 30.7,
+      "pbr": 1.02,
       "ma150": 87386,
       "above_ma150": false,
       "market_cap": 4824,
-      "updated_at": "2026-10-12T00:25:11.869317"
+      "updated_at": "2026-10-12T01:38:48.637166"
     },
     {
       "ticker": "025980",
@@ -2753,11 +2753,11 @@
       "recent_low": 4610,
       "low_rise_percent": 19.6,
       "per": null,
-      "pbr": 0.98,
+      "pbr": 0.64,
       "ma150": 5564,
       "above_ma150": false,
       "market_cap": 4773,
-      "updated_at": "2026-10-12T00:25:11.972075"
+      "updated_at": "2026-10-12T01:38:48.765157"
     },
     {
       "ticker": "147830",
@@ -2769,12 +2769,12 @@
       "prev_low": 6390,
       "recent_low": 6650,
       "low_rise_percent": 4.1,
-      "per": 14.0,
-      "pbr": 1.8,
+      "per": 12.6,
+      "pbr": 1.6,
       "ma150": 7672,
       "above_ma150": false,
       "market_cap": 1450,
-      "updated_at": "2026-10-12T00:25:12.097641"
+      "updated_at": "2026-10-12T01:38:48.935925"
     },
     {
       "ticker": "336570",
@@ -2786,12 +2786,12 @@
       "prev_low": 4430,
       "recent_low": 4745,
       "low_rise_percent": 7.1,
-      "per": 21.6,
-      "pbr": 4.99,
+      "per": 12.7,
+      "pbr": 2.83,
       "ma150": 6301,
       "above_ma150": false,
       "market_cap": 4424,
-      "updated_at": "2026-10-12T00:25:12.055353"
+      "updated_at": "2026-10-12T01:38:48.893825"
     },
     {
       "ticker": "100840",
@@ -2803,12 +2803,12 @@
       "prev_low": 25450,
       "recent_low": 31700,
       "low_rise_percent": 24.6,
-      "per": 13.1,
-      "pbr": 2.91,
+      "per": 7.8,
+      "pbr": 1.72,
       "ma150": 38676,
       "above_ma150": false,
       "market_cap": 6324,
-      "updated_at": "2026-10-12T00:25:11.767475"
+      "updated_at": "2026-10-12T01:38:48.456357"
     },
     {
       "ticker": "017900",
@@ -2820,12 +2820,12 @@
       "prev_low": 6820,
       "recent_low": 7120,
       "low_rise_percent": 4.4,
-      "per": 11.7,
-      "pbr": 0.48,
+      "per": 145.2,
+      "pbr": 2.23,
       "ma150": 7847,
       "above_ma150": true,
       "market_cap": 6183,
-      "updated_at": "2026-10-12T00:25:11.779863"
+      "updated_at": "2026-10-12T01:38:48.464508"
     },
     {
       "ticker": "025770",
@@ -2837,12 +2837,12 @@
       "prev_low": 7430,
       "recent_low": 7540,
       "low_rise_percent": 1.5,
-      "per": 8.1,
-      "pbr": 0.83,
+      "per": 8.0,
+      "pbr": 0.82,
       "ma150": 8429,
       "above_ma150": false,
       "market_cap": 2932,
-      "updated_at": "2026-10-12T00:25:12.215465"
+      "updated_at": "2026-10-12T01:38:49.065615"
     },
     {
       "ticker": "115310",
@@ -2854,12 +2854,12 @@
       "prev_low": 7470,
       "recent_low": 9000,
       "low_rise_percent": 20.5,
-      "per": null,
-      "pbr": null,
+      "per": 21.8,
+      "pbr": 0.74,
       "ma150": 10271,
       "above_ma150": false,
       "market_cap": 1422,
-      "updated_at": "2026-10-12T00:25:12.074498"
+      "updated_at": "2026-10-12T01:38:48.912003"
     },
     {
       "ticker": "008970",
@@ -2872,11 +2872,11 @@
       "recent_low": 1113,
       "low_rise_percent": 12.4,
       "per": null,
-      "pbr": 1.44,
+      "pbr": 1.04,
       "ma150": 1425,
       "above_ma150": false,
       "market_cap": 1475,
-      "updated_at": "2026-10-12T00:25:11.724967"
+      "updated_at": "2026-10-12T01:38:48.406996"
     },
     {
       "ticker": "039860",
@@ -2888,12 +2888,12 @@
       "prev_low": 3615,
       "recent_low": 4005,
       "low_rise_percent": 10.8,
-      "per": 51.9,
-      "pbr": 2.69,
+      "per": 95.4,
+      "pbr": 1.87,
       "ma150": 4692,
       "above_ma150": false,
       "market_cap": 1714,
-      "updated_at": "2026-10-12T00:25:11.787175"
+      "updated_at": "2026-10-12T01:38:48.474176"
     },
     {
       "ticker": "455900",
@@ -2906,11 +2906,11 @@
       "recent_low": 20000,
       "low_rise_percent": 3.2,
       "per": null,
-      "pbr": 10.26,
+      "pbr": 9.56,
       "ma150": 23816,
       "above_ma150": false,
       "market_cap": 3240,
-      "updated_at": "2026-10-12T00:25:12.024789"
+      "updated_at": "2026-10-12T01:38:48.792775"
     },
     {
       "ticker": "037460",
@@ -2922,12 +2922,12 @@
       "prev_low": 28650,
       "recent_low": 29000,
       "low_rise_percent": 1.2,
-      "per": 6.1,
-      "pbr": 0.91,
+      "per": 6.7,
+      "pbr": 0.96,
       "ma150": 33296,
       "above_ma150": false,
       "market_cap": 5067,
-      "updated_at": "2026-10-12T00:25:11.909922"
+      "updated_at": "2026-10-12T01:38:48.672450"
     },
     {
       "ticker": "051370",
@@ -2939,12 +2939,12 @@
       "prev_low": 5640,
       "recent_low": 5990,
       "low_rise_percent": 6.2,
-      "per": 5.8,
-      "pbr": 1.14,
+      "per": 5.0,
+      "pbr": 0.54,
       "ma150": 9405,
       "above_ma150": false,
       "market_cap": 1652,
-      "updated_at": "2026-10-12T00:25:12.071388"
+      "updated_at": "2026-10-12T01:38:48.910100"
     },
     {
       "ticker": "402340",
@@ -2956,12 +2956,12 @@
       "prev_low": 901000,
       "recent_low": 988000,
       "low_rise_percent": 9.7,
-      "per": 9.2,
-      "pbr": 2.9,
+      "per": 15.8,
+      "pbr": 5.01,
       "ma150": 1031546,
       "above_ma150": true,
       "market_cap": 1397075,
-      "updated_at": "2026-10-12T00:25:11.763933"
+      "updated_at": "2026-10-12T01:38:48.453516"
     },
     {
       "ticker": "108380",
@@ -2973,12 +2973,12 @@
       "prev_low": 16790,
       "recent_low": 17630,
       "low_rise_percent": 5.0,
-      "per": 13.8,
-      "pbr": 1.09,
+      "per": 6.8,
+      "pbr": 0.61,
       "ma150": 21815,
       "above_ma150": false,
       "market_cap": 1698,
-      "updated_at": "2026-10-12T00:25:11.812443"
+      "updated_at": "2026-10-12T01:38:48.517403"
     },
     {
       "ticker": "094820",
@@ -2990,12 +2990,12 @@
       "prev_low": 10660,
       "recent_low": 11420,
       "low_rise_percent": 7.1,
-      "per": 27.5,
-      "pbr": 2.15,
+      "per": 9.6,
+      "pbr": 1.21,
       "ma150": 14455,
       "above_ma150": false,
       "market_cap": 1788,
-      "updated_at": "2026-10-12T00:25:12.085132"
+      "updated_at": "2026-10-12T01:38:48.914523"
     },
     {
       "ticker": "017860",
@@ -3008,11 +3008,11 @@
       "recent_low": 11590,
       "low_rise_percent": 5.4,
       "per": null,
-      "pbr": 1.24,
+      "pbr": 0.84,
       "ma150": 15562,
       "above_ma150": false,
       "market_cap": 2265,
-      "updated_at": "2026-10-12T00:25:11.714784"
+      "updated_at": "2026-10-12T01:38:48.387332"
     },
     {
       "ticker": "032940",
@@ -3024,12 +3024,12 @@
       "prev_low": 5510,
       "recent_low": 8510,
       "low_rise_percent": 54.4,
-      "per": null,
-      "pbr": null,
+      "per": 13.7,
+      "pbr": 0.56,
       "ma150": 8201,
       "above_ma150": true,
       "market_cap": 1570,
-      "updated_at": "2026-10-12T00:25:12.053378"
+      "updated_at": "2026-10-12T01:38:48.891842"
     },
     {
       "ticker": "004310",
@@ -3041,12 +3041,12 @@
       "prev_low": 5600,
       "recent_low": 7700,
       "low_rise_percent": 37.5,
-      "per": 120.3,
-      "pbr": 2.9,
+      "per": 98.7,
+      "pbr": 2.47,
       "ma150": 7643,
       "above_ma150": true,
       "market_cap": 2477,
-      "updated_at": "2026-10-12T00:25:12.245700"
+      "updated_at": "2026-10-12T01:38:49.088909"
     },
     {
       "ticker": "307750",
@@ -3059,11 +3059,11 @@
       "recent_low": 2200,
       "low_rise_percent": 6.5,
       "per": null,
-      "pbr": null,
+      "pbr": 1.55,
       "ma150": 2960,
       "above_ma150": false,
       "market_cap": 1576,
-      "updated_at": "2026-10-12T00:25:11.781058"
+      "updated_at": "2026-10-12T01:38:48.465580"
     },
     {
       "ticker": "086820",
@@ -3075,12 +3075,12 @@
       "prev_low": 5930,
       "recent_low": 6160,
       "low_rise_percent": 3.9,
-      "per": null,
-      "pbr": 10.02,
+      "per": 584.7,
+      "pbr": 4.98,
       "ma150": 8270,
       "above_ma150": false,
       "market_cap": 1698,
-      "updated_at": "2026-10-12T00:25:11.887503"
+      "updated_at": "2026-10-12T01:38:48.655192"
     },
     {
       "ticker": "101490",
@@ -3092,12 +3092,12 @@
       "prev_low": 38600,
       "recent_low": 39100,
       "low_rise_percent": 1.3,
-      "per": 31.4,
-      "pbr": 5.91,
+      "per": 19.4,
+      "pbr": 3.62,
       "ma150": 64464,
       "above_ma150": false,
       "market_cap": 11265,
-      "updated_at": "2026-10-12T00:25:12.000693"
+      "updated_at": "2026-10-12T01:38:48.780787"
     },
     {
       "ticker": "950140",
@@ -3109,12 +3109,12 @@
       "prev_low": 7860,
       "recent_low": 7920,
       "low_rise_percent": 0.8,
-      "per": 10.1,
-      "pbr": 1.51,
+      "per": 6.6,
+      "pbr": 0.99,
       "ma150": 9902,
       "above_ma150": false,
       "market_cap": 1637,
-      "updated_at": "2026-10-12T00:25:12.091880"
+      "updated_at": "2026-10-12T01:38:48.915708"
     },
     {
       "ticker": "389260",
@@ -3126,12 +3126,12 @@
       "prev_low": 12220,
       "recent_low": 12700,
       "low_rise_percent": 3.9,
-      "per": 51.1,
-      "pbr": 3.09,
+      "per": 16.7,
+      "pbr": 1.47,
       "ma150": 16737,
       "above_ma150": false,
       "market_cap": 2420,
-      "updated_at": "2026-10-12T00:25:11.805918"
+      "updated_at": "2026-10-12T01:38:48.514228"
     },
     {
       "ticker": "045970",
@@ -3144,11 +3144,11 @@
       "recent_low": 3035,
       "low_rise_percent": 15.6,
       "per": null,
-      "pbr": null,
+      "pbr": 1.24,
       "ma150": 3968,
       "above_ma150": false,
       "market_cap": 1009,
-      "updated_at": "2026-10-12T00:25:12.139477"
+      "updated_at": "2026-10-12T01:38:48.991159"
     },
     {
       "ticker": "123690",
@@ -3160,12 +3160,12 @@
       "prev_low": 6150,
       "recent_low": 6170,
       "low_rise_percent": 0.3,
-      "per": null,
-      "pbr": null,
+      "per": 91.0,
+      "pbr": 3.05,
       "ma150": 7190,
       "above_ma150": false,
       "market_cap": 1028,
-      "updated_at": "2026-10-12T00:25:12.218090"
+      "updated_at": "2026-10-12T01:38:49.069488"
     },
     {
       "ticker": "054210",
@@ -3177,12 +3177,12 @@
       "prev_low": 6470,
       "recent_low": 6490,
       "low_rise_percent": 0.3,
-      "per": 11.3,
-      "pbr": 0.97,
+      "per": 7.8,
+      "pbr": 0.67,
       "ma150": 8949,
       "above_ma150": false,
       "market_cap": 1806,
-      "updated_at": "2026-10-12T00:25:12.065676"
+      "updated_at": "2026-10-12T01:38:48.904835"
     },
     {
       "ticker": "247540",
@@ -3194,12 +3194,12 @@
       "prev_low": 102166,
       "recent_low": 102200,
       "low_rise_percent": 0.0,
-      "per": 3867.3,
-      "pbr": 10.91,
+      "per": 319.9,
+      "pbr": 7.29,
       "ma150": 155202,
       "above_ma150": false,
       "market_cap": 123755,
-      "updated_at": "2026-10-12T00:25:12.022192"
+      "updated_at": "2026-10-12T01:38:48.788876"
     },
     {
       "ticker": "011170",
@@ -3212,11 +3212,11 @@
       "recent_low": 57000,
       "low_rise_percent": 7.8,
       "per": null,
-      "pbr": 0.29,
+      "pbr": 0.2,
       "ma150": 72790,
       "above_ma150": false,
       "market_cap": 25280,
-      "updated_at": "2026-10-12T00:25:11.862590"
+      "updated_at": "2026-10-12T01:38:48.631416"
     },
     {
       "ticker": "032500",
@@ -3229,11 +3229,11 @@
       "recent_low": 14680,
       "low_rise_percent": 8.7,
       "per": null,
-      "pbr": 9.13,
+      "pbr": 6.17,
       "ma150": 22828,
       "above_ma150": false,
       "market_cap": 8354,
-      "updated_at": "2026-10-12T00:25:12.123505"
+      "updated_at": "2026-10-12T01:38:48.985104"
     },
     {
       "ticker": "078000",
@@ -3245,12 +3245,12 @@
       "prev_low": 12510,
       "recent_low": 12650,
       "low_rise_percent": 1.1,
-      "per": 34.0,
-      "pbr": 1.15,
+      "per": 20.2,
+      "pbr": 0.62,
       "ma150": 14703,
       "above_ma150": false,
       "market_cap": 1257,
-      "updated_at": "2026-10-12T00:25:12.175407"
+      "updated_at": "2026-10-12T01:38:49.041231"
     },
     {
       "ticker": "009070",
@@ -3262,12 +3262,12 @@
       "prev_low": 3835,
       "recent_low": 3925,
       "low_rise_percent": 2.3,
-      "per": 7.9,
-      "pbr": 0.69,
+      "per": 5.9,
+      "pbr": 0.4,
       "ma150": 4854,
       "above_ma150": false,
       "market_cap": 1250,
-      "updated_at": "2026-10-12T00:25:11.729647"
+      "updated_at": "2026-10-12T01:38:48.420591"
     },
     {
       "ticker": "256840",
@@ -3279,12 +3279,12 @@
       "prev_low": 2315,
       "recent_low": 2520,
       "low_rise_percent": 8.9,
-      "per": 20.4,
-      "pbr": 1.18,
+      "per": 73.7,
+      "pbr": 0.9,
       "ma150": 3148,
       "above_ma150": false,
       "market_cap": 2096,
-      "updated_at": "2026-10-12T00:25:12.213647"
+      "updated_at": "2026-10-12T01:38:49.063975"
     },
     {
       "ticker": "006220",
@@ -3296,12 +3296,12 @@
       "prev_low": 8950,
       "recent_low": 9310,
       "low_rise_percent": 4.0,
-      "per": 42.5,
-      "pbr": 0.75,
+      "per": 24.3,
+      "pbr": 0.55,
       "ma150": 11011,
       "above_ma150": false,
       "market_cap": 3549,
-      "updated_at": "2026-10-12T00:25:12.102741"
+      "updated_at": "2026-10-12T01:38:48.973236"
     },
     {
       "ticker": "220260",
@@ -3313,12 +3313,12 @@
       "prev_low": 3500,
       "recent_low": 3650,
       "low_rise_percent": 4.3,
-      "per": null,
-      "pbr": null,
+      "per": 71.1,
+      "pbr": 2.29,
       "ma150": 4581,
       "above_ma150": true,
       "market_cap": 1528,
-      "updated_at": "2026-10-12T00:25:12.130363"
+      "updated_at": "2026-10-12T01:38:48.986701"
     },
     {
       "ticker": "090460",
@@ -3330,12 +3330,12 @@
       "prev_low": 14380,
       "recent_low": 18570,
       "low_rise_percent": 29.1,
-      "per": 11.4,
-      "pbr": 0.98,
+      "per": 23.8,
+      "pbr": 0.94,
       "ma150": 22726,
       "above_ma150": false,
       "market_cap": 7299,
-      "updated_at": "2026-10-12T00:25:11.894504"
+      "updated_at": "2026-10-12T01:38:48.661070"
     },
     {
       "ticker": "053080",
@@ -3348,11 +3348,11 @@
       "recent_low": 8520,
       "low_rise_percent": 0.9,
       "per": null,
-      "pbr": null,
+      "pbr": 0.97,
       "ma150": 10738,
       "above_ma150": false,
       "market_cap": 1195,
-      "updated_at": "2026-10-12T00:25:12.120139"
+      "updated_at": "2026-10-12T01:38:48.984252"
     },
     {
       "ticker": "024840",
@@ -3364,12 +3364,12 @@
       "prev_low": 4905,
       "recent_low": 5150,
       "low_rise_percent": 5.0,
-      "per": 182.6,
-      "pbr": 0.78,
+      "per": 15.1,
+      "pbr": 1.68,
       "ma150": 4547,
       "above_ma150": true,
       "market_cap": 2556,
-      "updated_at": "2026-10-12T00:25:11.727787"
+      "updated_at": "2026-10-12T01:38:48.408137"
     },
     {
       "ticker": "125490",
@@ -3381,12 +3381,12 @@
       "prev_low": 8390,
       "recent_low": 10070,
       "low_rise_percent": 20.0,
-      "per": 44.4,
-      "pbr": 68.15,
+      "per": 108.4,
+      "pbr": 4.39,
       "ma150": 12431,
       "above_ma150": true,
       "market_cap": 4625,
-      "updated_at": "2026-10-12T00:25:12.219214"
+      "updated_at": "2026-10-12T01:38:49.070670"
     },
     {
       "ticker": "035510",
@@ -3398,12 +3398,12 @@
       "prev_low": 12770,
       "recent_low": 13660,
       "low_rise_percent": 7.0,
-      "per": 10.8,
-      "pbr": 0.67,
+      "per": 7.5,
+      "pbr": 0.45,
       "ma150": 15998,
       "above_ma150": false,
       "market_cap": 2052,
-      "updated_at": "2026-10-12T00:25:11.964004"
+      "updated_at": "2026-10-12T01:38:48.755346"
     },
     {
       "ticker": "417200",
@@ -3415,12 +3415,12 @@
       "prev_low": 10430,
       "recent_low": 10880,
       "low_rise_percent": 4.3,
-      "per": 3928.6,
-      "pbr": 9.25,
+      "per": 2556.1,
+      "pbr": 6.01,
       "ma150": 16921,
       "above_ma150": false,
       "market_cap": 11115,
-      "updated_at": "2026-10-12T00:25:11.740211"
+      "updated_at": "2026-10-12T01:38:48.445618"
     },
     {
       "ticker": "272290",
@@ -3432,12 +3432,12 @@
       "prev_low": 19550,
       "recent_low": 19760,
       "low_rise_percent": 1.1,
-      "per": 9.5,
-      "pbr": 1.33,
+      "per": 7.8,
+      "pbr": 1.07,
       "ma150": 26871,
       "above_ma150": false,
       "market_cap": 4446,
-      "updated_at": "2026-10-12T00:25:12.063760"
+      "updated_at": "2026-10-12T01:38:48.903957"
     },
     {
       "ticker": "047310",
@@ -3449,12 +3449,12 @@
       "prev_low": 2780,
       "recent_low": 2890,
       "low_rise_percent": 4.0,
-      "per": null,
-      "pbr": null,
+      "per": 14.8,
+      "pbr": 0.63,
       "ma150": 3987,
       "above_ma150": false,
       "market_cap": 1259,
-      "updated_at": "2026-10-12T00:25:12.181979"
+      "updated_at": "2026-10-12T01:38:49.045968"
     },
     {
       "ticker": "011500",
@@ -3466,12 +3466,12 @@
       "prev_low": 12460,
       "recent_low": 12680,
       "low_rise_percent": 1.8,
-      "per": 72.4,
-      "pbr": 1.96,
+      "per": 59.9,
+      "pbr": 1.33,
       "ma150": 16997,
       "above_ma150": false,
       "market_cap": 2310,
-      "updated_at": "2026-10-12T00:25:12.218618"
+      "updated_at": "2026-10-12T01:38:49.070042"
     },
     {
       "ticker": "000390",
@@ -3483,12 +3483,12 @@
       "prev_low": 6050,
       "recent_low": 6490,
       "low_rise_percent": 7.3,
-      "per": 17.8,
-      "pbr": 0.8,
+      "per": 25.6,
+      "pbr": 0.57,
       "ma150": 7480,
       "above_ma150": false,
       "market_cap": 1959,
-      "updated_at": "2026-10-12T00:25:11.769036"
+      "updated_at": "2026-10-12T01:38:48.457313"
     },
     {
       "ticker": "001430",
@@ -3500,12 +3500,12 @@
       "prev_low": 38450,
       "recent_low": 39650,
       "low_rise_percent": 3.1,
-      "per": 42.2,
-      "pbr": 1.22,
+      "per": 29.9,
+      "pbr": 0.86,
       "ma150": 51612,
       "above_ma150": false,
       "market_cap": 16712,
-      "updated_at": "2026-10-12T00:25:11.934754"
+      "updated_at": "2026-10-12T01:38:48.729914"
     },
     {
       "ticker": "036630",
@@ -3517,12 +3517,12 @@
       "prev_low": 6780,
       "recent_low": 7380,
       "low_rise_percent": 8.8,
-      "per": null,
-      "pbr": null,
+      "per": 21.5,
+      "pbr": 0.46,
       "ma150": 8775,
       "above_ma150": false,
       "market_cap": 1091,
-      "updated_at": "2026-10-12T00:25:11.937148"
+      "updated_at": "2026-10-12T01:38:48.731409"
     },
     {
       "ticker": "217820",
@@ -3534,12 +3534,12 @@
       "prev_low": 1837,
       "recent_low": 1970,
       "low_rise_percent": 7.2,
-      "per": null,
-      "pbr": null,
+      "per": 116.1,
+      "pbr": 1.02,
       "ma150": 2573,
       "above_ma150": false,
       "market_cap": 1110,
-      "updated_at": "2026-10-12T00:25:12.054147"
+      "updated_at": "2026-10-12T01:38:48.892557"
     },
     {
       "ticker": "293490",
@@ -3552,11 +3552,11 @@
       "recent_low": 8620,
       "low_rise_percent": 7.8,
       "per": null,
-      "pbr": 0.82,
+      "pbr": 0.7,
       "ma150": 10104,
       "above_ma150": false,
       "market_cap": 9959,
-      "updated_at": "2026-10-12T00:25:12.116820"
+      "updated_at": "2026-10-12T01:38:48.981065"
     },
     {
       "ticker": "016610",
@@ -3568,12 +3568,12 @@
       "prev_low": 9040,
       "recent_low": 9740,
       "low_rise_percent": 7.7,
-      "per": 11.9,
-      "pbr": 0.57,
+      "per": 5.2,
+      "pbr": 0.36,
       "ma150": 11256,
       "above_ma150": false,
       "market_cap": 4168,
-      "updated_at": "2026-10-12T00:25:11.709762"
+      "updated_at": "2026-10-12T01:38:48.384938"
     },
     {
       "ticker": "297090",
@@ -3585,12 +3585,12 @@
       "prev_low": 3655,
       "recent_low": 4010,
       "low_rise_percent": 9.7,
-      "per": null,
-      "pbr": null,
+      "per": 11.8,
+      "pbr": 1.31,
       "ma150": 5521,
       "above_ma150": false,
       "market_cap": 1327,
-      "updated_at": "2026-10-12T00:25:11.970841"
+      "updated_at": "2026-10-12T01:38:48.763699"
     },
     {
       "ticker": "234340",
@@ -3602,12 +3602,12 @@
       "prev_low": 17580,
       "recent_low": 18250,
       "low_rise_percent": 3.8,
-      "per": 57.6,
-      "pbr": 3.27,
+      "per": 34.4,
+      "pbr": 1.81,
       "ma150": 25031,
       "above_ma150": false,
       "market_cap": 3185,
-      "updated_at": "2026-10-12T00:25:12.239011"
+      "updated_at": "2026-10-12T01:38:49.085228"
     },
     {
       "ticker": "079650",
@@ -3620,11 +3620,11 @@
       "recent_low": 5130,
       "low_rise_percent": 35.9,
       "per": null,
-      "pbr": null,
+      "pbr": 1.49,
       "ma150": 3396,
       "above_ma150": true,
       "market_cap": 1046,
-      "updated_at": "2026-10-12T00:25:11.915758"
+      "updated_at": "2026-10-12T01:38:48.710219"
     },
     {
       "ticker": "476060",
@@ -3636,12 +3636,12 @@
       "prev_low": 13820,
       "recent_low": 14260,
       "low_rise_percent": 3.2,
-      "per": 66.8,
-      "pbr": 14.79,
+      "per": 41.5,
+      "pbr": 9.18,
       "ma150": 17316,
       "above_ma150": false,
       "market_cap": 6698,
-      "updated_at": "2026-10-12T00:25:12.037390"
+      "updated_at": "2026-10-12T01:38:48.803578"
     },
     {
       "ticker": "336370",
@@ -3653,12 +3653,12 @@
       "prev_low": 6970,
       "recent_low": 7190,
       "low_rise_percent": 3.2,
-      "per": null,
+      "per": 14.8,
       "pbr": 1.14,
       "ma150": 9203,
       "above_ma150": false,
       "market_cap": 6066,
-      "updated_at": "2026-10-12T00:25:11.942065"
+      "updated_at": "2026-10-12T01:38:48.740312"
     },
     {
       "ticker": "115440",
@@ -3670,12 +3670,12 @@
       "prev_low": 6700,
       "recent_low": 7120,
       "low_rise_percent": 6.3,
-      "per": null,
-      "pbr": null,
+      "per": 32.2,
+      "pbr": 1.19,
       "ma150": 10008,
       "above_ma150": true,
       "market_cap": 1178,
-      "updated_at": "2026-10-12T00:25:12.044934"
+      "updated_at": "2026-10-12T01:38:48.852318"
     },
     {
       "ticker": "079900",
@@ -3687,12 +3687,12 @@
       "prev_low": 31400,
       "recent_low": 37500,
       "low_rise_percent": 19.4,
-      "per": 27.9,
-      "pbr": 5.55,
+      "per": 17.5,
+      "pbr": 3.53,
       "ma150": 48026,
       "above_ma150": false,
       "market_cap": 5545,
-      "updated_at": "2026-10-12T00:25:12.093618"
+      "updated_at": "2026-10-12T01:38:48.934360"
     },
     {
       "ticker": "023160",
@@ -3704,12 +3704,12 @@
       "prev_low": 20050,
       "recent_low": 25200,
       "low_rise_percent": 25.7,
-      "per": 21.1,
-      "pbr": 1.64,
+      "per": 10.9,
+      "pbr": 1.09,
       "ma150": 30364,
       "above_ma150": false,
       "market_cap": 6777,
-      "updated_at": "2026-10-12T00:25:12.170938"
+      "updated_at": "2026-10-12T01:38:49.038759"
     },
     {
       "ticker": "059120",
@@ -3721,12 +3721,12 @@
       "prev_low": 6020,
       "recent_low": 6550,
       "low_rise_percent": 8.8,
-      "per": null,
-      "pbr": null,
+      "per": 172.8,
+      "pbr": 3.31,
       "ma150": 7274,
       "above_ma150": true,
       "market_cap": 1362,
-      "updated_at": "2026-10-12T00:25:11.991174"
+      "updated_at": "2026-10-12T01:38:48.773957"
     },
     {
       "ticker": "041020",
@@ -3738,12 +3738,12 @@
       "prev_low": 2805,
       "recent_low": 2880,
       "low_rise_percent": 2.7,
-      "per": 35.5,
-      "pbr": 2.33,
+      "per": 31.2,
+      "pbr": 1.69,
       "ma150": 3629,
       "above_ma150": false,
       "market_cap": 1515,
-      "updated_at": "2026-10-12T00:25:12.196858"
+      "updated_at": "2026-10-12T01:38:49.050887"
     },
     {
       "ticker": "066970",
@@ -3756,11 +3756,11 @@
       "recent_low": 104600,
       "low_rise_percent": 20.8,
       "per": null,
-      "pbr": 5.64,
+      "pbr": 6.65,
       "ma150": 129969,
       "above_ma150": false,
       "market_cap": 47033,
-      "updated_at": "2026-10-12T00:25:12.026633"
+      "updated_at": "2026-10-12T01:38:48.794160"
     },
     {
       "ticker": "046970",
@@ -3772,12 +3772,12 @@
       "prev_low": 4075,
       "recent_low": 4870,
       "low_rise_percent": 19.5,
-      "per": null,
-      "pbr": 2.85,
+      "per": 100.4,
+      "pbr": 9.23,
       "ma150": 6229,
       "above_ma150": true,
       "market_cap": 3646,
-      "updated_at": "2026-10-12T00:25:12.045352"
+      "updated_at": "2026-10-12T01:38:48.888624"
     },
     {
       "ticker": "304360",
@@ -3790,11 +3790,11 @@
       "recent_low": 19350,
       "low_rise_percent": 5.6,
       "per": null,
-      "pbr": 32.92,
+      "pbr": 30.64,
       "ma150": 25639,
       "above_ma150": false,
       "market_cap": 2740,
-      "updated_at": "2026-10-12T00:25:11.998439"
+      "updated_at": "2026-10-12T01:38:48.779366"
     },
     {
       "ticker": "033100",
@@ -3806,12 +3806,12 @@
       "prev_low": 43150,
       "recent_low": 44000,
       "low_rise_percent": 2.0,
-      "per": 13.6,
-      "pbr": 3.34,
+      "per": 13.2,
+      "pbr": 3.24,
       "ma150": 51357,
       "above_ma150": false,
       "market_cap": 7758,
-      "updated_at": "2026-10-12T00:25:12.098004"
+      "updated_at": "2026-10-12T01:38:48.936296"
     },
     {
       "ticker": "042600",
@@ -3823,12 +3823,12 @@
       "prev_low": 9410,
       "recent_low": 10600,
       "low_rise_percent": 12.6,
-      "per": null,
-      "pbr": null,
+      "per": 8.0,
+      "pbr": 1.64,
       "ma150": 13638,
       "above_ma150": false,
       "market_cap": 1488,
-      "updated_at": "2026-10-12T00:25:11.913532"
+      "updated_at": "2026-10-12T01:38:48.709115"
     },
     {
       "ticker": "295310",
@@ -3840,12 +3840,12 @@
       "prev_low": 41300,
       "recent_low": 47000,
       "low_rise_percent": 13.8,
-      "per": null,
-      "pbr": 16.62,
+      "per": 70.0,
+      "pbr": 9.8,
       "ma150": 72464,
       "above_ma150": true,
       "market_cap": 9323,
-      "updated_at": "2026-10-12T00:25:12.019609"
+      "updated_at": "2026-10-12T01:38:48.786502"
     },
     {
       "ticker": "144510",
@@ -3858,11 +3858,11 @@
       "recent_low": 13700,
       "low_rise_percent": 5.3,
       "per": null,
-      "pbr": 1.51,
+      "pbr": 1.18,
       "ma150": 18322,
       "above_ma150": false,
       "market_cap": 2321,
-      "updated_at": "2026-10-12T00:25:12.109216"
+      "updated_at": "2026-10-12T01:38:48.976364"
     },
     {
       "ticker": "201490",
@@ -3874,12 +3874,12 @@
       "prev_low": 2120,
       "recent_low": 2500,
       "low_rise_percent": 17.9,
-      "per": null,
-      "pbr": null,
+      "per": 130.6,
+      "pbr": 0.72,
       "ma150": 2732,
       "above_ma150": true,
       "market_cap": 1065,
-      "updated_at": "2026-10-12T00:25:11.880276"
+      "updated_at": "2026-10-12T01:38:48.651846"
     },
     {
       "ticker": "123040",
@@ -3892,11 +3892,11 @@
       "recent_low": 1615,
       "low_rise_percent": 0.1,
       "per": null,
-      "pbr": null,
+      "pbr": 0.52,
       "ma150": 1960,
       "above_ma150": false,
       "market_cap": 1087,
-      "updated_at": "2026-10-12T00:25:12.031171"
+      "updated_at": "2026-10-12T01:38:48.798521"
     },
     {
       "ticker": "425040",
@@ -3908,12 +3908,12 @@
       "prev_low": 8100,
       "recent_low": 8450,
       "low_rise_percent": 4.3,
-      "per": 18.0,
-      "pbr": 1.24,
+      "per": 20.9,
+      "pbr": 1.65,
       "ma150": 12969,
       "above_ma150": true,
       "market_cap": 3431,
-      "updated_at": "2026-10-12T00:25:12.178985"
+      "updated_at": "2026-10-12T01:38:49.044735"
     },
     {
       "ticker": "053350",
@@ -3925,12 +3925,12 @@
       "prev_low": 3590,
       "recent_low": 3800,
       "low_rise_percent": 5.8,
-      "per": null,
-      "pbr": null,
+      "per": 35.5,
+      "pbr": 0.72,
       "ma150": 3376,
       "above_ma150": true,
       "market_cap": 1083,
-      "updated_at": "2026-10-12T00:25:12.065153"
+      "updated_at": "2026-10-12T01:38:48.904321"
     },
     {
       "ticker": "271980",
@@ -3942,12 +3942,12 @@
       "prev_low": 9690,
       "recent_low": 9750,
       "low_rise_percent": 0.6,
-      "per": 9.0,
-      "pbr": 0.98,
+      "per": 6.3,
+      "pbr": 0.69,
       "ma150": 11668,
       "above_ma150": false,
       "market_cap": 1470,
-      "updated_at": "2026-10-12T00:25:12.101636"
+      "updated_at": "2026-10-12T01:38:48.972154"
     },
     {
       "ticker": "306620",
@@ -3960,11 +3960,11 @@
       "recent_low": 1734,
       "low_rise_percent": 9.7,
       "per": null,
-      "pbr": null,
+      "pbr": 2.08,
       "ma150": 2486,
       "above_ma150": false,
       "market_cap": 1028,
-      "updated_at": "2026-10-12T00:25:12.109769"
+      "updated_at": "2026-10-12T01:38:48.976894"
     },
     {
       "ticker": "086960",
@@ -3976,12 +3976,12 @@
       "prev_low": 1835,
       "recent_low": 1900,
       "low_rise_percent": 3.5,
-      "per": null,
-      "pbr": null,
+      "per": 10.7,
+      "pbr": 0.65,
       "ma150": 2466,
       "above_ma150": false,
       "market_cap": 1006,
-      "updated_at": "2026-10-12T00:25:11.741440"
+      "updated_at": "2026-10-12T01:38:48.446775"
     },
     {
       "ticker": "171090",
@@ -3993,12 +3993,12 @@
       "prev_low": 58900,
       "recent_low": 63800,
       "low_rise_percent": 8.3,
-      "per": 7.8,
-      "pbr": 19.06,
+      "per": 7.4,
+      "pbr": 4.6,
       "ma150": 79010,
       "above_ma150": false,
       "market_cap": 7565,
-      "updated_at": "2026-10-12T00:25:11.919427"
+      "updated_at": "2026-10-12T01:38:48.719186"
     },
     {
       "ticker": "002030",
@@ -4010,12 +4010,12 @@
       "prev_low": 174500,
       "recent_low": 195400,
       "low_rise_percent": 12.0,
-      "per": 9.4,
-      "pbr": 0.49,
+      "per": 14.5,
+      "pbr": 0.3,
       "ma150": 221805,
       "above_ma150": false,
       "market_cap": 4313,
-      "updated_at": "2026-10-12T00:25:11.983980"
+      "updated_at": "2026-10-12T01:38:48.768592"
     },
     {
       "ticker": "015590",
@@ -4028,11 +4028,11 @@
       "recent_low": 1538,
       "low_rise_percent": 14.7,
       "per": null,
-      "pbr": null,
+      "pbr": 0.84,
       "ma150": 2182,
       "above_ma150": true,
       "market_cap": 1188,
-      "updated_at": "2026-10-12T00:25:11.712991"
+      "updated_at": "2026-10-12T01:38:48.386011"
     },
     {
       "ticker": "054450",
@@ -4045,11 +4045,11 @@
       "recent_low": 9080,
       "low_rise_percent": 1.3,
       "per": null,
-      "pbr": 0.96,
+      "pbr": 1.05,
       "ma150": 11790,
       "above_ma150": false,
       "market_cap": 1546,
-      "updated_at": "2026-10-12T00:25:12.174711"
+      "updated_at": "2026-10-12T01:38:49.040863"
     },
     {
       "ticker": "458650",
@@ -4061,12 +4061,12 @@
       "prev_low": 7400,
       "recent_low": 7410,
       "low_rise_percent": 0.1,
-      "per": 9.2,
-      "pbr": 0.88,
+      "per": 25.4,
+      "pbr": 0.55,
       "ma150": 10331,
       "above_ma150": false,
       "market_cap": 1217,
-      "updated_at": "2026-10-12T00:25:11.923721"
+      "updated_at": "2026-10-12T01:38:48.720425"
     },
     {
       "ticker": "361610",
@@ -4079,11 +4079,11 @@
       "recent_low": 15570,
       "low_rise_percent": 13.2,
       "per": null,
-      "pbr": 0.7,
+      "pbr": 0.58,
       "ma150": 18970,
       "above_ma150": false,
       "market_cap": 15065,
-      "updated_at": "2026-10-12T00:25:11.764323"
+      "updated_at": "2026-10-12T01:38:48.454200"
     },
     {
       "ticker": "073490",
@@ -4095,12 +4095,12 @@
       "prev_low": 27650,
       "recent_low": 28350,
       "low_rise_percent": 2.5,
-      "per": 127.1,
-      "pbr": 1.9,
+      "per": 24.6,
+      "pbr": 1.51,
       "ma150": 36144,
       "above_ma150": false,
       "market_cap": 2502,
-      "updated_at": "2026-10-12T00:25:11.738437"
+      "updated_at": "2026-10-12T01:38:48.443981"
     },
     {
       "ticker": "035890",
@@ -4112,12 +4112,12 @@
       "prev_low": 2010,
       "recent_low": 2085,
       "low_rise_percent": 3.7,
-      "per": 2.3,
+      "per": 4.0,
       "pbr": 0.36,
       "ma150": 2491,
       "above_ma150": false,
       "market_cap": 4370,
-      "updated_at": "2026-10-12T00:25:11.918734"
+      "updated_at": "2026-10-12T01:38:48.718438"
     },
     {
       "ticker": "331920",
@@ -4130,11 +4130,11 @@
       "recent_low": 9870,
       "low_rise_percent": 19.8,
       "per": null,
-      "pbr": null,
+      "pbr": 3.84,
       "ma150": 11904,
       "above_ma150": false,
       "market_cap": 1167,
-      "updated_at": "2026-10-12T00:25:11.938852"
+      "updated_at": "2026-10-12T01:38:48.732314"
     },
     {
       "ticker": "259630",
@@ -4146,12 +4146,12 @@
       "prev_low": 8810,
       "recent_low": 8900,
       "low_rise_percent": 1.0,
-      "per": null,
-      "pbr": null,
+      "per": 6.2,
+      "pbr": 1.21,
       "ma150": 11898,
       "above_ma150": false,
       "market_cap": 1292,
-      "updated_at": "2026-10-12T00:25:12.032592"
+      "updated_at": "2026-10-12T01:38:48.799094"
     },
     {
       "ticker": "282880",
@@ -4163,12 +4163,12 @@
       "prev_low": 9270,
       "recent_low": 9710,
       "low_rise_percent": 4.7,
-      "per": null,
-      "pbr": null,
+      "per": 76.8,
+      "pbr": 0.74,
       "ma150": 12364,
       "above_ma150": false,
       "market_cap": 1300,
-      "updated_at": "2026-10-12T00:25:12.141341"
+      "updated_at": "2026-10-12T01:38:49.003132"
     },
     {
       "ticker": "016360",
@@ -4180,12 +4180,12 @@
       "prev_low": 83400,
       "recent_low": 84700,
       "low_rise_percent": 1.6,
-      "per": 10.2,
-      "pbr": 1.25,
+      "per": 7.6,
+      "pbr": 0.95,
       "ma150": 103614,
       "above_ma150": false,
       "market_cap": 76709,
-      "updated_at": "2026-10-12T00:25:11.904685"
+      "updated_at": "2026-10-12T01:38:48.668838"
     },
     {
       "ticker": "014530",
@@ -4197,12 +4197,12 @@
       "prev_low": 3120,
       "recent_low": 3210,
       "low_rise_percent": 2.9,
-      "per": 14.4,
-      "pbr": 0.62,
+      "per": 103.4,
+      "pbr": 0.57,
       "ma150": 3497,
       "above_ma150": false,
       "market_cap": 1193,
-      "updated_at": "2026-10-12T00:25:11.782499"
+      "updated_at": "2026-10-12T01:38:48.466959"
     },
     {
       "ticker": "475560",
@@ -4214,12 +4214,12 @@
       "prev_low": 13910,
       "recent_low": 13950,
       "low_rise_percent": 0.3,
-      "per": 8.2,
-      "pbr": 1.17,
+      "per": null,
+      "pbr": 0.85,
       "ma150": 17377,
       "above_ma150": false,
       "market_cap": 2086,
-      "updated_at": "2026-10-12T00:25:11.827135"
+      "updated_at": "2026-10-12T01:38:48.555443"
     },
     {
       "ticker": "462860",
@@ -4231,12 +4231,12 @@
       "prev_low": 1878,
       "recent_low": 2490,
       "low_rise_percent": 32.6,
-      "per": 23.1,
-      "pbr": 5.7,
+      "per": 18.2,
+      "pbr": 2.81,
       "ma150": 2866,
       "above_ma150": true,
       "market_cap": 2106,
-      "updated_at": "2026-10-12T00:25:11.829206"
+      "updated_at": "2026-10-12T01:38:48.564176"
     },
     {
       "ticker": "243840",
@@ -4248,12 +4248,12 @@
       "prev_low": 4745,
       "recent_low": 5290,
       "low_rise_percent": 11.5,
-      "per": 13.5,
-      "pbr": 0.82,
+      "per": 12.9,
+      "pbr": 0.83,
       "ma150": 6396,
       "above_ma150": true,
       "market_cap": 2514,
-      "updated_at": "2026-10-12T00:25:11.966236"
+      "updated_at": "2026-10-12T01:38:48.757360"
     },
     {
       "ticker": "138080",
@@ -4266,11 +4266,11 @@
       "recent_low": 21100,
       "low_rise_percent": 5.0,
       "per": null,
-      "pbr": 4.37,
+      "pbr": 5.33,
       "ma150": 30384,
       "above_ma150": true,
       "market_cap": 3806,
-      "updated_at": "2026-10-12T00:25:12.035719"
+      "updated_at": "2026-10-12T01:38:48.802796"
     },
     {
       "ticker": "120110",
@@ -4282,12 +4282,12 @@
       "prev_low": 49200,
       "recent_low": 53000,
       "low_rise_percent": 7.7,
-      "per": 21.5,
-      "pbr": 0.58,
+      "per": 43.8,
+      "pbr": 0.43,
       "ma150": 66769,
       "above_ma150": false,
       "market_cap": 16680,
-      "updated_at": "2026-10-12T00:25:12.140608"
+      "updated_at": "2026-10-12T01:38:48.992061"
     },
     {
       "ticker": "118990",
@@ -4299,12 +4299,12 @@
       "prev_low": 5025,
       "recent_low": 5950,
       "low_rise_percent": 18.4,
-      "per": 12.3,
-      "pbr": 0.95,
+      "per": 20.9,
+      "pbr": 0.61,
       "ma150": 7042,
       "above_ma150": false,
       "market_cap": 1509,
-      "updated_at": "2026-10-12T00:25:11.875518"
+      "updated_at": "2026-10-12T01:38:48.642808"
     },
     {
       "ticker": "005010",
@@ -4316,12 +4316,12 @@
       "prev_low": 3560,
       "recent_low": 3800,
       "low_rise_percent": 6.7,
-      "per": 13.8,
-      "pbr": 0.28,
+      "per": null,
+      "pbr": 0.21,
       "ma150": 4559,
       "above_ma150": false,
       "market_cap": 2180,
-      "updated_at": "2026-10-12T00:25:12.252523"
+      "updated_at": "2026-10-12T01:38:49.094413"
     },
     {
       "ticker": "216080",
@@ -4334,11 +4334,11 @@
       "recent_low": 5820,
       "low_rise_percent": 45.1,
       "per": null,
-      "pbr": 4.28,
+      "pbr": 3.25,
       "ma150": 6070,
       "above_ma150": false,
       "market_cap": 2241,
-      "updated_at": "2026-10-12T00:25:12.103219"
+      "updated_at": "2026-10-12T01:38:48.973763"
     },
     {
       "ticker": "289080",
@@ -4351,11 +4351,11 @@
       "recent_low": 2405,
       "low_rise_percent": 24.5,
       "per": null,
-      "pbr": null,
+      "pbr": 2.09,
       "ma150": 2840,
       "above_ma150": false,
       "market_cap": 1615,
-      "updated_at": "2026-10-12T00:25:11.769711"
+      "updated_at": "2026-10-12T01:38:48.458002"
     },
     {
       "ticker": "009290",
@@ -4367,12 +4367,12 @@
       "prev_low": 5920,
       "recent_low": 6130,
       "low_rise_percent": 3.5,
-      "per": 11.9,
-      "pbr": 0.76,
+      "per": 17.3,
+      "pbr": 0.52,
       "ma150": 7064,
       "above_ma150": false,
       "market_cap": 3406,
-      "updated_at": "2026-10-12T00:25:11.779055"
+      "updated_at": "2026-10-12T01:38:48.464158"
     },
     {
       "ticker": "393890",
@@ -4385,11 +4385,11 @@
       "recent_low": 9230,
       "low_rise_percent": 21.3,
       "per": null,
-      "pbr": 0.46,
+      "pbr": 0.43,
       "ma150": 11916,
       "above_ma150": false,
       "market_cap": 3865,
-      "updated_at": "2026-10-12T00:25:11.828789"
+      "updated_at": "2026-10-12T01:38:48.563460"
     },
     {
       "ticker": "000150",
@@ -4401,12 +4401,12 @@
       "prev_low": 1000000,
       "recent_low": 1232000,
       "low_rise_percent": 23.2,
-      "per": 360.4,
-      "pbr": 15.25,
+      "per": 378.5,
+      "pbr": 15.35,
       "ma150": 1359800,
       "above_ma150": false,
       "market_cap": 215540,
-      "updated_at": "2026-10-12T00:25:11.844164"
+      "updated_at": "2026-10-12T01:38:48.592481"
     },
     {
       "ticker": "089980",
@@ -4418,12 +4418,12 @@
       "prev_low": 13880,
       "recent_low": 14370,
       "low_rise_percent": 3.5,
-      "per": 61.0,
-      "pbr": 1.98,
+      "per": 38.2,
+      "pbr": 1.24,
       "ma150": 19025,
       "above_ma150": false,
       "market_cap": 2573,
-      "updated_at": "2026-10-12T00:25:11.912116"
+      "updated_at": "2026-10-12T01:38:48.708727"
     },
     {
       "ticker": "137400",
@@ -4435,12 +4435,12 @@
       "prev_low": 27650,
       "recent_low": 28050,
       "low_rise_percent": 1.4,
-      "per": 16.6,
-      "pbr": 1.76,
+      "per": 11.4,
+      "pbr": 1.2,
       "ma150": 40026,
       "above_ma150": false,
       "market_cap": 7853,
-      "updated_at": "2026-10-12T00:25:12.201695"
+      "updated_at": "2026-10-12T01:38:49.054351"
     },
     {
       "ticker": "190510",
@@ -4452,12 +4452,12 @@
       "prev_low": 12660,
       "recent_low": 14610,
       "low_rise_percent": 15.4,
-      "per": 11.5,
-      "pbr": 1.62,
+      "per": 9.1,
+      "pbr": 1.26,
       "ma150": 16013,
       "above_ma150": false,
       "market_cap": 2159,
-      "updated_at": "2026-10-12T00:25:11.789042"
+      "updated_at": "2026-10-12T01:38:48.475371"
     },
     {
       "ticker": "000720",
@@ -4469,12 +4469,12 @@
       "prev_low": 103300,
       "recent_low": 103950,
       "low_rise_percent": 0.6,
-      "per": 49.4,
-      "pbr": 2.23,
+      "per": 32.5,
+      "pbr": 1.47,
       "ma150": 134430,
       "above_ma150": false,
       "market_cap": 118371,
-      "updated_at": "2026-10-12T00:25:12.239787"
+      "updated_at": "2026-10-12T01:38:49.085988"
     },
     {
       "ticker": "354320",
@@ -4486,12 +4486,12 @@
       "prev_low": 26400,
       "recent_low": 33050,
       "low_rise_percent": 25.2,
-      "per": 460.5,
-      "pbr": 2.14,
+      "per": 110.0,
+      "pbr": 2.43,
       "ma150": 50682,
       "above_ma150": true,
       "market_cap": 3579,
-      "updated_at": "2026-10-12T00:25:11.993545"
+      "updated_at": "2026-10-12T01:38:48.775378"
     },
     {
       "ticker": "010170",
@@ -4504,11 +4504,11 @@
       "recent_low": 13420,
       "low_rise_percent": 14.2,
       "per": null,
-      "pbr": 16.04,
+      "pbr": 34.58,
       "ma150": 14279,
       "above_ma150": true,
       "market_cap": 26386,
-      "updated_at": "2026-10-12T00:25:11.818661"
+      "updated_at": "2026-10-12T01:38:48.523611"
     },
     {
       "ticker": "064550",
@@ -4521,11 +4521,11 @@
       "recent_low": 8150,
       "low_rise_percent": 19.0,
       "per": null,
-      "pbr": 1.44,
+      "pbr": 1.04,
       "ma150": 9048,
       "above_ma150": false,
       "market_cap": 2178,
-      "updated_at": "2026-10-12T00:25:11.884084"
+      "updated_at": "2026-10-12T01:38:48.654442"
     },
     {
       "ticker": "081000",
@@ -4537,12 +4537,12 @@
       "prev_low": 8710,
       "recent_low": 8910,
       "low_rise_percent": 2.3,
-      "per": 29.3,
-      "pbr": 0.49,
+      "per": 19.4,
+      "pbr": 0.32,
       "ma150": 11139,
       "above_ma150": false,
       "market_cap": 1319,
-      "updated_at": "2026-10-12T00:25:12.079752"
+      "updated_at": "2026-10-12T01:38:48.913845"
     },
     {
       "ticker": "014280",
@@ -4555,11 +4555,11 @@
       "recent_low": 4270,
       "low_rise_percent": 3.5,
       "per": null,
-      "pbr": 0.41,
+      "pbr": 0.37,
       "ma150": 4613,
       "above_ma150": false,
       "market_cap": 1343,
-      "updated_at": "2026-10-12T00:25:11.783442"
+      "updated_at": "2026-10-12T01:38:48.469374"
     },
     {
       "ticker": "014620",
@@ -4571,12 +4571,12 @@
       "prev_low": 22550,
       "recent_low": 28200,
       "low_rise_percent": 25.1,
-      "per": 25.9,
-      "pbr": 1.93,
+      "per": 22.6,
+      "pbr": 1.39,
       "ma150": 32328,
       "above_ma150": false,
       "market_cap": 7662,
-      "updated_at": "2026-10-12T00:25:11.919992"
+      "updated_at": "2026-10-12T01:38:48.719696"
     },
     {
       "ticker": "067390",
@@ -4588,12 +4588,12 @@
       "prev_low": 4755,
       "recent_low": 5280,
       "low_rise_percent": 11.0,
-      "per": 30.7,
-      "pbr": 0.92,
+      "per": null,
+      "pbr": 0.73,
       "ma150": 6217,
       "above_ma150": false,
       "market_cap": 2367,
-      "updated_at": "2026-10-12T00:25:11.986191"
+      "updated_at": "2026-10-12T01:38:48.769699"
     },
     {
       "ticker": "307180",
@@ -4605,12 +4605,12 @@
       "prev_low": 4255,
       "recent_low": 5090,
       "low_rise_percent": 19.6,
-      "per": 349.4,
-      "pbr": 12.62,
+      "per": null,
+      "pbr": 8.87,
       "ma150": 5705,
       "above_ma150": false,
       "market_cap": 2078,
-      "updated_at": "2026-10-12T00:25:11.989096"
+      "updated_at": "2026-10-12T01:38:48.771979"
     },
     {
       "ticker": "260970",
@@ -4622,12 +4622,12 @@
       "prev_low": 49050,
       "recent_low": 50300,
       "low_rise_percent": 2.5,
-      "per": 7.7,
-      "pbr": 1.83,
+      "per": 8.6,
+      "pbr": 2.06,
       "ma150": 54343,
       "above_ma150": true,
       "market_cap": 1779,
-      "updated_at": "2026-10-12T00:25:12.000274"
+      "updated_at": "2026-10-12T01:38:48.780400"
     },
     {
       "ticker": "054920",
@@ -4639,12 +4639,12 @@
       "prev_low": 3440,
       "recent_low": 3595,
       "low_rise_percent": 4.5,
-      "per": null,
-      "pbr": null,
+      "per": 17.5,
+      "pbr": 0.84,
       "ma150": 4609,
       "above_ma150": true,
       "market_cap": 1370,
-      "updated_at": "2026-10-12T00:25:12.230552"
+      "updated_at": "2026-10-12T01:38:49.081544"
     },
     {
       "ticker": "205500",
@@ -4656,12 +4656,12 @@
       "prev_low": 1477,
       "recent_low": 1693,
       "low_rise_percent": 14.6,
-      "per": null,
-      "pbr": 3.09,
+      "per": 45.2,
+      "pbr": 3.55,
       "ma150": 1724,
       "above_ma150": true,
       "market_cap": 1505,
-      "updated_at": "2026-10-12T00:25:11.797915"
+      "updated_at": "2026-10-12T01:38:48.481587"
     },
     {
       "ticker": "271940",
@@ -4674,11 +4674,11 @@
       "recent_low": 10580,
       "low_rise_percent": 4.4,
       "per": null,
-      "pbr": 2.02,
+      "pbr": 1.32,
       "ma150": 13302,
       "above_ma150": false,
       "market_cap": 4176,
-      "updated_at": "2026-10-12T00:25:12.086729"
+      "updated_at": "2026-10-12T01:38:48.914880"
     },
     {
       "ticker": "033530",
@@ -4690,12 +4690,12 @@
       "prev_low": 6440,
       "recent_low": 6510,
       "low_rise_percent": 1.1,
-      "per": 3.3,
-      "pbr": 0.43,
+      "per": 2.8,
+      "pbr": 0.35,
       "ma150": 7165,
       "above_ma150": false,
       "market_cap": 1861,
-      "updated_at": "2026-10-12T00:25:11.756394"
+      "updated_at": "2026-10-12T01:38:48.451864"
     },
     {
       "ticker": "226950",
@@ -4708,11 +4708,11 @@
       "recent_low": 92600,
       "low_rise_percent": 1.5,
       "per": null,
-      "pbr": 193.29,
+      "pbr": 17.41,
       "ma150": 142336,
       "above_ma150": false,
       "market_cap": 26992,
-      "updated_at": "2026-10-12T00:25:12.037790"
+      "updated_at": "2026-10-12T01:38:48.814964"
     },
     {
       "ticker": "372170",
@@ -4724,12 +4724,12 @@
       "prev_low": 17840,
       "recent_low": 19370,
       "low_rise_percent": 8.6,
-      "per": 6.2,
-      "pbr": 1.17,
+      "per": 28.5,
+      "pbr": 1.07,
       "ma150": 24223,
       "above_ma150": false,
       "market_cap": 1907,
-      "updated_at": "2026-10-12T00:25:12.062422"
+      "updated_at": "2026-10-12T01:38:48.902674"
     },
     {
       "ticker": "000490",
@@ -4742,11 +4742,11 @@
       "recent_low": 7370,
       "low_rise_percent": 10.7,
       "per": null,
-      "pbr": 0.61,
+      "pbr": 0.41,
       "ma150": 8472,
       "above_ma150": false,
       "market_cap": 2142,
-      "updated_at": "2026-10-12T00:25:11.803849"
+      "updated_at": "2026-10-12T01:38:48.513395"
     },
     {
       "ticker": "085620",
@@ -4758,12 +4758,12 @@
       "prev_low": 17320,
       "recent_low": 18510,
       "low_rise_percent": 6.9,
-      "per": 25.1,
-      "pbr": 1.16,
+      "per": 30.9,
+      "pbr": 1.09,
       "ma150": 18583,
       "above_ma150": true,
       "market_cap": 27509,
-      "updated_at": "2026-10-12T00:25:11.878773"
+      "updated_at": "2026-10-12T01:38:48.647109"
     },
     {
       "ticker": "043260",
@@ -4775,12 +4775,12 @@
       "prev_low": 14000,
       "recent_low": 15680,
       "low_rise_percent": 12.0,
-      "per": 342.2,
-      "pbr": 19.28,
+      "per": 24.2,
+      "pbr": 9.16,
       "ma150": 32307,
       "above_ma150": true,
       "market_cap": 24560,
-      "updated_at": "2026-10-12T00:25:11.928196"
+      "updated_at": "2026-10-12T01:38:48.725526"
     },
     {
       "ticker": "046890",
@@ -4793,11 +4793,11 @@
       "recent_low": 9510,
       "low_rise_percent": 5.7,
       "per": null,
-      "pbr": 0.85,
+      "pbr": 0.95,
       "ma150": 11094,
       "above_ma150": false,
       "market_cap": 6052,
-      "updated_at": "2026-10-12T00:25:11.917711"
+      "updated_at": "2026-10-12T01:38:48.711361"
     },
     {
       "ticker": "388050",
@@ -4809,12 +4809,12 @@
       "prev_low": 7700,
       "recent_low": 9520,
       "low_rise_percent": 23.6,
-      "per": 60.0,
-      "pbr": 6.88,
+      "per": 34.1,
+      "pbr": 4.5,
       "ma150": 10320,
       "above_ma150": false,
       "market_cap": 1890,
-      "updated_at": "2026-10-12T00:25:12.111414"
+      "updated_at": "2026-10-12T01:38:48.978482"
     },
     {
       "ticker": "294570",
@@ -4826,12 +4826,12 @@
       "prev_low": 19570,
       "recent_low": 23750,
       "low_rise_percent": 21.4,
-      "per": 14.8,
-      "pbr": 1.83,
+      "per": 12.4,
+      "pbr": 1.54,
       "ma150": 25098,
       "above_ma150": true,
       "market_cap": 2624,
-      "updated_at": "2026-10-12T00:25:12.143505"
+      "updated_at": "2026-10-12T01:38:49.004190"
     },
     {
       "ticker": "261780",
@@ -4844,11 +4844,11 @@
       "recent_low": 2750,
       "low_rise_percent": 37.5,
       "per": null,
-      "pbr": null,
+      "pbr": 8.35,
       "ma150": 3060,
       "above_ma150": true,
       "market_cap": 1070,
-      "updated_at": "2026-10-12T00:25:11.972515"
+      "updated_at": "2026-10-12T01:38:48.765553"
     },
     {
       "ticker": "064850",
@@ -4860,12 +4860,12 @@
       "prev_low": 14740,
       "recent_low": 16650,
       "low_rise_percent": 13.0,
-      "per": 22.7,
-      "pbr": 3.25,
+      "per": 23.7,
+      "pbr": 3.4,
       "ma150": 22046,
       "above_ma150": false,
       "market_cap": 2322,
-      "updated_at": "2026-10-12T00:25:12.022794"
+      "updated_at": "2026-10-12T01:38:48.789419"
     },
     {
       "ticker": "041440",
@@ -4877,12 +4877,12 @@
       "prev_low": 5970,
       "recent_low": 6150,
       "low_rise_percent": 3.0,
-      "per": null,
-      "pbr": null,
+      "per": 24.0,
+      "pbr": 0.58,
       "ma150": 7546,
       "above_ma150": false,
       "market_cap": 1112,
-      "updated_at": "2026-10-12T00:25:12.246086"
+      "updated_at": "2026-10-12T01:38:49.089273"
     },
     {
       "ticker": "034020",
@@ -4894,12 +4894,12 @@
       "prev_low": 71800,
       "recent_low": 75200,
       "low_rise_percent": 4.7,
-      "per": 630.4,
-      "pbr": 9.36,
+      "per": 589.5,
+      "pbr": 6.42,
       "ma150": 93060,
       "above_ma150": false,
       "market_cap": 491310,
-      "updated_at": "2026-10-12T00:25:11.845458"
+      "updated_at": "2026-10-12T01:38:48.599474"
     },
     {
       "ticker": "416180",
@@ -4911,12 +4911,12 @@
       "prev_low": 19860,
       "recent_low": 23500,
       "low_rise_percent": 18.3,
-      "per": 569.0,
-      "pbr": 2.92,
+      "per": 470.2,
+      "pbr": 2.46,
       "ma150": 27738,
       "above_ma150": true,
       "market_cap": 2585,
-      "updated_at": "2026-10-12T00:25:11.955140"
+      "updated_at": "2026-10-12T01:38:48.754430"
     },
     {
       "ticker": "001040",
@@ -4928,12 +4928,12 @@
       "prev_low": 117300,
       "recent_low": 125700,
       "low_rise_percent": 7.2,
-      "per": 73.5,
-      "pbr": 1.32,
+      "per": 32.5,
+      "pbr": 0.84,
       "ma150": 165656,
       "above_ma150": false,
       "market_cap": 37843,
-      "updated_at": "2026-10-12T00:25:11.705639"
+      "updated_at": "2026-10-12T01:38:48.382206"
     },
     {
       "ticker": "382900",
@@ -4945,12 +4945,12 @@
       "prev_low": 15400,
       "recent_low": 17990,
       "low_rise_percent": 16.8,
-      "per": 309.1,
-      "pbr": 1.52,
+      "per": 133.9,
+      "pbr": 1.29,
       "ma150": 24946,
       "above_ma150": false,
       "market_cap": 2138,
-      "updated_at": "2026-10-12T00:25:11.890831"
+      "updated_at": "2026-10-12T01:38:48.657452"
     },
     {
       "ticker": "000880",
@@ -4962,12 +4962,12 @@
       "prev_low": 100600,
       "recent_low": 110000,
       "low_rise_percent": 9.3,
-      "per": 15.2,
-      "pbr": 1.05,
+      "per": 27.9,
+      "pbr": 0.83,
       "ma150": 135492,
       "above_ma150": false,
       "market_cap": 58875,
-      "updated_at": "2026-10-12T00:25:12.232624"
+      "updated_at": "2026-10-12T01:38:49.082317"
     },
     {
       "ticker": "103590",
@@ -4979,12 +4979,12 @@
       "prev_low": 60100,
       "recent_low": 67700,
       "low_rise_percent": 12.6,
-      "per": 37.9,
-      "pbr": 6.69,
+      "per": 37.4,
+      "pbr": 6.59,
       "ma150": 81022,
       "above_ma150": true,
       "market_cap": 39102,
-      "updated_at": "2026-10-12T00:25:12.080102"
+      "updated_at": "2026-10-12T01:38:48.914174"
     },
     {
       "ticker": "378340",
@@ -4996,12 +4996,12 @@
       "prev_low": 9800,
       "recent_low": 11170,
       "low_rise_percent": 14.0,
-      "per": 21.6,
-      "pbr": 2.13,
+      "per": null,
+      "pbr": 2.15,
       "ma150": 13535,
       "above_ma150": false,
       "market_cap": 2742,
-      "updated_at": "2026-10-12T00:25:12.202854"
+      "updated_at": "2026-10-12T01:38:49.054704"
     },
     {
       "ticker": "004960",
@@ -5013,12 +5013,12 @@
       "prev_low": 10460,
       "recent_low": 10620,
       "low_rise_percent": 1.5,
-      "per": 29.9,
-      "pbr": 0.27,
+      "per": 2.1,
+      "pbr": 0.15,
       "ma150": 12353,
       "above_ma150": false,
       "market_cap": 1251,
-      "updated_at": "2026-10-12T00:25:12.225145"
+      "updated_at": "2026-10-12T01:38:49.078737"
     },
     {
       "ticker": "041510",
@@ -5030,12 +5030,12 @@
       "prev_low": 68500,
       "recent_low": 74700,
       "low_rise_percent": 9.1,
-      "per": 126.2,
-      "pbr": 3.26,
+      "per": 5.1,
+      "pbr": 1.77,
       "ma150": 82872,
       "above_ma150": false,
       "market_cap": 17835,
-      "updated_at": "2026-10-12T00:25:12.004909"
+      "updated_at": "2026-10-12T01:38:48.782016"
     },
     {
       "ticker": "004020",
@@ -5048,11 +5048,11 @@
       "recent_low": 27750,
       "low_rise_percent": 3.5,
       "per": null,
-      "pbr": 0.26,
+      "pbr": 0.19,
       "ma150": 33901,
       "above_ma150": false,
       "market_cap": 37432,
-      "updated_at": "2026-10-12T00:25:12.248148"
+      "updated_at": "2026-10-12T01:38:49.090283"
     },
     {
       "ticker": "388790",
@@ -5064,12 +5064,12 @@
       "prev_low": 3755,
       "recent_low": 4130,
       "low_rise_percent": 10.0,
-      "per": null,
-      "pbr": null,
+      "per": 603.2,
+      "pbr": 7.29,
       "ma150": 4936,
       "above_ma150": true,
       "market_cap": 1595,
-      "updated_at": "2026-10-12T00:25:11.856606"
+      "updated_at": "2026-10-12T01:38:48.626004"
     },
     {
       "ticker": "332570",
@@ -5081,12 +5081,12 @@
       "prev_low": 6870,
       "recent_low": 7240,
       "low_rise_percent": 5.4,
-      "per": 31.8,
-      "pbr": 2.43,
+      "per": 23.9,
+      "pbr": 3.17,
       "ma150": 7717,
       "above_ma150": true,
       "market_cap": 3850,
-      "updated_at": "2026-10-12T00:25:11.745332"
+      "updated_at": "2026-10-12T01:38:48.449313"
     },
     {
       "ticker": "003240",
@@ -5098,12 +5098,12 @@
       "prev_low": 853000,
       "recent_low": 872000,
       "low_rise_percent": 2.2,
-      "per": 6.7,
-      "pbr": 0.34,
+      "per": 12.5,
+      "pbr": 0.19,
       "ma150": 996580,
       "above_ma150": false,
       "market_cap": 10176,
-      "updated_at": "2026-10-12T00:25:12.172263"
+      "updated_at": "2026-10-12T01:38:49.039135"
     }
   ]
 }
