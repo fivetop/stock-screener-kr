@@ -1,46 +1,94 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-13T08:40:37.122466",
-    "marketDate": "2026-10-12",
-    "totalCount": 3,
-    "screened_from": 1330
+    "lastUpdated": "2026-10-13T11:53:53.828040",
+    "marketDate": "2026-10-13",
+    "totalCount": 7,
+    "screened_from": 1309
   },
   "data": [
     {
-      "ticker": "002150",
-      "name": "002150",
-      "price": 5570,
-      "change_rate": 13.91,
-      "volume_ratio": 81.8,
+      "ticker": "225530",
+      "name": "HC보광산업",
+      "price": 2960,
+      "change_rate": 20.08,
+      "volume_ratio": 50.3,
       "volume_rank": 1,
-      "ma150": 5697,
-      "above_ma150": false,
-      "market_cap": 1878,
-      "updated_at": "2026-10-13T08:40:36.973307"
+      "ma150": 2613,
+      "above_ma150": true,
+      "market_cap": 1075,
+      "updated_at": "2026-10-13T11:53:53.815290"
     },
     {
-      "ticker": "002990",
-      "name": "002990",
-      "price": 13400,
-      "change_rate": 20.29,
-      "volume_ratio": 2.0,
+      "ticker": "042510",
+      "name": "라온시큐어",
+      "price": 18550,
+      "change_rate": 13.46,
+      "volume_ratio": 7.1,
       "volume_rank": 2,
-      "ma150": 8528,
+      "ma150": 9684,
       "above_ma150": true,
-      "market_cap": 4992,
-      "updated_at": "2026-10-13T08:40:36.864173"
+      "market_cap": 2060,
+      "updated_at": "2026-10-13T11:53:53.694709"
+    },
+    {
+      "ticker": "142280",
+      "name": "녹십자엠에스",
+      "price": 4215,
+      "change_rate": 13.61,
+      "volume_ratio": 5.3,
+      "volume_rank": 3,
+      "ma150": 3449,
+      "above_ma150": true,
+      "market_cap": 1010,
+      "updated_at": "2026-10-13T11:53:53.827381"
+    },
+    {
+      "ticker": "278650",
+      "name": "HLB바이오스텝",
+      "price": 6530,
+      "change_rate": 22.98,
+      "volume_ratio": 3.9,
+      "volume_rank": 4,
+      "ma150": 3991,
+      "above_ma150": true,
+      "market_cap": 1138,
+      "updated_at": "2026-10-13T11:53:53.802184"
     },
     {
       "ticker": "001210",
-      "name": "001210",
-      "price": 11070,
-      "change_rate": 29.93,
-      "volume_ratio": 2.0,
-      "volume_rank": 3,
-      "ma150": 5556,
+      "name": "금호전기",
+      "price": 12400,
+      "change_rate": 12.01,
+      "volume_ratio": 3.5,
+      "volume_rank": 5,
+      "ma150": 5611,
       "above_ma150": true,
-      "market_cap": 1397,
-      "updated_at": "2026-10-13T08:40:37.044995"
+      "market_cap": 1565,
+      "updated_at": "2026-10-13T11:53:53.732152"
+    },
+    {
+      "ticker": "003580",
+      "name": "HLB글로벌",
+      "price": 2405,
+      "change_rate": 15.07,
+      "volume_ratio": 3.1,
+      "volume_rank": 6,
+      "ma150": 1751,
+      "above_ma150": true,
+      "market_cap": 1218,
+      "updated_at": "2026-10-13T11:53:53.783466"
+    },
+    {
+      "ticker": "079650",
+      "name": "서산",
+      "price": 8780,
+      "change_rate": 29.88,
+      "volume_ratio": 2.3,
+      "volume_rank": 7,
+      "ma150": 3477,
+      "above_ma150": true,
+      "market_cap": 1756,
+      "updated_at": "2026-10-13T11:53:53.717071"
     }
   ]
 }

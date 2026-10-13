@@ -1,24 +1,9 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-13T08:40:41.941206",
-    "marketDate": "2026-10-12",
-    "totalCount": 1,
-    "screened_from": 1330
+    "lastUpdated": "2026-10-13T11:53:53.428271",
+    "marketDate": "2026-10-13",
+    "totalCount": 0,
+    "screened_from": 1309
   },
-  "data": [
-    {
-      "ticker": "950190",
-      "name": "950190",
-      "price": 9710,
-      "change_rate": -0.72,
-      "breakout_date": "2026-09-16",
-      "resistance": 10210,
-      "pullback_ratio": 4.9,
-      "volume_decrease": 98,
-      "ma150": 8793,
-      "above_ma150": true,
-      "market_cap": 1263,
-      "updated_at": "2026-10-13T08:40:41.662462"
-    }
-  ]
+  "data": []
 }
