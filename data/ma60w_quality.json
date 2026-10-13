@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-10-13T09:17:45.194872",
-    "total_count": 2,
+    "updated_at": "2026-10-13T10:49:44.276504",
+    "total_count": 4,
     "conditions": {
       "ma60w_gap": "0.0% ~ 10.0%",
       "min_op_margin": "10.0%",
@@ -12,26 +12,50 @@
     {
       "ticker": "443060",
       "name": "HD현대마린솔루션",
-      "current_price": 220500,
-      "ma60w": 203921,
-      "ma60w_gap": 8.13,
+      "current_price": 219500,
+      "ma60w": 206169,
+      "ma60w_gap": 6.47,
       "op_margin": 17.2,
       "op_growth_3y": 35.1,
-      "market_cap": 99082,
+      "market_cap": 98409,
       "sector": "기타",
-      "updated_at": "2026-10-13T09:17:42.987119"
+      "updated_at": "2026-10-13T10:47:38.335962"
     },
     {
       "ticker": "161390",
       "name": "한국타이어앤테크놀로지",
-      "current_price": 62300,
-      "ma60w": 58710,
-      "ma60w_gap": 6.11,
+      "current_price": 59800,
+      "ma60w": 58637,
+      "ma60w_gap": 1.98,
       "op_margin": 10.1,
       "op_growth_3y": 37.7,
-      "market_cap": 73830,
+      "market_cap": 74077,
       "sector": "기타",
-      "updated_at": "2026-10-13T09:17:43.361792"
+      "updated_at": "2026-10-13T10:47:52.971073"
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "current_price": 453500,
+      "ma60w": 429025,
+      "ma60w_gap": 5.7,
+      "op_margin": 19.5,
+      "op_growth_3y": 17.7,
+      "market_cap": 58354,
+      "sector": "기타",
+      "updated_at": "2026-10-13T10:48:01.618805"
+    },
+    {
+      "ticker": "000240",
+      "name": "한국앤컴퍼니",
+      "current_price": 26250,
+      "ma60w": 24398,
+      "ma60w_gap": 7.59,
+      "op_margin": 30.0,
+      "op_growth_3y": 18.9,
+      "market_cap": 24873,
+      "sector": "기타",
+      "updated_at": "2026-10-13T10:48:54.243507"
     }
   ]
 }

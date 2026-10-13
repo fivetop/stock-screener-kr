@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-10-13T09:14:54.379380",
+    "updated_at": "2026-10-13T10:23:46.078939",
     "total_count": 14,
     "treasury_rate": 3.4,
     "data_type": "TTM (FnGuide)"
@@ -9,8 +9,8 @@
     {
       "ticker": "000660",
       "name": "SK하이닉스",
-      "current_price": 1518000,
-      "market_cap": 11088874.0,
+      "current_price": 1465500,
+      "market_cap": 10705366.0,
       "per": 27.22,
       "pbr": 9.34,
       "revenue_growth_3y": 29.61,
@@ -24,8 +24,8 @@
     {
       "ticker": "214450",
       "name": "파마리서치",
-      "current_price": 274000,
-      "market_cap": 28468.0,
+      "current_price": 269500,
+      "market_cap": 28000.0,
       "per": 20.9,
       "pbr": 4.98,
       "revenue_growth_3y": 40.15,
@@ -39,8 +39,8 @@
     {
       "ticker": "145020",
       "name": "휴젤",
-      "current_price": 168400,
-      "market_cap": 21076.0,
+      "current_price": 166600,
+      "market_cap": 20850.0,
       "per": 15.86,
       "pbr": 2.05,
       "revenue_growth_3y": 14.7,
@@ -54,8 +54,8 @@
     {
       "ticker": "082920",
       "name": "비츠로셀",
-      "current_price": 24550,
-      "market_cap": 11082.0,
+      "current_price": 24200,
+      "market_cap": 10924.0,
       "per": 20.35,
       "pbr": 3.47,
       "revenue_growth_3y": 19.91,
@@ -69,8 +69,8 @@
     {
       "ticker": "005690",
       "name": "파미셀",
-      "current_price": 11820,
-      "market_cap": 7092.0,
+      "current_price": 11420,
+      "market_cap": 6852.0,
       "per": 18.07,
       "pbr": 5.88,
       "revenue_growth_3y": 23.74,
@@ -84,8 +84,8 @@
     {
       "ticker": "098120",
       "name": "마이크로컨텍솔",
-      "current_price": 54800,
-      "market_cap": 4555.0,
+      "current_price": 51600,
+      "market_cap": 4289.0,
       "per": 28.01,
       "pbr": 5.82,
       "revenue_growth_3y": 17.97,
@@ -99,8 +99,8 @@
     {
       "ticker": "461300",
       "name": "아이스크림미디어",
-      "current_price": 18060,
-      "market_cap": 2408.0,
+      "current_price": 17960,
+      "market_cap": 2395.0,
       "per": 4.87,
       "pbr": 1.13,
       "revenue_growth_3y": 23.46,
@@ -114,8 +114,8 @@
     {
       "ticker": "481070",
       "name": "에이유브랜즈",
-      "current_price": 13520,
-      "market_cap": 1942.0,
+      "current_price": 13400,
+      "market_cap": 1924.0,
       "per": 23.04,
       "pbr": 2.93,
       "revenue_growth_3y": 46.98,
@@ -129,8 +129,8 @@
     {
       "ticker": "353810",
       "name": "이지바이오",
-      "current_price": 5600,
-      "market_cap": 1853.0,
+      "current_price": 5590,
+      "market_cap": 1849.0,
       "per": 6.83,
       "pbr": 1.76,
       "revenue_growth_3y": 45.26,
@@ -144,8 +144,8 @@
     {
       "ticker": "260970",
       "name": "에스앤디",
-      "current_price": 61300,
-      "market_cap": 1773.0,
+      "current_price": 60500,
+      "market_cap": 1750.0,
       "per": 8.66,
       "pbr": 2.07,
       "revenue_growth_3y": 27.22,
@@ -159,8 +159,8 @@
     {
       "ticker": "039830",
       "name": "오로라",
-      "current_price": 14980,
-      "market_cap": 1612.0,
+      "current_price": 15130,
+      "market_cap": 1628.0,
       "per": 7.44,
       "pbr": 0.83,
       "revenue_growth_3y": 12.29,
@@ -174,8 +174,8 @@
     {
       "ticker": "408920",
       "name": "메쎄이상",
-      "current_price": 2905,
-      "market_cap": 1256.0,
+      "current_price": 2930,
+      "market_cap": 1267.0,
       "per": 8.36,
       "pbr": 1.6,
       "revenue_growth_3y": 23.89,
@@ -189,8 +189,8 @@
     {
       "ticker": "240550",
       "name": "동방메디컬",
-      "current_price": 5940,
-      "market_cap": 1243.0,
+      "current_price": 5910,
+      "market_cap": 1237.0,
       "per": 10.64,
       "pbr": 1.03,
       "revenue_growth_3y": 11.73,
@@ -204,8 +204,8 @@
     {
       "ticker": "073010",
       "name": "케이에스피",
-      "current_price": 2830,
-      "market_cap": 1137.0,
+      "current_price": 2770,
+      "market_cap": 1113.0,
       "per": 17.53,
       "pbr": 1.38,
       "revenue_growth_3y": 14.46,
