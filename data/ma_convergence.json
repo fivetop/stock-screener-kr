@@ -1,29 +1,48 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-12T15:14:29.325597",
+    "lastUpdated": "2026-10-13T08:41:01.924820",
     "marketDate": "2026-10-12",
-    "totalCount": 1,
-    "screened_from": 1326
+    "totalCount": 2,
+    "screened_from": 1330
   },
   "data": [
     {
       "ticker": "003550",
-      "name": "LG",
-      "current_price": 108800,
-      "volume": 163141,
-      "ma10w": 112940,
-      "ma20w": 108730,
-      "ma60w": 95751,
-      "ma20d": 112645,
-      "ma60d": 109246,
-      "ma120d": 108600,
-      "gap_20_60": 3.11,
-      "gap_20_120": 3.72,
+      "name": "003550",
+      "current_price": 108100,
+      "volume": 174860,
+      "ma10w": 112870,
+      "ma20w": 108695,
+      "ma60w": 95740,
+      "ma20d": 112610,
+      "ma60d": 109235,
+      "ma120d": 108595,
+      "gap_20_60": 3.09,
+      "gap_20_120": 3.7,
       "gap_60_120": 0.59,
-      "gap_price_20": 3.41,
+      "gap_price_20": 4.0,
       "weeks_since_high": 20,
-      "market_cap": 164496,
-      "updated_at": "2026-10-12T15:14:20.932660"
+      "market_cap": 163438,
+      "updated_at": "2026-10-13T08:40:48.400225"
+    },
+    {
+      "ticker": "004430",
+      "name": "004430",
+      "current_price": 11570,
+      "volume": 103790,
+      "ma10w": 11559,
+      "ma20w": 11430,
+      "ma60w": 10384,
+      "ma20d": 11548,
+      "ma60d": 11714,
+      "ma120d": 11517,
+      "gap_20_60": 1.42,
+      "gap_20_120": 0.27,
+      "gap_60_120": 1.71,
+      "gap_price_20": 0.19,
+      "weeks_since_high": 25,
+      "market_cap": 2776,
+      "updated_at": "2026-10-13T08:40:56.928505"
     }
   ]
 }
