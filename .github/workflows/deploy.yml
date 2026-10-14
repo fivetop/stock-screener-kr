@@ -127,18 +127,10 @@ jobs:
           echo "스크리너 실행 완료"
           echo "=========================================="
 
-      - name: 🗄️ 오늘 새로 걸린 종목 → MongoDB 저장
-        # MONGO_URI 시크릿이 없으면 경고만 출력하고 건너뜀(배포에는 영향 없음)
+      - name: 🗄️ 오늘 새로 걸린 종목 → data/fresh_history.json 누적
+        # data/ 가 함께 커밋되므로 아래 '변경 사항 확인' 단계가 이 파일도 커밋한다
         continue-on-error: true
-        env:
-          MONGO_URI: ${{ secrets.MONGO_URI }}
-          MONGO_DB: ${{ secrets.MONGO_DB }}      # 미설정 시 stock
-        run: |
-          if [ -z "$MONGO_URI" ]; then
-            echo "::warning:: MONGO_URI 시크릿이 없어 MongoDB 저장을 건너뜁니다."
-            exit 0
-          fi
-          python save_fresh_stocks.py
+        run: python save_fresh_stocks.py
 
       # 60주선 우량주 스크리너는 value-screener.yml로 이동 (20시 통합 실행)
 

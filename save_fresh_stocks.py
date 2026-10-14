@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-'오늘 새로 걸린 종목'(신규 판정)을 MongoDB에 저장한다.
+'오늘 새로 걸린 종목'(신규 판정)을 data/fresh_history.json 에 누적 저장한다.
 
 프론트(주식_스크리너_전체.html 의 renderFreshStocks)와 동일한 규칙으로
-data/*.json 에서 신규 종목을 산출해 MongoDB 컬렉션에 upsert 한다.
+data/*.json 에서 신규 종목을 산출해 날짜별로 누적한다. (MongoDB 불필요)
 
 규칙 (renderFreshStocks 와 동일):
   - 52주 신고가: days_since == 0
@@ -11,12 +11,9 @@ data/*.json 에서 신규 종목을 산출해 MongoDB 컬렉션에 upsert 한다
   - 거래량 폭발: change_rate 상위 3개
   - ticker 중복 제거 후 상위 10개
 
-환경변수:
-  MONGO_URI          MongoDB 연결 문자열 (예: mongodb+srv://user:pass@host/)
-  MONGO_DB           데이터베이스 이름 (기본: stock)
-  MONGO_COLLECTION   컬렉션 이름 (기본: fresh_stocks)
-
-MONGO_URI 가 없으면 저장을 건너뛰고 경고만 출력한다(CI 안전).
+기준일은 meta.marketDate(데이터 기준일)를 우선 사용하고, 없으면 오늘(KST)을 쓴다.
+같은 날짜에 다시 실행하면 그 날 항목을 현재 결과로 교체한다(멱등).
+결과가 이전과 같으면 파일을 다시 쓰지 않아 불필요한 커밋을 만들지 않는다.
 """
 from __future__ import annotations
 
@@ -28,28 +25,45 @@ from datetime import datetime, timedelta, timezone
 KST = timezone(timedelta(hours=9))
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DATA_DIR = os.path.join(HERE, "data")
-DEFAULT_DB = os.environ.get("MONGO_DB") or "stock"
-DEFAULT_COLLECTION = os.environ.get("MONGO_COLLECTION") or "fresh_stocks"
+HISTORY_FILE = "fresh_history.json"
 TOP_VOLUME = 3
 MAX_ITEMS = 10
+DEFAULT_KEEP_DAYS = 730
+
+
+def _load_json(path: str):
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def _rows(data_dir: str, name: str) -> list:
     path = os.path.join(data_dir, name)
     try:
-        with open(path, encoding="utf-8") as f:
-            payload = json.load(f)
+        payload = _load_json(path)
     except FileNotFoundError:
         print(f"::warning:: {name} 없음 — 건너뜀")
         return []
     except Exception as exc:  # noqa: BLE001
         print(f"::warning:: {name} 로드 실패: {exc}")
         return []
-    if isinstance(payload, dict):
-        data = payload.get("data")
-        if isinstance(data, list):
-            return data
+    if isinstance(payload, dict) and isinstance(payload.get("data"), list):
+        return payload["data"]
     return []
+
+
+def _market_date(data_dir: str):
+    """data/*.json 의 meta.marketDate 중 가장 최신값."""
+    dates = []
+    for name in ("new_high_52w.json", "box_breakout.json",
+                 "box_breakout_simple.json", "volume_explosion.json"):
+        try:
+            meta = _load_json(os.path.join(data_dir, name)).get("meta") or {}
+        except Exception:  # noqa: BLE001
+            continue
+        d = meta.get("marketDate")
+        if d:
+            dates.append(str(d))
+    return max(dates) if dates else None
 
 
 def build_fresh_stocks(data_dir: str = DEFAULT_DATA_DIR) -> list:
@@ -84,11 +98,11 @@ def build_fresh_stocks(data_dir: str = DEFAULT_DATA_DIR) -> list:
     return uniq[:MAX_ITEMS]
 
 
-def to_docs(uniq: list, date_str: str, captured_at: str) -> list:
-    docs = []
+def to_records(uniq: list, date_str: str, captured_at: str) -> list:
+    records = []
     for it in uniq:
         s = it["s"]
-        docs.append({
+        records.append({
             "date": date_str,
             "ticker": str(s.get("ticker")),
             "name": s.get("name"),
@@ -97,70 +111,98 @@ def to_docs(uniq: list, date_str: str, captured_at: str) -> list:
             "source": it["src"],
             "resistance": it.get("resistance"),
             "market_cap": s.get("market_cap"),
-            "captured_at": captured_at,
+            "first_seen_at": captured_at,
+            "last_seen_at": captured_at,
         })
-    return docs
+    return records
 
 
-def save(docs: list, uri: str, db_name: str, coll_name: str):
-    from pymongo import MongoClient, UpdateOne
+def _load_history(path: str) -> list:
+    try:
+        obj = _load_json(path)
+        if isinstance(obj, dict) and isinstance(obj.get("data"), list):
+            return obj["data"]
+    except FileNotFoundError:
+        return []
+    except Exception as exc:  # noqa: BLE001
+        print(f"::warning:: {path} 로드 실패({exc}) — 새로 작성")
+    return []
 
-    client = MongoClient(uri, serverSelectionTimeoutMS=20000)
-    coll = client[db_name][coll_name]
-    coll.create_index([("date", 1), ("ticker", 1)], unique=True)
 
-    ops = []
-    for d in docs:
-        fields = {k: v for k, v in d.items() if k not in ("date", "ticker")}
-        ops.append(UpdateOne(
-            {"date": d["date"], "ticker": d["ticker"]},
-            {"$set": fields, "$setOnInsert": {"first_seen_at": d["captured_at"]}},
-            upsert=True,
-        ))
-    if not ops:
-        return None
-    return coll.bulk_write(ops, ordered=False)
+def _signature(records: list) -> list:
+    """last_seen_at/meta 를 제외한 비교용 서명 (변경 감지)."""
+    keys = ("date", "ticker", "name", "price", "change_rate", "source", "resistance", "first_seen_at")
+    return [tuple(r.get(k) for k in keys) for r in records]
+
+
+def _prune(records: list, keep_days: int) -> list:
+    if keep_days <= 0:
+        return records
+    dates = sorted({r.get("date") for r in records if r.get("date")}, reverse=True)
+    keep = set(dates[:keep_days])
+    return [r for r in records if r.get("date") in keep]
+
+
+def _write_json(path: str, payload: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+        f.write("\n")
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="오늘 새로 걸린 종목을 MongoDB에 저장")
-    ap.add_argument("--date", help="저장 날짜(YYYY-MM-DD, 기본: 오늘 KST)")
-    ap.add_argument("--dry-run", action="store_true", help="MongoDB 저장 없이 결과만 출력")
-    ap.add_argument("--uri", help="MongoDB URI (기본: 환경변수 MONGO_URI)")
-    ap.add_argument("--db", default=DEFAULT_DB, help=f"데이터베이스 이름 (기본: {DEFAULT_DB})")
-    ap.add_argument("--collection", default=DEFAULT_COLLECTION,
-                    help=f"컬렉션 이름 (기본: {DEFAULT_COLLECTION})")
+    ap = argparse.ArgumentParser(description="오늘 새로 걸린 종목을 data/fresh_history.json 에 누적")
+    ap.add_argument("--date", help="기준일(YYYY-MM-DD, 기본: meta.marketDate → 오늘 KST)")
     ap.add_argument("--data-dir", default=DEFAULT_DATA_DIR, help="data 디렉터리 경로")
+    ap.add_argument("--keep-days", type=int, default=DEFAULT_KEEP_DAYS, help=f"보존 일수(기본 {DEFAULT_KEEP_DAYS})")
+    ap.add_argument("--dry-run", action="store_true", help="파일을 쓰지 않고 결과만 출력")
     args = ap.parse_args()
 
     now = datetime.now(KST)
-    date_str = args.date or now.strftime("%Y-%m-%d")
     captured_at = now.isoformat(timespec="seconds")
+    date_str = args.date or _market_date(args.data_dir) or now.strftime("%Y-%m-%d")
 
     uniq = build_fresh_stocks(args.data_dir)
-    docs = to_docs(uniq, date_str, captured_at)
-    print(f"[fresh_stocks] {date_str} 신규 종목 {len(docs)}개")
-    for d in docs:
-        print(f"  - {d['ticker']} {d['name']} ({d['source']}, {d['change_rate']})")
+    new_records = to_records(uniq, date_str, captured_at)
+    print(f"[fresh_history] 기준일 {date_str} 신규 종목 {len(new_records)}개")
+
+    path = os.path.join(args.data_dir, HISTORY_FILE)
+    existing = _load_history(path)
+
+    # 같은 (date, ticker)가 이미 있으면 first_seen_at 유지
+    prev_first = {(r.get("date"), r.get("ticker")): r.get("first_seen_at") for r in existing}
+    for r in new_records:
+        r["first_seen_at"] = prev_first.get((r["date"], r["ticker"])) or r["last_seen_at"]
+
+    others = [r for r in existing if r.get("date") != date_str]
+    merged = _prune(others + new_records, args.keep_days)
+
+    if _signature(merged) == _signature(existing):
+        print("변경 없음 — fresh_history.json 그대로 유지")
+        for r in new_records:
+            print(f"  - {r['ticker']} {r['name']} ({r['source']}, {r['change_rate']})")
+        return 0
+
+    for r in new_records:
+        print(f"  - {r['ticker']} {r['name']} ({r['source']}, {r['change_rate']})")
 
     if args.dry_run:
-        print("(dry-run) MongoDB 저장 생략")
+        print("(dry-run) 파일 저장 생략")
         return 0
 
-    uri = args.uri or os.environ.get("MONGO_URI")
-    if not uri:
-        print("::warning:: MONGO_URI 가 없어 MongoDB 저장을 건너뜁니다.")
-        return 0
-
-    try:
-        res = save(docs, uri, args.db, args.collection)
-    except Exception as exc:  # noqa: BLE001
-        print(f"::error:: MongoDB 저장 실패: {exc}")
-        return 1
-
-    upserted = getattr(res, "upserted_count", 0) if res else 0
-    modified = getattr(res, "modified_count", 0) if res else 0
-    print(f"저장 완료 → {args.db}.{args.collection} (upsert {upserted}, modified {modified})")
+    dates = {r.get("date") for r in merged if r.get("date")}
+    payload = {
+        "meta": {
+            "lastUpdated": captured_at,
+            "source": "fresh_history",
+            "totalCount": len(merged),
+            "dateCount": len(dates),
+            "latestDate": max(dates) if dates else None,
+        },
+        "data": merged,
+    }
+    _write_json(path, payload)
+    print(f"저장 완료 → {path} (총 {len(merged)}건, {len(dates)}일)")
     return 0
 
 
