@@ -143,6 +143,18 @@ jobs:
           echo "대가 스크리너 완료"
           echo "=========================================="
 
+      - name: 📰 뉴스 언급량 수집 (Google News RSS)
+        # 스크리너가 뽑은 종목의 일간지/경제지 언급량. 키 불필요, 실패해도 배포는 진행.
+        continue-on-error: true
+        run: |
+          echo "=========================================="
+          echo "뉴스 언급량 수집 시작: $(date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "=========================================="
+          python news_mentions.py --limit 200 || echo "::warning::뉴스 수집 실패 (기존 news_mentions.json 유지)"
+          echo "=========================================="
+          echo "뉴스 언급량 수집 완료"
+          echo "=========================================="
+
       - name: 📈 차트 데이터 가져오기 (chart-data 브랜치)
         run: |
           if git fetch -q --depth=1 origin chart-data; then
