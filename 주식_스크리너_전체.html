@@ -4089,7 +4089,7 @@
             el.innerHTML = uniq.map((it, i) => {
                 const r = it.s.change_rate;
                 const chg = r == null ? '' : `<span class="${getColor(r)}" style="font-weight:700;font-variant-numeric:tabular-nums">${formatPercent(r)}</span>`;
-                return `<button type="button" class="fresh-chip" onclick="openChartModal(window._freshStocks[${i}])"><span class="src">${it.src}</span><span class="nm">${escapeHtml(it.s.name)}</span>${chg}</button>`;
+                return `<button type="button" class="fresh-chip" onclick="openChartModal(window._freshStocks[${i}])"><span class="src">${it.src}</span><span class="nm">${escapeHtml(it.s.name)}</span>${getNewsBadge(it.s.ticker)}${chg}</button>`;
             }).join('');
         }
 
