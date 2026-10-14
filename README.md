@@ -3,7 +3,7 @@
 기술적 분석 기반 국내 주식 스크리닝 도구입니다.
 GitHub Actions와 GitHub Pages를 이용해 100% 무료로 운영됩니다.
 
-**[사이트 바로가기](https://hsh2578.github.io/stock-screener-kr/)**
+**[사이트 바로가기](https://fivetop.github.io/stock-screener-kr/)**
 
 ## 스크리너 목록
 
