@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "lastUpdated": "2026-10-14T13:57:40.707869",
+    "marketDate": "2026-10-14",
+    "totalCount": 1,
+    "screened_from": 1327
+  },
+  "data": [
+    {
+      "ticker": "000650",
+      "name": "천일고속",
+      "price": 224000,
+      "prev_close": 172600,
+      "limit_price": 224380,
+      "change_rate": 29.78,
+      "volume": 97151,
+      "volume_ratio": 3.2,
+      "market_cap": 3201.4528,
+      "per": null,
+      "pbr": 31.87,
+      "ma150": 186132,
+      "above_ma150": true
+    }
+  ]
+}

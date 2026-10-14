@@ -1,29 +1,48 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T13:38:16.162649",
+    "lastUpdated": "2026-10-14T13:58:06.426813",
     "marketDate": "2026-10-14",
-    "totalCount": 1,
-    "screened_from": 1324
+    "totalCount": 2,
+    "screened_from": 1327
   },
   "data": [
     {
       "ticker": "003550",
       "name": "LG",
-      "current_price": 106700,
-      "volume": 189256,
-      "ma10w": 112730,
-      "ma20w": 108625,
-      "ma60w": 95716,
-      "ma20d": 111390,
-      "ma60d": 109518,
-      "ma120d": 108828,
-      "gap_20_60": 1.71,
-      "gap_20_120": 2.35,
-      "gap_60_120": 0.63,
-      "gap_price_20": 4.21,
+      "current_price": 106900,
+      "volume": 190244,
+      "ma10w": 112750,
+      "ma20w": 108635,
+      "ma60w": 95720,
+      "ma20d": 111400,
+      "ma60d": 109521,
+      "ma120d": 108830,
+      "gap_20_60": 1.72,
+      "gap_20_120": 2.36,
+      "gap_60_120": 0.64,
+      "gap_price_20": 4.04,
       "weeks_since_high": 20,
-      "market_cap": 161321,
-      "updated_at": "2026-10-14T13:38:09.118099"
+      "market_cap": 161624,
+      "updated_at": "2026-10-14T13:58:00.226170"
+    },
+    {
+      "ticker": "060370",
+      "name": "LS마린솔루션",
+      "current_price": 31400,
+      "volume": 278225,
+      "ma10w": 32530,
+      "ma20w": 30442,
+      "ma60w": 29938,
+      "ma20d": 32517,
+      "ma60d": 31092,
+      "ma120d": 31975,
+      "gap_20_60": 4.58,
+      "gap_20_120": 1.69,
+      "gap_60_120": 2.76,
+      "gap_price_20": 3.44,
+      "weeks_since_high": 24,
+      "market_cap": 16403,
+      "updated_at": "2026-10-14T13:58:04.293459"
     }
   ]
 }

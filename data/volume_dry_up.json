@@ -1,16 +1,16 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T13:37:59.063812",
+    "lastUpdated": "2026-10-14T13:57:41.933458",
     "marketDate": "2026-10-14",
-    "totalCount": 10,
-    "screened_from": 1324
+    "totalCount": 9,
+    "screened_from": 1327
   },
   "data": [
     {
       "ticker": "126600",
       "name": "BGF에코머티리얼즈",
-      "price": 3565,
-      "change_rate": 0.71,
+      "price": 3575,
+      "change_rate": 0.99,
       "explosion_date": "2026-10-08",
       "explosion_change_rate": 12.2,
       "explosion_volume_ratio": 6.2,
@@ -21,14 +21,14 @@
       "volume_rank": 1,
       "ma150": 3380,
       "above_ma150": true,
-      "market_cap": 2237,
-      "updated_at": "2026-10-14T13:37:58.174853"
+      "market_cap": 2243,
+      "updated_at": "2026-10-14T13:57:41.409596"
     },
     {
       "ticker": "012030",
       "name": "DB",
-      "price": 2235,
-      "change_rate": 0.9,
+      "price": 2265,
+      "change_rate": 2.26,
       "explosion_date": "2026-10-08",
       "explosion_change_rate": 13.6,
       "explosion_volume_ratio": 3.6,
@@ -39,14 +39,14 @@
       "volume_rank": 2,
       "ma150": 1760,
       "above_ma150": true,
-      "market_cap": 4496,
-      "updated_at": "2026-10-14T13:37:57.494575"
+      "market_cap": 4556,
+      "updated_at": "2026-10-14T13:57:40.843998"
     },
     {
       "ticker": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": 2265,
-      "change_rate": -0.22,
+      "price": 2260,
+      "change_rate": -0.44,
       "explosion_date": "2026-10-08",
       "explosion_change_rate": 29.9,
       "explosion_volume_ratio": 7.4,
@@ -57,8 +57,26 @@
       "volume_rank": 3,
       "ma150": 1601,
       "above_ma150": true,
-      "market_cap": 1295,
-      "updated_at": "2026-10-14T13:37:58.816973"
+      "market_cap": 1292,
+      "updated_at": "2026-10-14T13:57:41.781255"
+    },
+    {
+      "ticker": "052260",
+      "name": "현대바이오랜드",
+      "price": 4490,
+      "change_rate": -1.54,
+      "explosion_date": "2026-09-29",
+      "explosion_change_rate": 29.9,
+      "explosion_volume_ratio": 40.4,
+      "days_since_detected": 9,
+      "volume_decrease_rate": 97,
+      "pattern_type": "ma20_approach",
+      "ma20_distance": 0.08,
+      "volume_rank": 4,
+      "ma150": 3980,
+      "above_ma150": true,
+      "market_cap": 1347,
+      "updated_at": "2026-10-14T13:57:41.757496"
     },
     {
       "ticker": "452190",
@@ -72,35 +90,35 @@
       "volume_decrease_rate": 92,
       "pattern_type": "ma20_approach",
       "ma20_distance": 0.98,
-      "volume_rank": 4,
+      "volume_rank": 5,
       "ma150": 4936,
       "above_ma150": true,
       "market_cap": 1334,
-      "updated_at": "2026-10-14T13:37:58.795126"
+      "updated_at": "2026-10-14T13:57:41.762247"
     },
     {
       "ticker": "036200",
       "name": "유니셈",
-      "price": 10050,
-      "change_rate": -6.34,
+      "price": 10030,
+      "change_rate": -6.52,
       "explosion_date": "2026-09-29",
       "explosion_change_rate": 11.5,
       "explosion_volume_ratio": 5.6,
       "days_since_detected": 9,
       "volume_decrease_rate": 75,
       "pattern_type": "ma20_approach",
-      "ma20_distance": 1.35,
-      "volume_rank": 5,
+      "ma20_distance": 1.15,
+      "volume_rank": 6,
       "ma150": 9809,
       "above_ma150": true,
-      "market_cap": 3081,
-      "updated_at": "2026-10-14T13:37:57.879716"
+      "market_cap": 3075,
+      "updated_at": "2026-10-14T13:57:41.073063"
     },
     {
       "ticker": "475960",
       "name": "토모큐브",
-      "price": 31450,
-      "change_rate": 0.64,
+      "price": 31650,
+      "change_rate": 1.28,
       "explosion_date": "2026-09-28",
       "explosion_change_rate": 12.6,
       "explosion_volume_ratio": 5.8,
@@ -108,11 +126,11 @@
       "volume_decrease_rate": 70,
       "pattern_type": "ma20_approach",
       "ma20_distance": 0.59,
-      "volume_rank": 6,
+      "volume_rank": 7,
       "ma150": 41602,
       "above_ma150": false,
-      "market_cap": 4238,
-      "updated_at": "2026-10-14T13:37:59.060769"
+      "market_cap": 4265,
+      "updated_at": "2026-10-14T13:57:41.932415"
     },
     {
       "ticker": "079370",
@@ -126,65 +144,29 @@
       "volume_decrease_rate": 79,
       "pattern_type": "ma20_approach",
       "ma20_distance": 0.94,
-      "volume_rank": 7,
+      "volume_rank": 8,
       "ma150": 12535,
       "above_ma150": false,
       "market_cap": 3849,
-      "updated_at": "2026-10-14T13:37:57.654660"
-    },
-    {
-      "ticker": "265740",
-      "name": "엔에프씨",
-      "price": 7500,
-      "change_rate": 1.35,
-      "explosion_date": "2026-09-18",
-      "explosion_change_rate": 29.9,
-      "explosion_volume_ratio": 6.4,
-      "days_since_detected": 14,
-      "volume_decrease_rate": 85,
-      "pattern_type": "ma20_approach",
-      "ma20_distance": 1.49,
-      "volume_rank": 8,
-      "ma150": 6621,
-      "above_ma150": true,
-      "market_cap": 1339,
-      "updated_at": "2026-10-14T13:37:58.779349"
+      "updated_at": "2026-10-14T13:57:40.920889"
     },
     {
       "ticker": "125210",
       "name": "아모그린텍",
-      "price": 6230,
-      "change_rate": 0.0,
+      "price": 6300,
+      "change_rate": 1.12,
       "explosion_date": "2026-09-16",
       "explosion_change_rate": 10.4,
       "explosion_volume_ratio": 26.3,
       "days_since_detected": 16,
       "volume_decrease_rate": 61,
       "pattern_type": "ma20_approach",
-      "ma20_distance": 0.27,
+      "ma20_distance": 1.34,
       "volume_rank": 9,
       "ma150": 7964,
       "above_ma150": false,
-      "market_cap": 1027,
-      "updated_at": "2026-10-14T13:37:59.032450"
-    },
-    {
-      "ticker": "317770",
-      "name": "엑스페릭스",
-      "price": 2720,
-      "change_rate": -1.63,
-      "explosion_date": "2026-09-11",
-      "explosion_change_rate": 12.4,
-      "explosion_volume_ratio": 4.8,
-      "days_since_detected": 19,
-      "volume_decrease_rate": 76,
-      "pattern_type": "ma20_approach",
-      "ma20_distance": 0.22,
-      "volume_rank": 10,
-      "ma150": 2885,
-      "above_ma150": false,
-      "market_cap": 1006,
-      "updated_at": "2026-10-14T13:37:59.047333"
+      "market_cap": 1039,
+      "updated_at": "2026-10-14T13:57:41.904331"
     }
   ]
 }

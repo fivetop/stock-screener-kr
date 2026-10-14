@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T13:37:56.105983",
+    "lastUpdated": "2026-10-14T13:57:38.436807",
     "marketDate": "2026-10-14",
     "totalCount": 1,
-    "screened_from": 1324
+    "screened_from": 1327
   },
   "data": [
     {
@@ -18,7 +18,7 @@
       "ma150": 8819,
       "above_ma150": true,
       "market_cap": 1276,
-      "updated_at": "2026-10-14T13:37:55.874848"
+      "updated_at": "2026-10-14T13:57:38.163279"
     }
   ]
 }
