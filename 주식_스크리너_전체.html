@@ -2581,6 +2581,41 @@
         </div>
     </div>
 
+    <!-- Limit Up Page -->
+    <div id="page-limit-up" class="page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="#" onclick="showPage('home'); return false;">홈</a></li>
+                    <li aria-hidden="true" class="separator">›</li>
+                    <li aria-current="page" class="current">상한가</li>
+                </ol>
+            </nav>
+            <a href="#" class="back-link" onclick="showPage('home'); return false;" aria-label="홈으로 돌아가기">
+                <span aria-hidden="true">←</span> 홈으로
+            </a>
+            <header class="page-header">
+                <div class="title-row">
+                    <span class="icon" aria-hidden="true"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s4 4.5 4 8.5a4 4 0 0 1-8 0c0-1.2.5-2.3 1-3.2C6.5 9.3 5 12 5 14.5A7 7 0 0 0 12 21.5a7 7 0 0 0 7-7C19 9 12 2 12 2z"/></svg></span>
+                    <h1>상한가</h1>
+                    <span class="badge badge-danger">당일</span>
+                </div>
+                <p class="desc">당일 등락률 29.5% 이상 — 사실상 가격제한폭(상한가) 도달 종목</p>
+                <div class="meta">
+                    <span class="date" id="limit-up-date">데이터 기준: -</span>
+                    <span><span class="count" id="limit-up-count">-</span>개 종목</span>
+                </div>
+            </header>
+            <div class="card table-card">
+                <div class="table-wrapper">
+                    <table id="limit-up-table" role="table" aria-label="상한가 종목 목록"><thead></thead><tbody></tbody></table>
+                </div>
+                <div id="limit-up-mobile" class="mobile-card-list"></div>
+                <div id="limit-up-pagination" class="pagination" role="navigation" aria-label="페이지 네비게이션"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Notification Container -->
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
     <!-- 스크린리더 안내용 영구 aria-live 영역 (sort 등 동적 메시지) -->
@@ -2697,6 +2732,7 @@
             lynch: { meta: { lastUpdated: null, totalCount: 0 }, data: [] },
             graham: { meta: { lastUpdated: null, totalCount: 0 }, data: [] },
             priceRise: { meta: { lastUpdated: null, totalCount: 0 }, data: [] },
+            limitUp: { meta: { lastUpdated: null, totalCount: 0 }, data: [] },
             financialData: { meta: {}, data: {} }  // PER/PBR 조회용 재무데이터
         };
 
@@ -2727,6 +2763,7 @@
             lynch: 'lynch.json',
             graham: 'graham.json',
             priceRise: 'price_rise.json',
+            limitUp: 'limit_up.json',
             newsMentions: 'news_mentions.json'
             // financialData는 레이지 로딩 (상세 페이지 방문 시)
         };
@@ -3002,6 +3039,7 @@
             package: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 6l9 5 9-5-9-5z" opacity="0.45"/><path d="M3 6v12l9 5V12L3 6z" opacity="0.9"/><path d="M21 6v12l-9 5V12l9-6z" opacity="0.65"/></svg>',
             rocket: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l6 9h-3.5v9h-5v-9H6l6-9z"/></svg>',
             trendUp: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>',
+            fire: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s4 4.5 4 8.5a4 4 0 0 1-8 0c0-1.2.5-2.3 1-3.2C6.5 9.3 5 12 5 14.5A7 7 0 0 0 12 21.5a7 7 0 0 0 7-7C19 9 12 2 12 2z"/></svg>',
             target: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" opacity="0.15"/><circle cx="12" cy="12" r="7" opacity="0.3"/><circle cx="12" cy="12" r="4" opacity="0.6"/><circle cx="12" cy="12" r="1.5"/></svg>',
             volDown: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="5" height="17" rx="1"/><rect x="10" y="10" width="5" height="11" rx="1" opacity="0.65"/><rect x="17" y="15" width="5" height="6" rx="1" opacity="0.35"/></svg>',
             zap: '<svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
@@ -3038,6 +3076,7 @@
                     { id: 'volume-explosion', icon: ICONS.zap, title: '거래량 폭발', desc: '40일 평균 2배 + 12% 이상 상승', badge: { text: '당일', type: 'danger' } },
                     { id: 'volume-dry-up', icon: ICONS.volDown, title: '눌림목', desc: '급등 후 −4%~+2% 유지 + 거래량 급감', badge: { text: '눌림목', type: 'warning' } },
                     { id: 'price-rise', icon: ICONS.trendUp, title: '상승률', desc: '최근 5거래일 날짜별 상승률 상위 20', badge: { text: '당일', type: 'danger' } },
+                    { id: 'limit-up', icon: ICONS.fire, title: '상한가', desc: '당일 등락률 29.5% 이상 — 사실상 상한가', badge: { text: '상한가', type: 'danger' } },
                     { id: 'ma-convergence', icon: ICONS.convergence, title: '이평선 수렴', desc: '이평선 수렴 + 정배열 + 신고가', badge: { text: '수렴', type: 'info' } }
                 ]
             },
@@ -3270,7 +3309,8 @@
             volumeDryUp: false,
             volumeExplosion: false,
             fallenRebound: false,
-            priceRise: false
+            priceRise: false,
+            limitUp: false
         };
 
         // Pagination state
@@ -3295,7 +3335,8 @@
             ackman: 1,
             lynch: 1,
             graham: 1,
-            priceRise: 1
+            priceRise: 1,
+            limitUp: 1
         };
 
         // Pagination helper functions
@@ -3532,7 +3573,8 @@
             'ackman-table': 'ackman',
             'lynch-table': 'lynch',
             'graham-table': 'graham',
-            'price-rise-table': 'priceRise'
+            'price-rise-table': 'priceRise',
+            'limit-up-table': 'limitUp'
         };
 
         // 역방향 매핑 - screener ID에서 table ID로
@@ -3895,7 +3937,8 @@
                 'ackman-date': getMeta('ackman', 'lastUpdated'),
                 'lynch-date': getMeta('lynch', 'lastUpdated'),
                 'graham-date': getMeta('graham', 'lastUpdated'),
-                'price-rise-date': marketLabel('priceRise')
+                'price-rise-date': marketLabel('priceRise'),
+                'limit-up-date': marketLabel('limitUp')
             };
 
             for (const [elementId, lastUpdated] of Object.entries(dateMapping)) {
@@ -3965,7 +4008,8 @@
                 'ackman': getCount('ackman', 'totalCount', 'length'),
                 'lynch': getCount('lynch', 'totalCount', 'length'),
                 'graham': getCount('graham', 'totalCount', 'length'),
-                'price-rise': getCount('priceRise', 'totalCount')
+                'price-rise': getCount('priceRise', 'totalCount'),
+                'limit-up': getCount('limitUp', 'totalCount')
             };
 
             renderHomeStatus();
@@ -5741,6 +5785,72 @@
             renderPagination('price-rise-pagination', 'priceRise', sortedData.length, renderPriceRise);
         }
 
+        function renderLimitUp() {
+            const cacheKey = 'limit-up-table';
+            const dataHash = getDataHash(
+                DATA.limitUp && DATA.limitUp.data,
+                filterMA150State.limitUp,
+                sortState[cacheKey],
+                paginationState.limitUp
+            );
+            if (shouldSkipRender(cacheKey, dataHash)) return;
+
+            syncFilterButton('limitUp');
+            let filteredData = enrichWithFinancials(DATA.limitUp && DATA.limitUp.data || []);
+            if (filterMA150State.limitUp) {
+                filteredData = filteredData.filter(s => s.above_ma150 === true);
+            }
+
+            const meta = DATA.limitUp && DATA.limitUp.meta;
+            const totalCount = (meta && meta.totalCount) || filteredData.length;
+            const countEl = document.getElementById('limit-up-count');
+            if (filterMA150State.limitUp) {
+                countEl.textContent = filteredData.length + '개 / 전체 ' + totalCount;
+            } else {
+                countEl.textContent = totalCount;
+            }
+
+            const headers = [
+                { label: '종목명', key: 'name' },
+                { label: '현재가', align: 'text-right', key: 'price' },
+                { label: '시가총액', align: 'text-right', key: 'market_cap' },
+                { label: 'PER', align: 'text-right', key: 'per' },
+                { label: 'PBR', align: 'text-right', key: 'pbr' },
+                { label: '상한가가', align: 'text-right', key: 'limit_price' },
+                { label: '등락률', align: 'text-right', key: 'change_rate' },
+                { label: '거래량비', align: 'text-right', key: 'volume_ratio' }
+            ];
+            const state = sortState[cacheKey] || {};
+            const sortedData = sortData(filteredData, state.key, state.direction);
+            const paginatedData = paginate(sortedData, paginationState.limitUp);
+            const rows = paginatedData.map(s => {
+                const hitLimit = s.change_rate >= 29.9;
+                const changeLabel = hitLimit
+                    ? '<span class="badge badge-danger">상한가</span>'
+                    : formatPercent(s.change_rate);
+                return `
+                <tr class="clickable" onclick='openChartModal(${safeJsonStringify({ticker:s.ticker,name:s.name,price:s.price,change_rate:s.change_rate})})'>
+                    <td><div class="stock-name">${s.name}</div><div class="stock-ticker">${s.ticker}</div></td>
+                    <td class="text-right">${formatNumber(s.price)}원</td>
+                    <td class="text-right">${formatMarketCap(s.market_cap)}</td>
+                    <td class="text-right ${getPERColor(s.per)}">${formatPER(s.per)}</td>
+                    <td class="text-right ${getPBRColor(s.pbr)}">${formatPBR(s.pbr)}</td>
+                    <td class="text-right">${s.limit_price != null ? formatNumber(s.limit_price) + '원' : '-'}</td>
+                    <td class="text-right ${getColor(s.change_rate)}" style="font-weight:700">${changeLabel}</td>
+                    <td class="text-right">${s.volume_ratio != null ? s.volume_ratio.toFixed(1) + 'x' : '-'}</td>
+                </tr>`;
+            }).join('');
+            renderTable(cacheKey, headers, rows, renderLimitUp);
+            renderMobileCards('limit-up-mobile', paginatedData, {
+                extraFields: [
+                    { label: '등락률', key: 'change_rate', format: function(s) { return formatPercent(s.change_rate); } },
+                    { label: '상한가가', key: 'limit_price', format: function(s) { return s.limit_price != null ? formatNumber(s.limit_price) + '원' : '-'; } },
+                    { label: '거래량비', key: 'volume_ratio', format: function(s) { return s.volume_ratio != null ? s.volume_ratio.toFixed(1) + 'x' : '-'; } }
+                ]
+            });
+            renderPagination('limit-up-pagination', 'limitUp', sortedData.length, renderLimitUp);
+        }
+
         // 렌더링 상태 추적 - Lazy Rendering용
         const renderedPages = new Set();
 
@@ -5766,7 +5876,8 @@
             'ackman': renderAckman,
             'lynch': renderLynch,
             'graham': renderGraham,
-            'price-rise': renderPriceRise
+            'price-rise': renderPriceRise,
+            'limit-up': renderLimitUp
         };
 
         // ============================================================
@@ -5985,6 +6096,14 @@
                 ],
                 note: '시가총액 1,000억 이상 보통주 대상 | 거래량비 = 당일 거래량 / 20일 평균 거래량'
             },
+            'limit-up': {
+                items: [
+                    { label: '등락률', value: '≥ 29.5% (가격제한폭 ±30%)', key: true },
+                    { label: '정렬', value: '등락률 내림차순', key: true },
+                    { label: '상한가가', value: '전일 종가 × 1.3' },
+                ],
+                note: '시가총액 1,000억 이상 보통주 대상 | 등락률은 종가 기준(수정주가)으로 계산되어 실제 상한가와 소수점 차이가 있을 수 있음 | 거래량비 = 당일 거래량 / 20일 평균 거래량'
+            },
         };
 
         // 조건 패널 주입 함수
@@ -6091,7 +6210,8 @@
                 'ackman': '빌 애크먼 전략',
                 'lynch': '피터 린치 전략',
                 'graham': '벤저민 그레이엄 전략',
-                'price-rise': '상승률'
+                'price-rise': '상승률',
+                'limit-up': '상한가'
             };
 
             const pageTitle = pageTitles[pageId] || '국내 주식 종목 발굴';
