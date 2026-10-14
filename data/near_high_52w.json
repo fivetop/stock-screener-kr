@@ -1,18 +1,18 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T12:59:53.899370",
+    "lastUpdated": "2026-10-14T13:38:03.827393",
     "marketDate": "2026-10-14",
-    "totalCount": 8,
-    "screened_from": 1326
+    "totalCount": 7,
+    "screened_from": 1324
   },
   "data": [
     {
       "ticker": "096770",
       "name": "SK이노베이션",
-      "price": 161900,
-      "change_rate": 3.25,
+      "price": 163300,
+      "change_rate": 4.15,
       "high_52w": 164700,
-      "percent_from_high": -1.7,
+      "percent_from_high": -0.85,
       "high_52w_date": "2026-09-10",
       "entry_date": "2026-10-08",
       "status": "active",
@@ -21,9 +21,9 @@
       "predicted_gain": 18.8,
       "breakout_probability": 61.3,
       "ai_score": 59.8,
-      "market_cap": 273696,
-      "updated_at": "2026-10-14T12:59:53.898506",
-      "above_high_percent": -1.7
+      "market_cap": 276063,
+      "updated_at": "2026-10-14T13:38:03.807472",
+      "above_high_percent": -0.85
     },
     {
       "ticker": "004080",
@@ -41,34 +41,16 @@
       "breakout_probability": 43.1,
       "ai_score": 37.5,
       "market_cap": 1323,
-      "updated_at": "2026-10-14T12:59:53.896658",
+      "updated_at": "2026-10-14T13:38:03.813466",
       "above_high_percent": -2.51
-    },
-    {
-      "ticker": "453340",
-      "name": "현대그린푸드",
-      "price": 19280,
-      "change_rate": 1.42,
-      "high_52w": 19950,
-      "percent_from_high": -3.36,
-      "high_52w_date": "2026-08-10",
-      "entry_date": "2026-10-14",
-      "status": "active",
-      "days_since": 0,
-      "volume_ratio": 0.4,
-      "predicted_gain": 9.8,
-      "breakout_probability": 34.0,
-      "ai_score": 32.6,
-      "market_cap": 6260,
-      "updated_at": "2026-10-14T12:59:53.531435"
     },
     {
       "ticker": "049430",
       "name": "코메론",
-      "price": 22750,
-      "change_rate": -1.09,
+      "price": 22900,
+      "change_rate": -0.43,
       "high_52w": 23650,
-      "percent_from_high": -3.81,
+      "percent_from_high": -3.17,
       "high_52w_date": "2026-04-01",
       "entry_date": "2026-10-13",
       "status": "active",
@@ -77,9 +59,27 @@
       "predicted_gain": 11.1,
       "breakout_probability": 34.5,
       "ai_score": 34.1,
-      "market_cap": 2058,
-      "updated_at": "2026-10-14T12:59:53.897427",
-      "above_high_percent": -3.81
+      "market_cap": 2071,
+      "updated_at": "2026-10-14T13:38:03.814109",
+      "above_high_percent": -3.17
+    },
+    {
+      "ticker": "453340",
+      "name": "현대그린푸드",
+      "price": 19180,
+      "change_rate": 0.89,
+      "high_52w": 19950,
+      "percent_from_high": -3.86,
+      "high_52w_date": "2026-08-10",
+      "entry_date": "2026-10-14",
+      "status": "active",
+      "days_since": 0,
+      "volume_ratio": 0.4,
+      "predicted_gain": 9.6,
+      "breakout_probability": 30.7,
+      "ai_score": 30.1,
+      "market_cap": 6228,
+      "updated_at": "2026-10-14T13:38:03.458674"
     },
     {
       "ticker": "089860",
@@ -97,33 +97,15 @@
       "breakout_probability": 27.4,
       "ai_score": 27.4,
       "market_cap": 18372,
-      "updated_at": "2026-10-14T12:59:53.461023"
-    },
-    {
-      "ticker": "143240",
-      "name": "사람인",
-      "price": 17510,
-      "change_rate": 0.34,
-      "high_52w": 18400,
-      "percent_from_high": -4.84,
-      "high_52w_date": "2026-04-28",
-      "entry_date": "2026-10-14",
-      "status": "active",
-      "days_since": 0,
-      "volume_ratio": 1.1,
-      "predicted_gain": 7.3,
-      "breakout_probability": 24.1,
-      "ai_score": 23.4,
-      "market_cap": 1879,
-      "updated_at": "2026-10-14T12:59:53.692333"
+      "updated_at": "2026-10-14T13:38:03.379030"
     },
     {
       "ticker": "251970",
       "name": "251970",
-      "price": 66200,
-      "change_rate": -3.78,
+      "price": 66300,
+      "change_rate": -3.63,
       "high_52w": 70200,
-      "percent_from_high": -5.7,
+      "percent_from_high": -5.56,
       "high_52w_date": "2026-01-30",
       "entry_date": "2026-10-12",
       "status": "dropped",
@@ -132,9 +114,9 @@
       "predicted_gain": 18.5,
       "breakout_probability": 51.2,
       "ai_score": 52.4,
-      "market_cap": 8208,
-      "updated_at": "2026-10-14T12:59:53.897970",
-      "above_high_percent": -5.7
+      "market_cap": 8221,
+      "updated_at": "2026-10-14T13:38:03.826344",
+      "above_high_percent": -5.56
     },
     {
       "ticker": "041520",
@@ -152,7 +134,7 @@
       "breakout_probability": 65.1,
       "ai_score": 60.6,
       "market_cap": 1534,
-      "updated_at": "2026-10-14T12:59:53.898923",
+      "updated_at": "2026-10-14T13:38:03.826887",
       "above_high_percent": -7.56
     }
   ]

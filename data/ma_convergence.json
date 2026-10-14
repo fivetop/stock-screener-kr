@@ -1,29 +1,29 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T13:00:06.266003",
+    "lastUpdated": "2026-10-14T13:38:16.162649",
     "marketDate": "2026-10-14",
     "totalCount": 1,
-    "screened_from": 1326
+    "screened_from": 1324
   },
   "data": [
     {
       "ticker": "003550",
       "name": "LG",
-      "current_price": 106600,
-      "volume": 187065,
-      "ma10w": 112720,
-      "ma20w": 108620,
-      "ma60w": 95715,
-      "ma20d": 111385,
-      "ma60d": 109516,
-      "ma120d": 108827,
+      "current_price": 106700,
+      "volume": 189256,
+      "ma10w": 112730,
+      "ma20w": 108625,
+      "ma60w": 95716,
+      "ma20d": 111390,
+      "ma60d": 109518,
+      "ma120d": 108828,
       "gap_20_60": 1.71,
       "gap_20_120": 2.35,
       "gap_60_120": 0.63,
-      "gap_price_20": 4.3,
+      "gap_price_20": 4.21,
       "weeks_since_high": 20,
-      "market_cap": 161170,
-      "updated_at": "2026-10-14T13:00:02.845355"
+      "market_cap": 161321,
+      "updated_at": "2026-10-14T13:38:09.118099"
     }
   ]
 }

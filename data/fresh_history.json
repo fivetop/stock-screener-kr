@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T13:36:14+09:00",
+    "lastUpdated": "2026-10-14T13:38:58+09:00",
     "source": "fresh_history",
     "totalCount": 9,
     "dateCount": 2,
@@ -59,25 +59,25 @@
       "date": "2026-10-14",
       "ticker": "028670",
       "name": "팬오션",
-      "price": 7190,
-      "change_rate": 9.77,
+      "price": 7250,
+      "change_rate": 10.69,
       "source": "52주 신고가",
       "resistance": 6630,
-      "market_cap": 38435,
+      "market_cap": 38756,
       "first_seen_at": "2026-10-14T13:36:14+09:00",
-      "last_seen_at": "2026-10-14T13:36:14+09:00"
+      "last_seen_at": "2026-10-14T13:38:58+09:00"
     },
     {
       "date": "2026-10-14",
       "ticker": "000240",
       "name": "한국앤컴퍼니",
-      "price": 27300,
-      "change_rate": 2.44,
+      "price": 27350,
+      "change_rate": 2.63,
       "source": "박스권 돌파",
       "resistance": null,
-      "market_cap": 25917,
+      "market_cap": 25964,
       "first_seen_at": "2026-10-14T13:36:14+09:00",
-      "last_seen_at": "2026-10-14T13:36:14+09:00"
+      "last_seen_at": "2026-10-14T13:38:58+09:00"
     },
     {
       "date": "2026-10-14",
@@ -89,31 +89,31 @@
       "resistance": null,
       "market_cap": 3201,
       "first_seen_at": "2026-10-14T13:36:14+09:00",
-      "last_seen_at": "2026-10-14T13:36:14+09:00"
+      "last_seen_at": "2026-10-14T13:38:58+09:00"
     },
     {
       "date": "2026-10-14",
       "ticker": "084670",
       "name": "동양고속",
-      "price": 43800,
-      "change_rate": 27.51,
+      "price": 43150,
+      "change_rate": 25.62,
       "source": "거래량 폭발",
       "resistance": null,
-      "market_cap": 1268,
+      "market_cap": 1249,
       "first_seen_at": "2026-10-14T13:36:14+09:00",
-      "last_seen_at": "2026-10-14T13:36:14+09:00"
+      "last_seen_at": "2026-10-14T13:38:58+09:00"
     },
     {
       "date": "2026-10-14",
       "ticker": "452280",
       "name": "한선엔지니어링",
-      "price": 15560,
-      "change_rate": 23.98,
+      "price": 15540,
+      "change_rate": 23.82,
       "source": "거래량 폭발",
       "resistance": null,
-      "market_cap": 2994,
+      "market_cap": 2991,
       "first_seen_at": "2026-10-14T13:36:14+09:00",
-      "last_seen_at": "2026-10-14T13:36:14+09:00"
+      "last_seen_at": "2026-10-14T13:38:58+09:00"
     }
   ]
 }

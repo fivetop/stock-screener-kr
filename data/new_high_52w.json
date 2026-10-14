@@ -1,78 +1,78 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-14T12:59:53.940844",
+    "lastUpdated": "2026-10-14T13:38:03.981911",
     "marketDate": "2026-10-14",
     "totalCount": 4,
-    "screened_from": 1326
+    "screened_from": 1324
   },
   "data": [
     {
       "ticker": "028670",
       "name": "팬오션",
-      "price": 7190,
-      "change_rate": 9.77,
+      "price": 7250,
+      "change_rate": 10.69,
       "high_52w": 6630,
       "breakout_date": "2026-10-14",
       "days_since": 0,
-      "above_high_percent": 8.45,
-      "volume_ratio": 3.3,
+      "above_high_percent": 9.35,
+      "volume_ratio": 3.6,
       "vs_breakout_close": 0.0,
-      "predicted_gain": 12.9,
-      "success_probability": 30.1,
-      "ai_score": 32.7,
-      "market_cap": 38435,
-      "updated_at": "2026-10-14T12:59:53.084336"
+      "predicted_gain": 13.5,
+      "success_probability": 35.4,
+      "ai_score": 36.9,
+      "market_cap": 38756,
+      "updated_at": "2026-10-14T13:38:02.995880"
     },
     {
       "ticker": "217190",
       "name": "제너셈",
-      "price": 9650,
-      "change_rate": -2.43,
+      "price": 9600,
+      "change_rate": -2.93,
       "high_52w": 9670,
       "breakout_date": "2026-10-08",
       "days_since": 3,
-      "above_high_percent": -0.21,
+      "above_high_percent": -0.72,
       "volume_ratio": 4.8,
-      "vs_breakout_close": -4.08,
+      "vs_breakout_close": -4.57,
       "predicted_gain": 18.2,
       "success_probability": 39.5,
       "ai_score": 44.0,
-      "market_cap": 1269,
-      "updated_at": "2026-10-14T12:59:53.937773"
+      "market_cap": 1262,
+      "updated_at": "2026-10-14T13:38:03.977312"
     },
     {
       "ticker": "141000",
       "name": "비아트론",
-      "price": 14620,
-      "change_rate": -0.61,
+      "price": 14580,
+      "change_rate": -0.88,
       "high_52w": 12890,
       "breakout_date": "2026-10-08",
       "days_since": 3,
-      "above_high_percent": 13.42,
+      "above_high_percent": 13.11,
       "volume_ratio": 23.1,
-      "vs_breakout_close": 5.64,
+      "vs_breakout_close": 5.35,
       "predicted_gain": 17.1,
       "success_probability": 34.4,
       "ai_score": 39.4,
-      "market_cap": 1771,
-      "updated_at": "2026-10-14T12:59:53.938761"
+      "market_cap": 1766,
+      "updated_at": "2026-10-14T13:38:03.978146"
     },
     {
       "ticker": "096530",
       "name": "씨젠",
-      "price": 37250,
-      "change_rate": 1.5,
+      "price": 37300,
+      "change_rate": 1.63,
       "high_52w": 35750,
       "breakout_date": "2026-10-01",
       "days_since": 7,
-      "above_high_percent": 4.2,
+      "above_high_percent": 4.34,
       "volume_ratio": 1.9,
-      "vs_breakout_close": -0.13,
+      "vs_breakout_close": 0.0,
       "predicted_gain": 19.7,
       "success_probability": 51.0,
       "ai_score": 53.5,
-      "market_cap": 17408,
-      "updated_at": "2026-10-14T12:59:53.939459"
+      "market_cap": 17431,
+      "updated_at": "2026-10-14T13:38:03.979141"
     }
   ]
 }
